@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Blog</title>
-    <link rel="icon" href="images/color-icon.png" type="image/x-icon">
-    <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <title>{{ title }}</title>
+    <link rel="icon" href="../images/color-icon.png" type="image/x-icon">
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="mayworms.info">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Blog">
-    <meta property="og:url" content="https://mayworms.info/blog.html">
-    <meta property="og:image" content="https://mayworms.info/images/favicon.png">
-    <meta property="og:description" content="Past blog posts">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="https://mayworms.info/">
+    <meta property="og:image" content="https://mayworms.info/images/">
+    <meta property="og:description" content="">
   </head>
   
   <body>
@@ -20,16 +20,16 @@
       <div id="headerArea">
         <nav id="navbar">
           <ul>
-            <li><a class="site-title" href="index.html">mayworms.info</a></li>
+            <li><a class="site-title" href="../index.html">mayworms.info</a></li>
             <span class="hamburger">
               <div class="bar bar1"></div>
               <div class="bar bar2"></div>
               <div class="bar bar3"></div>
-            </span> 
+            </span>
             <span class="nav-links">
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="publications.html">Publications</a></li>
-              <li><a href="cv.html">CV</a></li>
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../publications.html">Publications</a></li>
+              <li><a href="../cv.html">CV</a></li>
             </span>
           </ul>
         </nav>
@@ -40,7 +40,7 @@
         <div id="flex">
           <div id="sidebar">
             <div id="profile">
-              <img src="images/cropped-mayworm-profile-photo-07-24.png" alt="Samuel's profile picture: smiling young man wearing round glasses">
+              <img src="../images/cropped-mayworm-profile-photo-07-24.png" alt="Samuel's profile picture: smiling young man wearing round glasses">
               <div>
                 <h2>Samuel Mayworm</h2>
                 <p>PhD student at the University of Michigan School of Information. Researching trans-centered online communities and content moderation.</p>
@@ -65,29 +65,23 @@
               document.getElementById('contact-toggle').addEventListener('click', function() {document.getElementById('contact-links').classList.toggle('show');});
              </script>
           </div>
-        
+
           <main id="container">
             <div id="flex-2">
               <article>
-
-                <h1>Blog</h1>
+                <h1>{{ title }}</h1>
                 
-                <!--This next part shows all of your posts tagged "posts" in reverse chronological order-->
-<ul class="none">
-<li><b>2024-11-17:</b> <a href="posts/2024-12-17.html">Website maintenance (blog redesign)</a></li>
-<li><b>2024-11-12:</b> <a href="posts/2024-12-12.html">Thoughts on the end of my first PhD semester</a></li>
-<li><b>2024-11-12:</b> <a href="posts/2024-11-12.html">CSCW 2024 in San Jose, Costa Rica!</a></li>
-<li><b>2024-09-23:</b> <a href="posts/2024-09-23.html">Life updates: started my PhD, attended the 2nd International Trans Studies Conference, began rewriting my website</a></li>
-<li><b>2024-07-12:</b> <a href="posts/2024-07-12.html">In the News: Transgender and Nonbinary Social Media Users Experience Disproportionate Content Removals on Social Media</a></li>
-<li><b>2024-06-07:</b> <a href="posts/2024-06-07.html">New Papers Accepted for ACM FAccT '24</a></li>
-<li><b>2024-05-03:</b> <a href="posts/2024-05-03.html">Upcoming Website Maintenance</a></li>
-<li><b>2024-04-30:</b> <a href="posts/2024-04-30.html">New Papers Accepted for CSCW 2024</a></li>
-<li><b>2024-04-16:</b> <a href="posts/2024-04-16.html">In the News: Shadowbanning: Some Marginalized Social Media Users Believe Their Content is Suppressed</a></li>
-<li><b>2024-04-07:</b> <a href="posts/2024-04-07.html">New Paper Accepted to ACM Transactions on Social Computing</a></li>
-<li><b>2024-02-05:</b> <a href="posts/2024-02-05.html">whoa 👀</a></li>
-<li><b>2023-03-19:</b> <a href="posts/2023-03-19.html">Hello, World!</a></li>
-</ul>
-
+                <strong>Invalid DateTime</strong>
+                
+                
+                
+                <nav id="nextprev">
+                
+                <a href="../blog.html">Blog</a>
+                
+                | <a class="previous" href="/posts/2024-12-12.html">Previous »</a>
+                
+                </nav>
               </article>
             </div>
           </main>
@@ -101,11 +95,11 @@
         <section>
           
           
-          <img src="images/transrights.png" alt="Trans rights!" height="100" alt="grey button with a trans flag and a label that reads: Trans rights now!">
+          <img src="../images/transrights.png" alt="Trans rights!" height="100" alt="grey button with a trans flag and a label that reads: Trans rights now!">
           
         </section>
       </footer>
-
+    
       <script>
         let topbutton = document.getElementById("topBtn");
         window.onscroll = function() {scrollFunction()};
