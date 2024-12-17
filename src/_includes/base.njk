@@ -1,0 +1,133 @@
+---
+title: "{{ title }}"
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <link rel="icon" href="images/color-icon.png" type="image/x-icon">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mayworms.info">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="https://mayworms.info/{{ permalink }}">
+    <meta property="og:image" content="https://mayworms.info/images/{{ featured_image }}">
+    <meta property="og:description" content="{{ description }}">
+  </head>
+  
+  <body>
+    <div class="site-wrapper">
+      <div id="headerArea">
+        <nav id="navbar">
+          <ul>
+            <li><a class="site-title" href="index.html">mayworms.info</a></li>
+            <span class="hamburger">
+              <div class="bar bar1"></div>
+              <div class="bar bar2"></div>
+              <div class="bar bar3"></div>
+            </span> 
+            <span class="nav-links">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="cv.html">CV</a></li>
+            </span>
+          </ul>
+        </nav>
+        <div class="grey-out"></div> <!-- grey-out overlay -->
+      </div>
+
+      <div id="content-wrapper">
+        <div id="flex">
+          <div id="sidebar">
+            <div id="profile">
+              <img src="images/cropped-mayworm-profile-photo-07-24.png" alt="Samuel's profile picture: smiling young man wearing round glasses">
+              <div>
+                <h2>Samuel Mayworm</h2>
+                <p>PhD student at the University of Michigan School of Information. Researching trans-centered online communities and content moderation.</p>
+                <button id="contact-toggle">Contact</button>
+              </div>
+            </div>
+            <nav id="sidebar-links">
+              <ul id="contact-links">
+                <li><a href="mailto:mayworms@umich.edu">📧 Email</a></li>
+                <li><a href="https://www.si.umich.edu/people/samuel-mayworm">〽️ UMSI</a></li>
+                <li><a href="https://www.linkedin.com/in/sammayworm/" target="_blank">🔗 LinkedIn</a></li>
+                <li><a href="https://github.com/mayworms" target="_blank">🐙 GitHub</a></li>
+                <li><a href="https://scholar.google.com/citations?user=Ksz1L_AAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">🎓 Google Scholar</a></li>
+                <li><a href="https://orcid.org/my-orcid?orcid=0009-0008-8394-7991/" target="_blank">📝 ORCID</a></li>
+                <li><a href="https://bsky.app/profile/mayworms.bsky.social/" target="_blank">🦋 Bluesky</a></li>
+                <li><a href="https://twitter.com/mayworm_s/" target="_blank">🐦 Twitter</a></li>
+              </ul>
+            </nav>
+
+            <!-- script for toggling contact links in Mobile view -->
+             <script>
+              document.getElementById('contact-toggle').addEventListener('click', function() {document.getElementById('contact-links').classList.toggle('show');});
+             </script>
+          </div>
+        
+          <main id="container">
+            <div id="flex-2">
+              <article>
+
+                <h1>{{ title }}</h1>
+                
+                {{ content | safe }}
+
+              </article>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <section>
+          <p>© 2024 Samuel Mayworm</p>
+        </section>
+        <section>
+          {# <a href="https://tamanotchi.world/15348c"><img src="https://tamanotchi.world/i/15348" alt="It's tamaNOTchi! Click to feed!"></a> #}
+          {# <img src="images/3ds-2.png" alt="3DS" height="100"> #}
+          <img src="images/transrights.png" alt="Trans rights!" height="100" alt="grey button with a trans flag and a label that reads: Trans rights now!">
+          {# <img src="images/vaporwave.gif" alt="vaporwave" height="100"> #}
+        </section>
+      </footer>
+
+      <script>
+        let topbutton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topbutton.style.display = "block";
+          } else {
+            topbutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.querySelector('.hamburger');
+          const navLinks = document.querySelector('.nav-links');
+          const greyOut = document.querySelector('.grey-out');
+
+          hamburger.addEventListener('click', function () {
+            navLinks.classList.toggle('show-nav');
+            greyOut.classList.toggle('show-nav');
+            hamburger.classList.toggle('active');
+          });
+
+          greyOut.addEventListener('click', function () {
+            navLinks.classList.remove('show-nav');
+            greyOut.classList.remove('show-nav');
+            hamburger.classList.remove('active');
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
