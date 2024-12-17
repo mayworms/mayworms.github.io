@@ -1,48 +1,32 @@
-# If you’d like to deploy this to GitHub pages, rename this
-# file to `gh-pages.yml` and read the mini-tutorial on
-# https://www.11ty.dev/docs/deployment/#deploy-an-eleventy-project-to-github-pages
-name: Deploy to GitHub Pages
-
+name: Build Eleventy
 on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+  build:
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Use Node.js current
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: current
 
-      - name: Cache npm
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
-
-      - name: Cache Eleventy .cache
-        uses: actions/cache@v3
-        with:
-          path: ./.cache
-          key: ${{ runner.os }}-eleventy-fetch-cache
-
-
-      - run: npm install
-      - run: npm run build-ghpages
-
+      - name: Install dependencies & build
+        run: |
+          npm ci
+          npm run build
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          #publish_dir is the folder on the docker instance which eleventy builds the pages to.
+          #it is not the docs folder in the repository
+          publish_dir: dist
+          #publish_branch is the branch in the repository.
+          #this is where you need to point GitHub pages
+          publish_branch: gh-pages
