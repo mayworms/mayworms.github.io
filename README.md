@@ -1,1 +1,1 @@
-https://mayworms.github.io/second-blog/
+https://www.mayworms.info
