@@ -1,0 +1,35 @@
+# Name of the action:
+name: Deploy GH Pages
+
+# when should it trigger? 
+on:
+  # trigger when something is pushed to the branch main
+  push: 
+    branches: [ "main" ]
+  # make it possible to trigger manually, useful for debugging
+  workflow_dispatch: 
+
+# what should be done
+jobs:
+  # we have only one stage and we name it 'build'
+  build:
+    # this is the (docker) image used to run the steps below
+    runs-on: ubuntu-latest
+
+    steps:
+      # checkout the branch
+      - uses: actions/checkout@v3
+
+      # install the project and to build the page
+      - name: npm ci & build
+        uses: actions/setup-node@v4
+      - run: npm ci
+      - run: npm npx @11ty/eleventy
+
+      # deploy the content of _site to the branch gh-pages (default setting)
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # this line is needed for the action to be able to push something to your repository
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
