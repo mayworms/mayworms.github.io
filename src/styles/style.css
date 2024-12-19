@@ -6,7 +6,7 @@
 /* Theme colors: also! for personal reference: npx @11ty/eleventy --serve */
 :root {
 	--xkcd-light-grey: #d8dcd6;
-	--xkcd-peach: #b33a0e;
+	--xkcd-peach: #7e290b; /* was b33a0e */
   --cream: #ffffe4;
   --light-cream: #fffff2;
 	--light-peach: #FFC099;
