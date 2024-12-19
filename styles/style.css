@@ -527,6 +527,7 @@ body {
       padding-top: .5em;
       padding-bottom: .5em;
       margin-top: .5em;
+      line-height: 1.2em;
     }
     #profile div {
       display: flex; 
