@@ -501,7 +501,7 @@ body {
     #sidebar {
       order: 1; /* keeps sidebar above container */
       padding: 1em;
-      font-size: 1.4em; /* was 1.3em */
+      font-size: 1.5em; /* was 1.4em */
       position: static;
     }
 
