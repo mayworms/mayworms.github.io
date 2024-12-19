@@ -415,7 +415,7 @@ body {
       width: 25%;
       position: absolute;
       background-color: var(--cream);
-      font-size: 1.2em;
+      font-size: 1.4em; /* was 1.2em */
       right: 5%;
       top: 5.5em;
       padding: 1em;
