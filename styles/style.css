@@ -566,7 +566,7 @@ body {
       gap: 1em;
     }
     article {
-      font-size: 1.5em;
+      font-size: 1.8em; /* was 1.5em */
       line-height: 1.5em;
       padding: .5em;
     }
@@ -575,26 +575,3 @@ body {
       margin-top: 1.5em;
     }
   }
-  
-  /* Go To Top button */
-  /* #topBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    border-radius: 24px;
-    background-color: var(--cream);
-    color: var(--xkcd-peach);
-    cursor: pointer;
-    padding: 15px;
-    font-size: 18px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    font-family: "Jost", sans-serif;
-  }
-  #topBtn:hover {
-    color: var(--xkcd-peach);
-    background-color: var(--light-mint);
-  } */
