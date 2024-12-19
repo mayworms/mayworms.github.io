@@ -538,7 +538,7 @@ body {
     /* contact links toggle button */
     #contact-toggle {
       display: block;
-      width: 30%;
+      width: 40%; /* was 30% */
       background-color: var(--mint);
       color: var(--cream);
       border: none;
