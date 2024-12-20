@@ -9,7 +9,7 @@ I am a first year PhD student at the <a href="https://www.si.umich.edu" target="
 
 Some of my current research interests include trans-centered online communities, content moderation, platform governance, folk theorization, and alternative online infrastructures.
 
-I graduated from Michigan State University with a Bachelor of Arts in Social Relations and Policy in 2017, and from UMSI with a Master of Science in Information in May 2022. Prior to graduate school, I worked in public and academic libraries. 
+I graduated from Michigan State University with a Bachelor of Arts in Social Relations and Policy in 2017, and from UMSI with a Master of Science in Information in 2022. Prior to graduate school, I worked in public and academic libraries. 
 
 --- 
 <!-- This next part will show your top three most recent posts. You can change how readableDate looks in your .eleventy.js file-->
