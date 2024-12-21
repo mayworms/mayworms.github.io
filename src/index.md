@@ -11,6 +11,8 @@ Some of my current research interests include trans-centered online communities,
 
 I graduated from Michigan State University with a Bachelor of Arts in Social Relations and Policy in 2017, and from UMSI with a Master of Science in Information in 2022. Prior to graduate school, I worked in public and academic libraries. 
 
+Outside of research, I enjoy collecting printed state highway maps, playing the piano, visiting public libraries, the colour green, playing *Dwarf Fortress* and *Cities: Skylines*, watching Detroit Lions games, and re-watching *Lupin III.*
+
 --- 
 <!-- This next part will show your top three most recent posts. You can change how readableDate looks in your .eleventy.js file-->
 ## Recent Blog Posts
