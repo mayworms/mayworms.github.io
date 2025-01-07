@@ -26,7 +26,7 @@
 	--syntax-tab-size: 2;
 }
 
-/* Main Styles */ 
+/* Main + Desktop View Styles */ 
 body {
     overflow-y: scroll;
     background-color: var(--background-color);
@@ -55,7 +55,7 @@ body {
     margin: 0 auto; /* centers site-wrapper */
   }
 
-  /* Ensure the navbar and footer are full width within the wrapper */
+  /* Makes sure navbar and footer are full width within the wrapper */
   #navbar, #footer {
     width: 100%;
   }
@@ -111,7 +111,7 @@ body {
 
 /* hamburger menu icon style */
   .hamburger {
-    display: none; /* hidden by default */
+    display: none; /* hidden by default on desktop/tablet view */
     cursor: pointer;
     font-size: 1.5em;
     color: var(--mint);
@@ -128,7 +128,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 1em; /* was 2rem */
+    gap: 1em;
     width: 100%;
   }
 
@@ -138,7 +138,7 @@ body {
     padding-inline: 3em;
     background-color: var(--cream);
     border-radius: 10px;
-    top: 1em; /* was 1rem */
+    top: 1em;
     display: block;
   }
 
@@ -153,7 +153,6 @@ body {
     top: 1em;
     flex: 1;
     overflow: auto;
-    /* width: calc(300px - 1em) */
     padding-inline: 1.5em;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -210,7 +209,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--cream);
-    margin: 1em auto; /* centers footer */
+    margin: 1em auto;
     padding: 10px;
     text-align: center;
     border-radius: 24px;
@@ -241,7 +240,6 @@ body {
     height: auto;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    /* border-radius: 10px; nts: fix this so it doesn't round footer images */
   }
   
   ul.none {
@@ -271,94 +269,91 @@ body {
     list-style-type: none;
   }
   
-  /* At the bottom of blog posts */
+  /* Navigation text at the bottom of blog posts */
   #nextprev {
     text-align: center;
     margin-top: 1.4em;
   }
 
-  /* Post Grid -- took this right from Renkotsuban lol */
-.post-grid {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  gap: 10px;
-  width: 100%;
-  margin: 0 auto;
-}
-.post-grid .post-grid-item {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-decoration: none;
-  color: initial;
-  border-radius: 10px;
-  outline-width: 1px;
-  outline-style: solid;
-  outline-color: #BBCFEA;
-  padding: 5px;
-  width: 300px;
-  height: 200px;
-}
-.post-grid-image {
-  max-height: 200px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-.post-grid-title {
-  background-color: #1E2030;
-  padding: 5px;
-  border-radius: 10px;
-}
-.post-grid .post-grid-item .post-grid-title {
-  font-weight: bold;
-  background-color: rgba(30,32,48,0.8);
-  color: #A6DA95;
-  padding: 8px;
-  overflow: hidden;
-  text-decoration: none;
-  border-radius: 10px;
-}
-.post-grid .post-grid-item .post-grid-date {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 5px;
-  gap: 5px;
-}
-.post-grid .post-grid-item .post-grid-date  {
-  padding: 4px;
-  box-sizing: border-box;
-  display: inline-block;
-  border-radius: 10px;
-}
-.post-grid .post-grid-item .post-grid-date {
-  background-color: rgba(30,32,48,0.8);
-  color: #F5BDE6;
-  width: 111px;
-  background-size: auto;
-}
+  /* Post Grid (took this right from Renkotsuban lol, may or may not use) */
+  .post-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .post-grid .post-grid-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: initial;
+    border-radius: 10px;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #BBCFEA;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+  }
+  .post-grid-image {
+    max-height: 200px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .post-grid-title {
+    background-color: #1E2030;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .post-grid .post-grid-item .post-grid-title {
+    font-weight: bold;
+    background-color: rgba(30,32,48,0.8);
+    color: #A6DA95;
+    padding: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .post-grid .post-grid-item .post-grid-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 5px;
+    gap: 5px;
+  }
+  .post-grid .post-grid-item .post-grid-date  {
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .post-grid .post-grid-item .post-grid-date {
+    background-color: rgba(30,32,48,0.8);
+    color: #F5BDE6;
+    width: 111px;
+    background-size: auto;
+  }
   
   @media only screen and (max-width: 768px) { /* tablet view! */
     .site-wrapper {
-      max-width: 90%; /* take up more screen space on tablets */
+      max-width: 90%; /* less side margin on tablet view */
       margin: 0 auto;
     }
     
     #flex {
       flex-wrap: wrap;
-      gap: 1em; /* was 1rem */
+      gap: 1em;
     }
-    /* #container, #sidebar {
-      margin-left: 1em;
-      margin-right: 1em;
-    } */
+
     #navbar ul {
       flex-wrap: wrap;
     }
@@ -415,7 +410,7 @@ body {
       width: 25%;
       position: absolute;
       background-color: var(--cream);
-      font-size: 1.4em; /* was 1.2em */
+      font-size: 1.4em;
       right: 5%;
       top: 5.5em;
       padding: 1em;
@@ -438,7 +433,7 @@ body {
       font-size: 1.5em;
     }
 
-    /* Style for the hamburger menu icon */
+    /* style for the hamburger icon on mobile -- please don't mess with this, this took forever to make happen lol */
     .hamburger {
       display: block;
       cursor: pointer;
@@ -469,7 +464,7 @@ body {
       width: 21px;
     }
   
-    /* For grey-out effect */
+    /* hamburger menu grey-out effect */
     .grey-out {
       position: fixed;
       top: 0;
@@ -501,7 +496,7 @@ body {
     #sidebar {
       order: 1; /* keeps sidebar above container */
       padding: 1em;
-      font-size: 1.5em; /* was 1.4em */
+      font-size: 1.5em;
       position: static;
     }
 
@@ -539,11 +534,11 @@ body {
     /* contact links toggle button */
     #contact-toggle {
       display: block;
-      width: 40%; /* was 30% */
+      width: 40%;
       background-color: var(--mint);
       color: var(--cream);
       border: none;
-      border-radius: 28px; /* 23 */
+      border-radius: 28px;
       padding: 4px;
       font-size: .9em;
       text-align: center;
@@ -567,7 +562,7 @@ body {
       gap: 1em;
     }
     article {
-      font-size: 1.8em; /* was 1.5em */
+      font-size: 1.8em;
       line-height: 1.5em;
       padding: .5em;
     }
