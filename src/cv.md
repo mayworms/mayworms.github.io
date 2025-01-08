@@ -12,26 +12,33 @@ featured_image: favicon.png
 ---
 
 ### Education
-**Master of Science in Information**, University of Michigan School of Information, Ann Arbor, MI, (Aug. 2020 - May 2022)
-- Library Science, Archives, and Digital Preservation
+**Master of Science in Information**
+University of Michigan School of Information
+Library Science, Archives, and Digital Preservation track
+Ann Arbor, MI
+Aug. 2020 - May 2022
 
-**Bachelor of Arts in Social Relations and Policy**, Michigan State University – James Madison College, East Lansing, MI, (Aug. 2013 - May 2017)
+**Bachelor of Arts in Social Relations and Policy**
+Michigan State University
+James Madison College
+East Lansing, MI
+Aug. 2013 - May 2017
 
 ---
 
 ### Publications
 #### Published Peer-Reviewed Works
-<b>Samuel Mayworm</b>, Kendra Albert, and Oliver L. Haimson. 2024. <b>Misgendered During Moderation: How Trans Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement on Social Media Platforms.</b> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT)</i>. [ <a href="https://doi.org/10.1145/3630106.3658907" target="_blank">link</a> ].
+<b>Samuel Mayworm</b>, Kendra Albert, and Oliver L. Haimson. 2024. <b>Misgendered During Moderation: How Trans Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement on Social Media Platforms.</b> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT)</i>. [<a href="https://doi.org/10.1145/3630106.3658907" target="_blank">link</a>].
 
-Hibby Thach, <b>Samuel Mayworm</b>, Michaelanne Thomas, and Oliver L. Haimson. 2024. <b>Trans-Centered Moderation: Trans Technology Creators and Centering Transness in Platform and Community Governance.</b> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT)</i>. [ <a href="https://doi.org/10.1145/3630106.3658909" target="_blank">link</a> ].
+Hibby Thach, <b>Samuel Mayworm</b>, Michaelanne Thomas, and Oliver L. Haimson. 2024. <b>Trans-Centered Moderation: Trans Technology Creators and Centering Transness in Platform and Community Governance.</b> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT)</i>. [<a href="https://doi.org/10.1145/3630106.3658909" target="_blank">link</a>].
 
-<b>Samuel Mayworm</b>, Michael Ann DeVito, Daniel Delmonaco, Hibby Thach, and Oliver L. Haimson. 2024. <b>Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users.</b> <i>ACM Transactions on Social Computing</i> 7, 1: 1-27. [ <a href="https://doi.org/10.1145/3632741" target="_blank">link</a> ].
+<b>Samuel Mayworm</b>, Michael Ann DeVito, Daniel Delmonaco, Hibby Thach, and Oliver L. Haimson. 2024. <b>Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users.</b> <i>ACM Transactions on Social Computing</i> 7, 1: 1-27. [<a href="https://doi.org/10.1145/3632741" target="_blank">link</a>].
 
-<b>Samuel Mayworm</b>, Shannon Li, Hibby Thach, Daniel Delmonaco, Christian Paneda, Andrea Wegner, and Oliver L. Haimson. 2024. <b>The Online Identity Help Center: Designing and Developing a Content Moderation Policy Resource for Marginalized Social Media Users.</b> <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i> CSCW [Computer-Supported Cooperative & Social Computing] [ <a href="https://doi.org/10.1145/3637406" target="_blank">link</a> ].
+<b>Samuel Mayworm</b>, Shannon Li, Hibby Thach, Daniel Delmonaco, Christian Paneda, Andrea Wegner, and Oliver L. Haimson. 2024. <b>The Online Identity Help Center: Designing and Developing a Content Moderation Policy Resource for Marginalized Social Media Users.</b> <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i> CSCW [Computer-Supported Cooperative & Social Computing] [<a href="https://doi.org/10.1145/3637406" target="_blank">link</a>].
 
-Daniel Delmonaco, <b>Samuel Mayworm</b>, Josh Guberman, Hibby Thach, Aurelia Augusta, and Oliver L. Haimson. 2024. <b>“What are you doing, TikTok?”: How Marginalized Social Media Users Perceive, Theorize, and “Prove” Shadowbanning.</b> <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i> CSCW [Computer-Supported Cooperative & Social Computing] [ <a href="https://doi.org/10.1145/3637431" target="_blank">link</a> ].
+Daniel Delmonaco, <b>Samuel Mayworm</b>, Josh Guberman, Hibby Thach, Aurelia Augusta, and Oliver L. Haimson. 2024. <b>“What are you doing, TikTok?”: How Marginalized Social Media Users Perceive, Theorize, and “Prove” Shadowbanning.</b> <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i> CSCW [Computer-Supported Cooperative & Social Computing] [<a href="https://doi.org/10.1145/3637431" target="_blank">link</a>].
 
-Hibby Thach, <b>Samuel Mayworm</b>, Daniel Delmonaco, and Oliver L. Haimson. 2022. <b>(In)Visible Moderation: A Digital Ethnography of Marginalized Users and Content Moderation on Twitch and Reddit.</b> <i>New Media & Society.</i> [ <a href="https://doi.org/10.1177/14614448221109804" target="_blank">link</a> ].
+Hibby Thach, <b>Samuel Mayworm</b>, Daniel Delmonaco, and Oliver L. Haimson. 2022. <b>(In)Visible Moderation: A Digital Ethnography of Marginalized Users and Content Moderation on Twitch and Reddit.</b> <i>New Media & Society.</i> [<a href="https://doi.org/10.1177/14614448221109804" target="_blank">link</a>].
       
 #### Conference Presentations
 **Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users**  
