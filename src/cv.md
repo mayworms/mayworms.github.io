@@ -12,7 +12,7 @@ featured_image: favicon.png
 ---
 
 ### Education
-**PhD in Information (current)**
+**PhD in Information (current)**  
 University of Michigan  
 School of Information  
 Ann Arbor, MI  
