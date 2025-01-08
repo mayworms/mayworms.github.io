@@ -12,13 +12,13 @@ featured_image: favicon.png
 ---
 
 ### Education
-**Master of Science in Information**
+**Master of Science in Information**  
 University of Michigan School of Information  
 Library Science, Archives, and Digital Preservation track  
 Ann Arbor, MI  
 Aug. 2020 - May 2022  
 
-**Bachelor of Arts in Social Relations and Policy**
+**Bachelor of Arts in Social Relations and Policy**  
 Michigan State University  
 James Madison College  
 East Lansing, MI  
