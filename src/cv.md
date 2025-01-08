@@ -12,9 +12,15 @@ featured_image: favicon.png
 ---
 
 ### Education
+**PhD in Information (current)**
+University of Michigan  
+School of Information  
+Ann Arbor, MI  
+Aug. 2024 - present  
+
 **Master of Science in Information**  
-University of Michigan School of Information  
-Library Science, Archives, and Digital Preservation track  
+University of Michigan  
+School of Information, Library Science, Archives, and Digital Preservation track  
 Ann Arbor, MI  
 Aug. 2020 - May 2022  
 
