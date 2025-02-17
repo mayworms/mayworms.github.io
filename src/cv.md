@@ -34,9 +34,14 @@ Aug. 2013 - May 2017
 
 ### Publications
 #### Published Peer-Reviewed Works
-<b>Samuel Mayworm</b>, Kendra Albert, and Oliver L. Haimson. 2024. <b>Misgendered During Moderation: How Trans Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement on Social Media Platforms.</b> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT)</i>. [<a href="https://doi.org/10.1145/3630106.3658907" target="_blank">link</a>].
+Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F. Ria Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025. <b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i> [in press].
 
-Hibby Thach, <b>Samuel Mayworm</b>, Michaelanne Thomas, and Oliver L. Haimson. 2024. <b>Trans-Centered Moderation: Trans Technology Creators and Centering Transness in Platform and Community Governance.</b> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT)</i>. [<a href="https://doi.org/10.1145/3630106.3658909" target="_blank">link</a>].
+
+F. Ria Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025. <b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i> [in press].
+
+<b>Samuel Mayworm</b>, Kendra Albert, and Oliver L. Haimson. 2024. <b>Misgendered During Moderation: How Trans Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement on Social Media Platforms.</b> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT 2024)</i>. [<a href="https://doi.org/10.1145/3630106.3658907" target="_blank">link</a>].
+
+Hibby Thach, <b>Samuel Mayworm</b>, Michaelanne Thomas, and Oliver L. Haimson. 2024. <b>Trans-Centered Moderation: Trans Technology Creators and Centering Transness in Platform and Community Governance.</b> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT 2024)</i>. [<a href="https://doi.org/10.1145/3630106.3658909" target="_blank">link</a>].
 
 <b>Samuel Mayworm</b>, Michael Ann DeVito, Daniel Delmonaco, Hibby Thach, and Oliver L. Haimson. 2024. <b>Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users.</b> <i>ACM Transactions on Social Computing</i> 7, 1: 1-27. [<a href="https://doi.org/10.1145/3632741" target="_blank">link</a>].
 
