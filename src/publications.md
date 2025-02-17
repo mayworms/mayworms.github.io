@@ -5,6 +5,12 @@ title: Publications
 description: Publications
 featured_image: favicon.png
 ---
+### 2025
+---
+Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F. Ria Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025. "That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility. In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25).</i> [in press]
+
+
+F. Ria Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025. Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making. In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25).</i> [in press]
 
 ### 2024
 ---
