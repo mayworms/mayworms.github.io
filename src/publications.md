@@ -7,10 +7,10 @@ featured_image: favicon.png
 ---
 ### 2025
 ---
-Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F. Ria Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025. <b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i> [in press].
+Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, Ria Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025. <b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i> [in press].
 
 
-F. Ria Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025. <b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i> [in press].
+Ria Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025. <b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i> [in press].
 
 ### 2024
 ---
