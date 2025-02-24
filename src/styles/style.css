@@ -55,7 +55,7 @@ body {
     margin: 0 auto; /* centers site-wrapper */
   }
 
-  /* Makes sure navbar and footer are full width within the wrapper */
+  /* Makes sure navbar and footer are full width in the wrapper */
   #navbar, #footer {
     width: 100%;
   }
