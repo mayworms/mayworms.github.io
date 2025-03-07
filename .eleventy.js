@@ -35,11 +35,24 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/baguettebox.js/dist/baguetteBox.js": "/assets/js/baguetteBox.js",
+  });
+
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/baguettebox.js/dist/baguetteBox.css" : "/styles/baguetteBox.css",
+  });
+
+  eleventyConfig.addPassthroughCopy({
+    "./samuelscode.js" : "/assets/js/samuelscode.js",
+  });
+
+
   // These are the folders that Eleventy will use. "src" is where you edit files that Eleventy will then take in and export into "public," which you upload.
-    return {
-      dir: {
-        input: "src",
-        output: "public",
-      },
-    };
+  return {
+    dir: {
+      input: "src",
+      output: "public",
+    },
   };
+};
