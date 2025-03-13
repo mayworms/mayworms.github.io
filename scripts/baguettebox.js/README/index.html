@@ -1,0 +1,301 @@
+<h1 align="center">baguetteBox.js</h1>
+<p><a href="https://github.com/feimosi/baguetteBox.js/releases"><img src="https://img.shields.io/github/release/feimosi/baguetteBox.js.svg" alt="GitHub Release"></a>
+<a href="https://github.com/feimosi/baguetteBox.js/blob/dev/LICENSE"><img src="https://img.shields.io/npm/l/baguettebox.js.svg" alt="MIT License"></a>
+<a href="https://david-dm.org/feimosi/baguetteBox.js"><img src="https://img.shields.io/badge/dependencies-none-blue.svg" alt="dependency Status"></a>
+<a href="https://david-dm.org/feimosi/baguetteBox.js?type=dev"><img src="https://img.shields.io/david/dev/feimosi/baguetteBox.js.svg" alt="devDependency Status"></a>
+<a href="https://www.npmjs.com/package/baguettebox.js"><img src="https://img.shields.io/npm/dm/baguettebox.js.svg" alt="npm"></a>
+<a href="https://travis-ci.org/feimosi/baguetteBox.js"><img src="https://travis-ci.org/feimosi/baguetteBox.js.svg?branch=master" alt="Build Status"></a></p>
+<p><a href="https://paypal.me/feimosi"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a>
+<a href="https://twitter.com/intent/tweet?text=Check%20out%20baguetteBox.js%20-%20simple%20and%20easy%20to%20use%20lightbox%20script%20written%20in%20pure%20JavaScript%0Ahttps%3A%2F%2Fgithub.com%2Ffeimosi%2FbaguetteBox.js"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" alt="Twitter"></a>
+<a href="https://twitter.com/feimosi"><img src="https://img.shields.io/twitter/follow/feimosi.svg?style=social&amp;label=Follow%20the%20author" alt="Twitter Follow"></a></p>
+<p>Simple and easy to use lightbox script written in pure JavaScript.</p>
+<p><a href="https://feimosi.github.io/baguetteBox.js/">Demo page</a></p>
+<p><img src="https://i.imgur.com/GMmnud0.jpg" alt="Demo Page screenshot"></p>
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#importing">Importing</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#customization">Customization</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#responsive-images">Responsive images</a></li>
+<li><a href="#compatibility">Compatibility</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#donation">Donation</a></li>
+<li><a href="#credits">Credits</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>Written in pure JavaScript, no dependencies required</li>
+<li>Multiple-gallery support allows custom options for each</li>
+<li>Supports swipe gestures on touch-screen devices</li>
+<li>Full-screen mode available</li>
+<li>Modern and minimal look</li>
+<li>Image captions support</li>
+<li>Responsive images</li>
+<li>CSS3 transitions</li>
+<li>SVG buttons, no extra files to download</li>
+<li>Around 3.2KB gzipped</li>
+<li>With Accessibility in mind</li>
+</ul>
+<h2>Installation</h2>
+<p>You can use one of the following methods:</p>
+<h3>npm</h3>
+<pre><code class="language-sh">npm install baguettebox.js --save
+</code></pre>
+<h3>Yarn</h3>
+<pre><code class="language-sh">yarn add baguettebox.js
+</code></pre>
+<h3>Bower</h3>
+<pre><code class="language-sh">bower install baguettebox.js --save
+</code></pre>
+<h3>CDN</h3>
+<ol>
+<li>Use one of the following CDN providers:</li>
+</ol>
+<ul>
+<li>https://cdnjs.com/libraries/baguettebox.js</li>
+<li>https://jsdelivr.com/projects/baguettebox.js</li>
+</ul>
+<ol start="3">
+<li>
+<p>Copy URLs of the latest version (both <code>.js</code> and <code>.css</code> files)</p>
+</li>
+<li>
+<p>Paste the URLs in your HTML file:</p>
+</li>
+</ol>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;CSS URL&gt;&quot;&gt;
+&lt;script src=&quot;&lt;JS URL&gt;&quot; async&gt;&lt;/script&gt;
+</code></pre>
+<h3>Manually</h3>
+<ol>
+<li>Download <code>baguetteBox.min.css</code> and <code>baguetteBox.min.js</code> files from the <code>dist</code> folder.</li>
+<li>Include them somewhere in your document:</li>
+</ol>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/baguetteBox.min.css&quot;&gt;
+&lt;script src=&quot;js/baguetteBox.min.js&quot; async&gt;&lt;/script&gt;
+</code></pre>
+<h2>Importing</h2>
+<h3>Traditional approach</h3>
+<p>If you don't use JavaScript modules and include the file with a <code>&lt;script&gt;</code> tag, you don't have to import anything explicitly. <code>baguetteBox</code> will be available in the global scope.</p>
+<h3>CommonJS</h3>
+<pre><code class="language-js">const baguetteBox = require('baguettebox.js');
+</code></pre>
+<h3>ES2015 modules</h3>
+<pre><code class="language-js">import baguetteBox from 'baguettebox.js';
+</code></pre>
+<h3>Sass</h3>
+<pre><code class="language-scss">@import 'baguettebox.js/dist/baguetteBox.min.css';
+</code></pre>
+<h2>Usage</h2>
+<p>Initialize the script by running:</p>
+<pre><code class="language-js">baguetteBox.run('.gallery');
+</code></pre>
+<p>where the first argument is a selector to a gallery (or galleries) containing <code>a</code> tags. The HTML code may look like this:</p>
+<pre><code class="language-html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;img/2-1.jpg&quot; data-caption=&quot;Image caption&quot;&gt;
+        &lt;img src=&quot;img/thumbnails/2-1.jpg&quot; alt=&quot;First image&quot;&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;img/2-2.jpg&quot;&gt;
+        &lt;img src=&quot;img/thumbnails/2-2.jpg&quot; alt=&quot;Second image&quot;&gt;
+    &lt;/a&gt;
+    ...
+&lt;/div&gt;
+</code></pre>
+<p>To use captions put a <code>title</code> or <code>data-caption</code> attribute on the <code>a</code> tag.</p>
+<p>Note: if you import baguetteBox using the <code>&lt;script&gt;</code> tag, remember to run it after the document has loaded:</p>
+<pre><code class="language-html">&lt;script&gt;
+window.addEventListener('load', function() {
+  baguetteBox.run('.gallery');
+});
+&lt;/script&gt;
+</code></pre>
+<h2>Customization</h2>
+<p>You can pass an object with custom options as the second parameter.</p>
+<pre><code class="language-js">baguetteBox.run('.gallery', {
+    // Custom options
+});
+</code></pre>
+<p>The following options are available:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>captions</code></td>
+<td><code>Boolean</code> | <code>function(element)</code></td>
+<td><code>true</code></td>
+<td>Display image captions. Passing a function will use a string returned by this callback. The only argument is <code>a</code> element containing the image. Invoked in the context of the current gallery array</td>
+</tr>
+<tr>
+<td><code>buttons</code></td>
+<td><code>Boolean</code> | <code>'auto'</code></td>
+<td><code>'auto'</code></td>
+<td>Display buttons. <code>'auto'</code> hides buttons on touch-enabled devices or when only one image is available</td>
+</tr>
+<tr>
+<td><code>leftArrow</code> | <code>rightArrow</code> | <code>closeX</code></td>
+<td><code>string</code></td>
+<td>default icons</td>
+<td>This allows to customize buttons with own icons</td>
+</tr>
+<tr>
+<td><code>fullScreen</code></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Enable full screen mode</td>
+</tr>
+<tr>
+<td><code>noScrollbars</code></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Hide scrollbars when gallery is displayed</td>
+</tr>
+<tr>
+<td><code>bodyClass</code></td>
+<td><code>String</code></td>
+<td><code>'baguetteBox-open'</code></td>
+<td>Class name that will be appended to the <code>body</code> when lightbox is visible (works in IE 10+)</td>
+</tr>
+<tr>
+<td><code>ignoreClass</code></td>
+<td><code>String</code></td>
+<td><code>null</code></td>
+<td>It will ignore images with given class put on <code>a</code> tag</td>
+</tr>
+<tr>
+<td><code>titleTag</code></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Use caption value also in the gallery <code>img.title</code> attribute</td>
+</tr>
+<tr>
+<td><code>async</code></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Load files asynchronously</td>
+</tr>
+<tr>
+<td><code>preload</code></td>
+<td><code>Number</code></td>
+<td><code>2</code></td>
+<td>How many files should be preloaded</td>
+</tr>
+<tr>
+<td><code>animation</code></td>
+<td><code>'slideIn'</code> | <code>'fadeIn'</code> | <code>false</code></td>
+<td><code>'slideIn'</code></td>
+<td>Animation type</td>
+</tr>
+<tr>
+<td><code>afterShow</code></td>
+<td><code>function</code></td>
+<td><code>null</code></td>
+<td>Callback to be run after showing the overlay</td>
+</tr>
+<tr>
+<td><code>afterHide</code></td>
+<td><code>function</code></td>
+<td><code>null</code></td>
+<td>Callback to be run after hiding the overlay</td>
+</tr>
+<tr>
+<td><code>onChange</code></td>
+<td><code>function(currentIndex, imagesCount)</code></td>
+<td><code>null</code></td>
+<td>Callback to be run when image changes</td>
+</tr>
+<tr>
+<td><code>overlayBackgroundColor</code></td>
+<td><code>String</code></td>
+<td><code>'rgba</code><br><code>(0,0,0,0.8)'</code></td>
+<td>Background color for the lightbox overlay</td>
+</tr>
+<tr>
+<td><code>filter</code></td>
+<td><code>RegExp</code></td>
+<td><code>/.+\.(gif|jpe?g|png|webp)/i</code></td>
+<td>Pattern to match image files. Applied to the <code>a.href</code> attribute</td>
+</tr>
+</tbody>
+</table>
+<h2>API</h2>
+<h3><code>run(selector, userOptions)</code></h3>
+<p>Initialize baguetteBox.js</p>
+<ul>
+<li>@param <code>selector</code> {string} - valid CSS selector used by <code>querySelectorAll</code></li>
+<li>@param <code>userOptions</code> {object} - custom options (see <a href="#customization">#Customization</a>)</li>
+<li>@return {array} - an array of gallery objects (reflects elements found by the selector)</li>
+</ul>
+<h3><code>show(index, gallery)</code></h3>
+<p>Show (if hidden) and move the gallery to a specific index</p>
+<ul>
+<li>@param <code>index</code> {number} - the position of the image</li>
+<li>@param <code>gallery</code> {array} - gallery which should be opened, if omitted assumes the currently opened one</li>
+<li>@return {boolean} - true on success or false if the index is invalid</li>
+</ul>
+<p>Usage:</p>
+<pre><code class="language-js">const gallery = baguetteBox.run('.gallery');
+baguetteBox.show(index, gallery[0]);
+</code></pre>
+<h3><code>showNext</code></h3>
+<p>Switch to the next image</p>
+<ul>
+<li>@return {boolean} - true on success or false if there are no more images to be loaded</li>
+</ul>
+<h3><code>showPrevious</code></h3>
+<p>Switch to the previous image</p>
+<ul>
+<li>@return {boolean} - true on success or false if there are no more images to be loaded</li>
+</ul>
+<h3><code>hide</code></h3>
+<p>Hide the gallery</p>
+<h3><code>destroy</code></h3>
+<p>Remove the plugin with any event bindings</p>
+<h2>Responsive images</h2>
+<p>To use this feature, simply put <code>data-at-{width}</code> attributes on <code>a</code> tags with a value being the path to the desired image. <code>{width}</code> should be the maximum screen width the image can be displayed at. The script chooses the first image with <code>{width}</code> greater than or equal to the current screen width for best user experience.
+That last <code>data-at-X</code> image is also used in the case of a screen larger than X.</p>
+<p>Here's an example of what the HTML code can look like:</p>
+<pre><code class="language-html">&lt;a href=&quot;img/2-1.jpg&quot;
+  data-at-450=&quot;img/thumbs/2-1.jpg&quot;
+  data-at-800=&quot;img/small/2-1.jpg&quot;
+  data-at-1366=&quot;img/medium/2-1.jpg&quot;
+  data-at-1920=&quot;img/big/2-1.jpg&quot;&gt;
+    &lt;img src=&quot;img/thumbs/2-1.jpg&quot;&gt;
+&lt;/a&gt;
+</code></pre>
+<p>If you have 1366x768 resolution baguetteBox.js will choose <code>&quot;img/medium/2-1.jpg&quot;</code>. If, however, it's 1440x900 it'll choose <code>&quot;img/big/2-1.jpg&quot;</code>. Keep the <code>href</code> attribute as a fallback (link to a bigger image e.g. of HD size) for older browsers.</p>
+<h2>Compatibility</h2>
+<p>Desktop:</p>
+<ul>
+<li>IE 8+</li>
+<li>Chrome</li>
+<li>Firefox 3.6+</li>
+<li>Opera 12+</li>
+<li>Safari 5+</li>
+</ul>
+<p>Mobile:</p>
+<ul>
+<li>Safari on iOS</li>
+<li>Chrome on Android</li>
+</ul>
+<h2>Contributing</h2>
+<p>Feel free to report any issues! If you wish to contribute by fixing a bug or implementing a new feature, please first read the <a href="./CONTRIBUTING.md">CONTRIBUTING</a> guide.</p>
+<h2>Donation</h2>
+<p>If you find this project useful and want to say thanks, you can buy me a cup of coffee :)</p>
+<p><a href="https://paypal.me/feimosi"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt=""></a></p>
+<h2>Credits</h2>
+<p>Creation of <code>baguetteBox.js</code> was inspired by a great jQuery plugin <a href="https://github.com/martinaglv/touchTouch">touchTouch</a>.</p>
+<p>Huge thanks for providing a testing platform go to <a href="http://browserstack.com/"><img src="https://i.imgur.com/rlVVZwG.png" alt="BrowserStack"></a></p>
+<h2>License</h2>
+<p>Copyright (c) 2018 <a href="https://github.com/feimosi/">feimosi</a></p>
+<p>This content is released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
