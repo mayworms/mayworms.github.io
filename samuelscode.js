@@ -1,3 +1,3 @@
-baguetteBox.run('class here!', {
+baguetteBox.run('.gallery', {
     // Custom options
 });
