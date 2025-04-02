@@ -50,8 +50,11 @@ Hibby Thach, <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, and Oliver L. Hai
 Daniel Delmonaco, <b><u>Samuel Mayworm</u></b>, Josh Guberman, Hibby Thach, Aurelia Augusta, and Oliver L. Haimson. 2024. <a href="https://doi.org/10.1145/3637431" target="_blank"><b>“What are you doing, TikTok?”: How Marginalized Social Media Users Perceive, Theorize, and “Prove” Shadowbanning.</b></a> <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i> CSCW [Computer-Supported Cooperative & Social Computing]  
 
 Hibby Thach, <b><u>Samuel Mayworm</u></b>, Daniel Delmonaco, and Oliver L. Haimson. 2022. <a href="https://doi.org/10.1177/14614448221109804" target="_blank"><b>(In)Visible Moderation: A Digital Ethnography of Marginalized Users and Content Moderation on Twitch and Reddit.</b></a> <i>New Media & Society.</i>  
-      
-#### Conference Presentations
+
+---  
+
+### Presentations   
+#### Conference Presentations  
 **Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users**  
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2024)  
 San Jose, Costa Rica
@@ -62,7 +65,13 @@ San Jose, Costa Rica
 
 **Taking Stock: Collections Assessment at the Bentley Historical Library**  
 Michigan Archival Association Annual Conference  
-Grand Rapids, MI 
+Grand Rapids, MI  
+
+#### Guest Lectures  
+**Algorithms, AI, and Social Media**    
+Guest lecture for Interpersonal & Psychological Implications of Social Media (School of Information 315)   
+University of Michigan  
+March 2025  
 
 ---
 
