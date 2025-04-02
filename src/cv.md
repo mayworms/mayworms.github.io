@@ -77,10 +77,12 @@ March 2025
 
 ### Honors and Awards
 **Rackham Merit Fellowship**  
-University of Michigan
+University of Michigan  
+2024 - present
 
 **University of Michigan School of Information (UMSI) Achievement Fellowship**  
-University of Michigan
+University of Michigan  
+2020 - 2022  
 
 ---
 
