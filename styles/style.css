@@ -371,7 +371,7 @@ body {
     background-size: auto;
   }
   
-  @media only screen and (max-width: 768px) { /* tablet view! */
+  @media only screen and (max-width: 820px) { /* tablet view! */
     .site-wrapper {
       max-width: 90%; /* less side margin on tablet view */
       margin: 0 auto;
