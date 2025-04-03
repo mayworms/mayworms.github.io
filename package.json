@@ -13,6 +13,7 @@
   "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@hint/hint-meta-theme-color": "^4.0.23",
     "luxon": "^3.5.0"
   },
   "dependencies": {
