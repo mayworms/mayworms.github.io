@@ -67,11 +67,16 @@ San Jose, Costa Rica
 Michigan Archival Association Annual Conference  
 Grand Rapids, MI  
 
-#### Guest Lectures  
+#### Guest Lectures and Talks  
 **Algorithms, AI, and Social Media**    
 Guest lecture for Interpersonal & Psychological Implications of Social Media (School of Information 315)   
 University of Michigan  
 March 2025  
+
+**Regulation and Moderation of Online Communities**  
+Guest talk with Hibby Thach for Online Communities (School of Information 429)  
+University of Michigan  
+April 2025  
 
 ---
 
