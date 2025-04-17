@@ -305,7 +305,7 @@ body {
   }
 
   /* Post Grid (took this right from Renkotsuban lol, may or may not use) */
-  .post-grid {
+  /* .post-grid {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -370,7 +370,7 @@ body {
     color: #F5BDE6;
     width: 111px;
     background-size: auto;
-  }
+  } */
   
   @media only screen and (max-width: 820px) { /* tablet view! */
     .site-wrapper {
