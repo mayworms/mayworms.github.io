@@ -12,11 +12,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@hint/hint-meta-theme-color": "^4.0.23",
     "luxon": "^3.5.0"
   },
   "dependencies": {
+    "@11ty/font-awesome": "^1.0.0-beta.1",
     "baguettebox.js": "^1.12.0"
   }
 }

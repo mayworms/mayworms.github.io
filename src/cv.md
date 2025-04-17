@@ -74,7 +74,7 @@ University of Michigan
 March 2025  
 
 **Regulation and Moderation of Online Communities**  
-Guest talk with Hibby Thach for Online Communities (School of Information 429)  
+Guest talk with <a href="https://www.hibbythach.com" target="_blank">Hibby Thach</a> for Online Communities (School of Information 429)  
 University of Michigan  
 April 2025  
 
