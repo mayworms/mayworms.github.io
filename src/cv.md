@@ -34,10 +34,10 @@ Aug. 2013 - May 2017
 
 ### Publications 
 #### Published Peer-Reviewed Works
-Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F. Ria Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025. <a href="https://deepblue.lib.umich.edu/handle/2027.42/196550" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
+Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F.R. Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025. <a href="https://deepblue.lib.umich.edu/handle/2027.42/196550" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
 
-F. Ria Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025. <a href="https://deepblue.lib.umich.edu/handle/2027.42/196549" target="_blank"><b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b></a> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
+F.R. Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025. <a href="https://deepblue.lib.umich.edu/handle/2027.42/196549" target="_blank"><b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b></a> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
 <b><u>Samuel Mayworm</u></b>, Kendra Albert, and Oliver L. Haimson. 2024. <a href="https://doi.org/10.1145/3630106.3658907" target="_blank"><b>Misgendered During Moderation: How Trans Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement on Social Media Platforms.</b></a> In <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT 2024)</i>.  
 

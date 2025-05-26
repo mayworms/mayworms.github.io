@@ -8,12 +8,12 @@ featured_image: favicon.png
 ### 2025
 ---
 <a href="https://deepblue.lib.umich.edu/handle/2027.42/196550" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a>  
-Authors: Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F. Ria Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025.  
+Authors: Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F.R. Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025.  
 Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
 
 <a href="https://deepblue.lib.umich.edu/handle/2027.42/196549" target="_blank"><b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b></a>  
-Authors: F. Ria Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025.  
+Authors: F.R. Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025.  
 Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
 ### 2024
