@@ -24,6 +24,7 @@ Conference: <i>2025 CHI Conference on Human Factors in Computing Systems (CHI 20
 
 ### 2024
 ---
+#### Peer-Reviewed Works
 <a href="https://doi.org/10.1145/3630106.3658907" target="_blank"><b>Misgendered During Moderation: How Trans Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement on Social Media Platforms.</b></a>  
 Authors: <b><u>Samuel Mayworm</u></b>, Kendra Albert, and Oliver L. Haimson.  
 Published in: <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT 2024)</i>.  
@@ -46,6 +47,7 @@ Published in: <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i
 
 ### 2022
 ---
+#### Peer-Reviewed Works
 <a href="https://doi.org/10.1177/14614448221109804" target="_blank"><b>(In)Visible Moderation: A Digital Ethnography of Marginalized Users and Content Moderation on Twitch and Reddit.</b></a>  
 Authors: Hibby Thach, <b><u>Samuel Mayworm</u></b>, Daniel Delmonaco, and Oliver L. Haimson.  
 Published in: <i>New Media & Society.</i>  
