@@ -33,7 +33,7 @@ Aug. 2013 - May 2017
 ---
 
 ### Publications 
-#### Published Peer-Reviewed Works
+#### Peer-Reviewed Works
 Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F.R. Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025. <a href="https://deepblue.lib.umich.edu/handle/2027.42/196550" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
 
@@ -50,6 +50,10 @@ Hibby Thach, <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, and Oliver L. Hai
 Daniel Delmonaco, <b><u>Samuel Mayworm</u></b>, Josh Guberman, Hibby Thach, Aurelia Augusta, and Oliver L. Haimson. 2024. <a href="https://doi.org/10.1145/3637431" target="_blank"><b>“What are you doing, TikTok?”: How Marginalized Social Media Users Perceive, Theorize, and “Prove” Shadowbanning.</b></a> <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i> CSCW [Computer-Supported Cooperative & Social Computing]  
 
 Hibby Thach, <b><u>Samuel Mayworm</u></b>, Daniel Delmonaco, and Oliver L. Haimson. 2022. <a href="https://doi.org/10.1177/14614448221109804" target="_blank"><b>(In)Visible Moderation: A Digital Ethnography of Marginalized Users and Content Moderation on Twitch and Reddit.</b></a> <i>New Media & Society.</i>  
+
+#### Workshop Papers (Non-Archival)
+<b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, Oliver L. Haimson. 2025. <b>Trans Resistance to AI Technologies.</b> <i>CHI
+Conference on Human Factors in Computing Systems workshop on Resisting AI Solutionism: Where Do We Go From Here?</i>
 
 ---  
 

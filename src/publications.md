@@ -7,14 +7,20 @@ featured_image: favicon.png
 ---
 ### 2025
 ---
+#### Peer-Reviewed Works
 <a href="https://deepblue.lib.umich.edu/handle/2027.42/196550" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a>  
 Authors: Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F.R. Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025.  
 Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
-
 <a href="https://deepblue.lib.umich.edu/handle/2027.42/196549" target="_blank"><b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b></a>  
 Authors: F.R. Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson. 2025.  
 Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
+
+#### Workshop Papers (Non-Archival)
+<b>Trans Resistance to AI Technologies.</b>   
+Authors: <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, Oliver L. Haimson. 2025.   
+Workshop: <i>Resisting AI Solutionism: Where Do We Go From Here?</i>    
+Conference: <i>2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>   
 
 ### 2024
 ---
