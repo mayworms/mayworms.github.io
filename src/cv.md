@@ -111,16 +111,16 @@ Dec. 2017 - July 2020
 #### Past Client Projects
 **Statewide Library Digitization Survey**  
 Library of Michigan  
-Jan. 2022 – April 2022
+Jan. 2022 - April 2022
 
 **Newsprint Archiving**  
 Toledo Lucas County Public Library  
-Jan. 2022 – April 2022
+Jan. 2022 - April 2022
 
 **Collections and Metadata Assessment**  
 University of Michigan Bentley Historical Library  
-Aug. 2021 – Dec. 2021
+Aug. 2021 - Dec. 2021
 
 **Organizational Consulting**  
 Michigan Ability Partners  
-Aug. 2020 – Dec. 2020
+Aug. 2020 - Dec. 2020
