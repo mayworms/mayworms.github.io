@@ -46,13 +46,4 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./samuelscode.js" : "/assets/js/samuelscode.js",
   });
-
-
-  // These are the folders that Eleventy will use. "src" is where you edit files that Eleventy will then take in and export into "public," which you upload.
-  return {
-    dir: {
-      input: "src",
-      output: "public",
-    },
-  };
 };
