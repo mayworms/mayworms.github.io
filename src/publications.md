@@ -12,11 +12,11 @@ featured_image: favicon.png
 Authors: Oliver L. Haimson, <b><u>Samuel Mayworm</b></u>, Alexis Shore Ingber, and Nazanin Andalibi.   
 Published in: <i>Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT 2025).</i> [in press].   
 
-<a href="https://deepblue.lib.umich.edu/handle/2027.42/196550" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a>  
+<a href="https://doi.org/10.1145/3706598.3713991" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a>  
 Authors: Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F.R. Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson.  
 Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
-<a href="https://deepblue.lib.umich.edu/handle/2027.42/196549" target="_blank"><b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b></a>  
+<a href="https://doi.org/10.1145/3706598.3713704" target="_blank"><b>Cataloging Augmented, Ambivalent Transgender Futures: Designing Inclusive AR Technologies for Trans Communities Through Speculative, Participatory Zine-Making.</b></a>  
 Authors: F.R. Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson.  
 Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
