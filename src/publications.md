@@ -8,7 +8,7 @@ featured_image: favicon.png
 ### 2025
 ---
 #### Peer-Reviewed Works
-<a href="https://programs.sigchi.org/facct/2025/program/content/201793" target="blank"><b>AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes.</b></a>   
+<a href="https://deepblue.lib.umich.edu/handle/2027.42/197725" target="blank"><b>AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes.</b></a>   
 Authors: Oliver L. Haimson, <b><u>Samuel Mayworm</b></u>, Alexis Shore Ingber, and Nazanin Andalibi.   
 Published in: <i>Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT 2025).</i> [in press].   
 
