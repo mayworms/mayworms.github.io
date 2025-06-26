@@ -10,7 +10,7 @@ featured_image: favicon.png
 #### Peer-Reviewed Works
 <a href="https://doi.org/10.1145/3715275.3732081" target="blank"><b>AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes.</b></a>   
 Authors: Oliver L. Haimson, <b><u>Samuel Mayworm</b></u>, Alexis Shore Ingber, and Nazanin Andalibi.   
-Published in: <i>Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT 2025).</i> [in press].   
+Published in: <i>Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT 2025).</i>     
 
 <a href="https://doi.org/10.1145/3706598.3713991" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a>  
 Authors: Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F.R. Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson.  

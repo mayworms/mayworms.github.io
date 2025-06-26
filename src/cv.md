@@ -35,7 +35,7 @@ Aug. 2013 - May 2017
 ### Publications 
 #### Peer-Reviewed Works
 Oliver L. Haimson, <b><u>Samuel Mayworm</b></u>, Alexis Shore Ingber, and Nazanin Andalibi. 2025. <a href="https://doi.org/10.1145/3715275.3732081" target="blank"><b>AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes.</b></a> In <i>Proceedings of the 2025
-ACM Conference on Fairness, Accountability, & Transparency (FAccT).</i> [in press].   
+ACM Conference on Fairness, Accountability, & Transparency (FAccT).</i>      
 
 Kat Brewster, Aloe DeGuia, <b><u>Samuel Mayworm</u></b>, F.R. Khan, Mel Monier, Denny L. Starks, and Oliver L. Haimson. 2025. <a href="https://doi.org/10.1145/3706598.3713991" target="_blank"><b>"That Moment of Curiosity": Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility.</b></a> In <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
