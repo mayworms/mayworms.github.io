@@ -2,6 +2,7 @@
   "name": "second-blog",
   "version": "1.0.0",
   "main": ".eleventy.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx @11ty/eleventy",
