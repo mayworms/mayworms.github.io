@@ -6,8 +6,8 @@
     <link href="../styles/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
     <link href="../styles/baguetteBox.css" rel="stylesheet" type="text/css" media="all">
-    <script src="../assets/js/baguetteBox.js" defer></script>
-    <script src="../assets/js/samuelscode.js" defer></script>
+    <script src="../assets/js/baguetteBox.js" defer=""></script>
+    <script src="../assets/js/samuelscode.js" defer=""></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="mayworms.info">
@@ -103,17 +103,17 @@
 
       <footer id="footer">
         <section>
-          <p>© 2025 Samuel Mayworm</p>
+          <p>© <span id="year"></span> Samuel Mayworm</p>
         </section>
         <section>
-          
-          
-          <img src="../images/transrights.png" alt="Trans rights!" height="100" alt="grey button with a trans flag and a label that reads: Trans rights now!">
-          
+          <img src="../images/transrights.png" alt="Trans rights!" height="100">
         </section>
       </footer>
     
       <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('year').textContent = currentYear;
+
         let topbutton = document.getElementById("topBtn");
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
