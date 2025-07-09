@@ -3,7 +3,7 @@
   --font-family-monospace: Jost, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
-/* Theme colors: also! for personal reference: npx @11ty/eleventy --serve */
+/* Theme colors: also, for personal reference: npx @11ty/eleventy --serve */
 :root {
 	--xkcd-light-grey: #d8dcd6;
 	--xkcd-peach: #9b330e; /* was b33a0e */
@@ -49,18 +49,18 @@ body {
     text-decoration-color: var(--light-peach);
   }
 
-    /* Site-Wide Wrapper */
+  /* Wrapper for the website */
   .site-wrapper {
     max-width: 80%;
     margin: 0 auto; /* centers site-wrapper */
   }
 
-  /* Makes sure navbar and footer are full width in the wrapper */
+  /* Sets navbar + footer width to 100% */
   #navbar, #footer {
     width: 100%;
   }
   
-  /* Header/Navbar Styles */
+  /* Header + Navbar Styles */
   #navbar {
     background-color: var(--cream);
     box-sizing: border-box;
@@ -109,7 +109,7 @@ body {
     margin: 0;
   }
 
-/* hamburger menu icon style */
+  /* hamburger menu icon style */
   .hamburger {
     display: none; /* hidden by default on desktop/tablet view */
     cursor: pointer;
@@ -146,7 +146,7 @@ body {
     border-radius: 10px;
   }
 
-    /* Sidebar Styles */
+  /* Sidebar Styles */
   #sidebar {
     position: sticky;
     position: -webkit-sticky;
@@ -158,7 +158,7 @@ body {
     padding-bottom: 1em;
     background-color: var(--cream);
     border-radius: 10px;
-    font-size: calc(.7vw + .7vh); /* previously 75% */
+    font-size: calc(.7vw + .7vh); /* was 75% */
   }
 
   #profile img {
@@ -247,14 +247,14 @@ body {
     gap: 10px;
     padding: 10px;
     border-radius: 10px;
-    margin: 0 auto; /* Center the gallery block */
-    max-width: fit-content; /* was 100%, Prevents overflow */
+    margin: 0 auto; /* centers gallery */
+    max-width: fit-content; /* was 100%, prevents overflow */
     outline: 2px dotted #FFC099;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
   
-  .gallery figure { /* Use <figure></figure> for multi-image galleries, omit for single-image uploads */
+  .gallery figure { /* note: use <figure></figure> for multi-image galleries, omit for single-image uploads */
     flex: 0 1 48%; /* was 0 0 auto; */
     /* width: fit-content; prev. fit-content, prev prev 300px */
     /* max-width: 45%; */
@@ -276,7 +276,7 @@ body {
       list-style-type: none;
   }
   
-  /* Alignment classes */
+  /* alignment */
   .right {
     float: right;
     margin-left: 1em;
@@ -292,13 +292,13 @@ body {
     text-align: center;
   }
   
-  /* Recent Blog Posts block in index.html */
+  /* Recent Blog Posts section in index.html */
   #recentpostlistdiv ul {
     padding: 0;
     list-style-type: none;
   }
   
-  /* Navigation text at the bottom of blog posts */
+  /* navigation text at the bottom of blog posts */
   #nextprev {
     text-align: center;
     margin-top: 1.4em;
@@ -406,7 +406,7 @@ body {
     } */
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 481px) { /* lowkey don't remember why I formatted this code like this */
     #contact-toggle {
       display: none;
     }
@@ -415,7 +415,7 @@ body {
     }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) { /* mobile (phone) view! */
     .site-wrapper {
       width: 95%;
       max-width: 95%;
@@ -472,7 +472,7 @@ body {
       font-size: 1.5em;
     }
 
-    /* style for the hamburger icon on mobile -- please don't mess with this, this took forever to make happen lol */
+    /* style for the hamburger icon on mobile -- please don't mess with this, this took forever to make lol */
     .hamburger {
       display: block;
       cursor: pointer;
@@ -539,7 +539,7 @@ body {
       position: static;
     }
 
-    /* flexbox for profile info */
+    /* flexbox for profile info + contacts links */
     #profile {
       display: flex;
       flex-direction: row;
@@ -591,7 +591,7 @@ body {
       color: var(--cream);
       background-color: var(--dark-peach);
     }
-    /* show contact links when button is clicked */
+    /* show contact links by clicking Contact button */
     #contact-links.show {
       display: block;
       margin-top: 1em;
