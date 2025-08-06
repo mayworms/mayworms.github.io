@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@11ty/font-awesome": "^1.0.0-beta.1",
-    "baguettebox.js": "^1.12.0"
+    "baguettebox.js": "^1.12.0",
+    "lite-youtube-embed": "^0.3.3"
   }
-} 
+}
