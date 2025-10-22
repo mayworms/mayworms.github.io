@@ -84,6 +84,11 @@ Guest talk with <a href="https://www.hibbythach.com" target="_blank">Hibby Thach
 University of Michigan  
 April 2025  
 
+**Algorithms and Online Communities**.  
+Guest lecture for Online Communities (School of Information 429)   
+University of Michigan   
+October 2025   
+
 ---
 
 ### Honors and Awards
