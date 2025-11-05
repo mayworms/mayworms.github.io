@@ -15,7 +15,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.1",
     "@hint/hint-meta-theme-color": "^4.0.23",
-    "luxon": "^3.5.0"
+    "luxon": "^3.7.2"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^2.0.4",

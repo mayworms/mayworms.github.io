@@ -19,6 +19,11 @@ export default function(eleventyConfig) {
     return coll;
   });
 
+  // Return the length of a collection for tag clouds (thank you Claus!!)
+  eleventyConfig.addFilter('length', (collection) => {
+    return collection[1].length;
+  });
+
   // Date formatting
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc+9' }).toFormat(

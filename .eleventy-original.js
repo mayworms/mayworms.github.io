@@ -21,6 +21,11 @@ module.exports = function (eleventyConfig) {
     return coll;
   });
 
+  // Return the length of a collection for tag clouds (thank you Claus!!)
+  eleventyConfig.addFilter('length', (collection) => {
+    return collection[1].length;
+  });
+
   // Add the filter "readableDate" to simplify the way blog dates are presented in the Archives page
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc+9' }).toFormat(

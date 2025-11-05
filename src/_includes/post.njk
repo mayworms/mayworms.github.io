@@ -79,7 +79,17 @@ title: "{{ title }}"
               <article>
                 <h1>{{ title }}</h1>
                 
-                <strong>{{ date | topDate }}</strong>
+                <div class="postMetadata">
+                  <!--You can change how topDate looks in your .eleventy.js file-->
+                  <strong>{{ date | topDate }}</strong>
+                  // 
+                  <!--This will list the tags on your post EXCEPT for the "post" tag, separated by commas-->
+                  {% set comma = joiner() %}
+                    {% for tag in tags -%}
+                      {% if tag !== 'posts' %}<a href="../tags/{{ tag | slugify }}.html">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
+                    {% endif %}
+                  {%- endfor %}
+                </div>
                 
                 {{ content | safe }}
                 

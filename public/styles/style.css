@@ -297,6 +297,17 @@ body {
     padding: 0;
     list-style-type: none;
   }
+
+  /* 11-04-2025 -- Date/tags bar at the top of blog posts */
+  .postMetadata {
+    background-color: var(--cream);
+    width: fit-content;
+    text-align: left;
+    /* outline-width: 2px;
+    outline-style: dotted;
+    outline-color: var(--light-peach);
+    border-radius: 10px; */
+  }
   
   /* navigation text at the bottom of blog posts */
   #nextprev {

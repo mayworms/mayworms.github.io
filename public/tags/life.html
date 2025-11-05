@@ -1,10 +1,7 @@
----
-title: "{{ tag }}"
----
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{{ title }}</title>
+        <title>mayworms.info: life</title>
         <link rel="icon" href="../images/color-icon.png" type="image/x-icon">
         <link href="../styles/style.css" rel="stylesheet" type="text/css" media="all">
         <link rel="stylesheet" href="../assets/js/lite-youtube-embed/lite-yt-embed.css" /> <!-- Lite YouTube Embed -->
@@ -18,29 +15,29 @@ title: "{{ tag }}"
         <meta name="description" content="mayworms.info">
         <meta name="theme-color" content="#ffc099">
         <meta property="og:type" content="article">
-        <meta property="og:title" content="{{ tag }}">
-        <meta property="og:url" content="https://mayworms.info/tags/{{ tag | slugify }}.html">
+        <meta property="og:title" content="life">
+        <meta property="og:url" content="https://mayworms.info/tags/life.html">
         <meta property="og:image" content="https://mayworms.info/images/favicon.png">
-        <meta property="og:description" content="Blog posts tagged “{{ tag }}”">
+        <meta property="og:description" content="Blog posts tagged “life”">
     </head>
 
     <body>
       <div class="site-wrapper">
         <div id="headerArea">
             <nav id="navbar">
-                <ul>
-                    <li><a class="site-title" href="../index.html">mayworms.info</a></li>
-                    <span class="hamburger">
-                        <div class="bar bar1"></div>
-                        <div class="bar bar2"></div>
-                        <div class="bar bar3"></div>
-                    </span> 
-                    <span class="nav-links">
-                        <li><a href="../blog.html">Blog</a></li>
-                        <li><a href="../publications.html">Publications</a></li>
-                        <li><a href="../cv.html">CV</a></li>
-                    </span>
-                </ul>
+            <ul>
+                <li><a class="site-title" href="../index.html">mayworms.info</a></li>
+                <span class="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+                </span> 
+                <span class="nav-links">
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../cv.html">CV</a></li>
+                </span>
+            </ul>
             </nav>
             <div class="grey-out"></div> <!-- grey-out overlay -->
         </div>
@@ -77,10 +74,16 @@ title: "{{ tag }}"
                 <main id="container">
                     <div id="flex-2">
                         <article>
-                            <h1>Tagged “{{ tag }}”</h1>
+                            <h1>Tagged “life”</h1>
 
                             <!--The content of "tag.md" i.e. list of pages in this tag-->
-                            {{ content | safe }}
+                            <!--Displays the posts that have this tag-->
+<ul>
+
+
+  <li class="archives"><a href="/posts/2024-02-05.html">whoa 👀</a> <em>2024-02-05</em> » That&#39;s right, finally uploaded the CV</li>
+
+</ul>
 
                         </article>
                     </div>
@@ -101,19 +104,19 @@ title: "{{ tag }}"
             const currentYear = new Date().getFullYear();
             document.getElementById('year').textContent = currentYear;
 
-            // let topbutton = document.getElementById("topBtn");
-            // window.onscroll = function() {scrollFunction()};
-            // function scrollFunction() {
-            // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            //     topbutton.style.display = "block";
-            // } else {
-            //     topbutton.style.display = "none";
-            // }
-            // }
-            // function topFunction() {
-            // document.body.scrollTop = 0;
-            // document.documentElement.scrollTop = 0;
-            // }
+            let topbutton = document.getElementById("topBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topbutton.style.display = "block";
+            } else {
+                topbutton.style.display = "none";
+            }
+            }
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
 
             document.addEventListener("DOMContentLoaded", function () {
             const hamburger = document.querySelector('.hamburger');
