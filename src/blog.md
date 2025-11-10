@@ -10,7 +10,7 @@ featured_image: favicon.png
 <!--This next part shows links to all the tags you have on your posts, ordered by frequency-->
 <ul class="none">
 {% for tag in collections -%}{% if tag[0] != "all" and tag[0] != "posts" %}<a href="../tags/{{ tag[0] | slugify }}.html">{{ tag[0] }}</a> ({{ tag | length }}) {% endif %}{%- endfor %}
-</ul>
+</ul> 
 
 ---
 ### Posts
