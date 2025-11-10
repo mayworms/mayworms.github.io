@@ -248,29 +248,61 @@ body {
     padding: 10px;
     border-radius: 10px;
     margin: 0 auto; /* centers gallery */
-    max-width: fit-content; /* was 100%, prevents overflow */
+    max-width: fit-content; /* prevents overflow */
     outline: 2px dotted #FFC099;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
   
-  .gallery figure { /* note: use <figure></figure> for multi-image galleries, omit for single-image uploads */
-    flex: 0 1 48%; /* was 0 0 auto; */
-    width: fit-content; /* prev. fit-content, prev prev 300px */
-    height: 400px; /* prev. auto, prev. prev. 300px */
+  /* note: use <figure></figure> for multi-image galleries, omit for single-image uploads */
+
+  .gallery figure {
+    flex: 0 1 48%;
+    /* width: fit-content; 
+    height: 400px; */
+    aspect-ratio: 4 / 3; /* new 11/09/25: maintains proportional preview boxes across screen sizes */
     margin: 0;
     overflow: hidden;
+    position: relative; /* hover-over effect */
     border-radius: 10px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .gallery img {
-    width: 100%; /* was 100% */
-    height: 100%; /* was auto */
-    object-fit: cover;
+    width: 100%;
+    height: 100%; /* was auto */ 
+    object-fit: cover; /* crops edges evenly, prevents distortion */
     display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease, filter 0.4s ease; /* hover-over effect */
+    transform-origin: center center; /* hover-over effect */
+  }
+
+  /* hover/focus effect */
+  .gallery figure:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  .gallery figure:hover img,
+  .gallery figure:focus-within img {
+    transform: scale(1.05); /* gentle zoom-in */
+    filter: brightness(1.05); /* slight brightness pop */
+    cursor: pointer;
+  }
+
+  /* hover-zoom on mobile (slower/gentler) */
+  @media (hover: none) and (pointer: coarse) {
+  .gallery img {
+    transition: transform 0.7s ease, filter 0.7s ease;
+  }
+
+  .gallery figure:hover img,
+  .gallery figure:focus-within img {
+    transform: scale(1.02); /* smaller zoom on touch */
+    filter: brightness(1.03); /* gentle brightness change */
+  }
   }
   
   ul.none {
@@ -413,9 +445,9 @@ body {
       gap: 5px; /* Reduced gap on smaller screens */
     }
   
-    /* .gallery figure {
-      width: 150px;
-      height: 150px;
+    /* chose to stop using this, prefer using 4 / 3 ratio even on smaller displays
+    .gallery figure {
+      aspect-ratio: 1 / 1;
     } */
   }
 
@@ -630,8 +662,10 @@ body {
     }
 
     .gallery figure {
-      width: 180px;
-      height: 180px;
+      /* flex: 0 1 100%; */
+      aspect-ratio: 3 / 4;
+      /* width: 180px;
+      height: 180px; */
     }
 
     #footer {
