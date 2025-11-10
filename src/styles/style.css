@@ -288,7 +288,7 @@ body {
   .gallery figure:hover img,
   .gallery figure:focus-within img {
     transform: scale(1.05); /* gentle zoom-in */
-    filter: brightness(1.05); /* slight brightness pop */
+    /* filter: brightness(1.05); /* slight brightness pop */
     cursor: pointer;
   }
 
@@ -301,7 +301,7 @@ body {
   .gallery figure:hover img,
   .gallery figure:focus-within img {
     transform: scale(1.02); /* smaller zoom on touch */
-    filter: brightness(1.03); /* gentle brightness change */
+    /* filter: brightness(1.03); /* gentle brightness change */
   }
   }
   
