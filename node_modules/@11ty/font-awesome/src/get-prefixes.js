@@ -14,27 +14,40 @@ async function getPrefixes() {
 	});
 
 	let json = await data.json();
+	// console.log( JSON.stringify(json, null, 2) );
 
-	let map = {};
+	let familyStyleToPrefixMap = {};
+	let prefixToFamilyStyleMap = {};
 	let styles = new Set();
 	let families = new Set();
+	let prefixes = new Set();
 
 	for(let {family, prefix, style} of json?.data?.release?.familyStyles || []) {
 		styles.add(style);
 		families.add(family);
+		prefixes.add(prefix);
 
-		if(!map[family]) {
-			map[family] = {};
+		if(!prefixToFamilyStyleMap[prefix]) {
+			prefixToFamilyStyleMap[prefix] = {
+				family,
+				style,
+			};
 		}
-		if(!map[family][style]) {
-			map[family][style] = prefix;
+
+		if(!familyStyleToPrefixMap[family]) {
+			familyStyleToPrefixMap[family] = {};
+		}
+		if(!familyStyleToPrefixMap[family][style]) {
+			familyStyleToPrefixMap[family][style] = prefix;
 		}
 	}
 
 	return {
+		prefixes: Array.from(prefixes),
 		styles: Array.from(styles),
 		families: Array.from(families),
-		map,
+		familyStyleToPrefixMap,
+		prefixToFamilyStyleMap,
 	};
 };
 

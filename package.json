@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^2.0.4",
-    "@11ty/font-awesome": "^1.0.0-beta.1",
+    "@11ty/font-awesome": "^1.0.0-beta.11",
     "baguettebox.js": "^1.12.0",
     "lite-youtube-embed": "^0.3.3"
   }
