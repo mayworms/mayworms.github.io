@@ -55,7 +55,7 @@ export default function(eleventyConfig) {
     return coll;
   });
 
-  // Return the length of a collection for tag clouds (thank you Claus!!)
+  // Return the length of a collection for tag clouds
   eleventyConfig.addFilter('length', (collection) => {
     return collection[1].length;
   });
