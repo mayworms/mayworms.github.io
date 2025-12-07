@@ -85,8 +85,10 @@
                     <a href="../tags/website.html">website</a>
                     
                 </div>
-                
-                <p>Good news! I recently finished redesigning my website with <a href="https://www.11ty.dev" target="blank">Eleventy</a> (or 11ty), a simple static site generator. I used to use a GitHub Pages Jekyll template for my personal website, but later decided to design and build my own website from scratch. I was an absolute beginner with HTML, CSS, and Javascript, so the redesign took several months of jumping between:</p>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>Good news! I recently finished redesigning my website with <a href="https://www.11ty.dev" target="blank">Eleventy</a> (or 11ty), a simple static site generator. I used to use a GitHub Pages Jekyll template for my personal website, but later decided to design and build my own website from scratch. I was an absolute beginner with HTML, CSS, and Javascript, so the redesign took several months of jumping between:</p>
 <ul>
 <li>Renkon's <a href="https://renkotsuban.com/posts/2023-11-15-Migrating-to-Eleventy.html" target="blank">Eleventy guide</a> (drew heavily from this excellent guide while getting started)</li>
 <li>Official <a href="https://www.11ty.dev/docs/" target="blank">Eleventy documentation</a> (sometimes helpful, though I wish it wasn't so sparse!)</li>
@@ -95,16 +97,16 @@
 <p>After I finished building my website locally, my friend <a href="https://nathan-kim.org" target="blank"><b>Nathan Kim</b></a> helped me configure it for <a href="https://pages.github.com" target="blank">GitHub Pages</a> -- thank you, Nathan!</p>
 <p>The thing that surprised me the most was how much fun I had designing and building this site. Seriously, you should have seen my face after I got the mobile-view hamburger menu animation working (which took me four hours to do -- seriously, go check it out on your phone, it's so cool). I'm sure I'll continue to tweak and improve the website over time (I've already increased the mobile view font size quite a bit), but for now, I think I'll just let myself feel proud of it. :D</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2025-01-22.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2024-12-12.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2025-01-22.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2024-12-12.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -155,6 +157,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

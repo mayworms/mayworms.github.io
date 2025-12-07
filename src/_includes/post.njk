@@ -90,18 +90,38 @@ title: "{{ title }}"
                     {% endif %}
                   {%- endfor %}
                 </div>
-                
-                {{ content | safe }}
-                
-                <nav id="nextprev">
-                {% if nextPost.url %}
-                <a class="next" href="{{ nextPost.url }}">« Next</a> |
-                {% endif %}
-                <a href="../blog.html">Blog</a>
-                {% if prevPost.url %}
-                | <a class="previous" href="{{ prevPost.url }}">Previous »</a>
-                {% endif %}
-                </nav>
+                  <!-- Table of Contents code -->
+                  {% if toc %}
+                  <nav class="toc" aria-label="Table of contents">
+                    <button class="toc-toggle" aria-expanded="false" aria-controls="toc-list">
+                      <span class="toc-title">Table of Contents</span>
+                      <span class="toc-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <div id="toc-list" class="toc-list">
+                      {{ content | toc | safe }}
+                    </div>
+                  </nav>
+
+                  <noscript>
+                    <style>
+                      .toc-list { max-height: none !important; overflow: visible !important; }
+                      .toc-icon { display: none; }
+                    </style>
+                  </noscript>
+                  {% endif %}
+                  
+                  {{ content | safe }}
+                  
+                  <nav id="nextprev">
+                  {% if nextPost.url %}
+                  <a class="next" href="{{ nextPost.url }}">« Next</a> |
+                  {% endif %}
+                  <a href="../blog.html">Blog</a>
+                  {% if prevPost.url %}
+                  | <a class="previous" href="{{ prevPost.url }}">Previous »</a>
+                  {% endif %}
+                  </nav>
               </article>
             </div>
           </main>
@@ -152,6 +172,63 @@ title: "{{ title }}"
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

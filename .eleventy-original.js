@@ -1,6 +1,16 @@
 // Tells Eleventy to look for Luxon
 const { DateTime } = require('luxon');
 
+// Markdown Anchor code
+const anchor = require('markdown-it-anchor')
+
+md.use(anchor, {
+  permalink: anchor.permalink.linkInsideHeader({
+    symbol: `<span aria-hidden="true">#</span>`,
+    placement: 'before'
+  })
+});
+
 // This is all the stuff that Eleventy is going to process when it exports your site
 module.exports = function (eleventyConfig) {
   // Edit these to include your images, CSS, and other folders and files that you want to copy over to your public folder.

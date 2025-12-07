@@ -5,7 +5,7 @@ title: Nice to meet you! 👋😃
 description: mayworms.info home page
 featured_image: favicon.png
 ---
-I am a second year PhD student at the <a href="https://www.si.umich.edu" target="_blank">University of Michigan School of Information</a> (UMSI), advised by <a href="https://oliverhaimson.com/index.html" target="_blank">Oliver L. Haimson</a> and <a href="https://michaelannethomas.com" target="_blank">Michaelanne Thomas</a>.
+I am a PhD student at the <a href="https://www.si.umich.edu" target="_blank">University of Michigan School of Information</a> (UMSI), advised by <a href="https://oliverhaimson.com/index.html" target="_blank">Oliver L. Haimson</a> and <a href="https://michaelannethomas.com" target="_blank">Michaelanne Thomas</a>.
 
 Some of my current research interests include trans-centered online communities, content moderation, platform governance, folk theorization, and alternative online infrastructures.
 
@@ -15,7 +15,7 @@ Outside of research, I enjoy collecting printed state highway maps, playing the 
 
 --- 
 <!-- This next part will show your top three most recent posts. You can change how readableDate looks in your .eleventy.js file-->
-## Recent Blog Posts
+<h2>Recent Blog Posts</h2>
 
 <div id="recentpostlistdiv">
   <ul>

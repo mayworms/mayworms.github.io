@@ -11,7 +11,8 @@ featured_image: favicon.png
 
 ---
 
-### Education
+<h3>Education</h3>
+
 **PhD in Information (current)**  
 University of Michigan  
 School of Information  
@@ -32,8 +33,8 @@ Aug. 2013 - May 2017
 
 ---
 
-### Publications 
-#### Peer-Reviewed Works
+<h3>Publications</h3>
+<h4>Peer-Reviewed Works</h4>
 Oliver L. Haimson, <b><u>Samuel Mayworm</b></u>, Alexis Shore Ingber, and Nazanin Andalibi. 2025. <a href="https://doi.org/10.1145/3715275.3732081" target="blank"><b>AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes.</b></a> In <i>Proceedings of the 2025
 ACM Conference on Fairness, Accountability, & Transparency (FAccT).</i>      
 
@@ -53,14 +54,15 @@ Daniel Delmonaco, <b><u>Samuel Mayworm</u></b>, Josh Guberman, Hibby Thach, Aure
 
 Hibby Thach, <b><u>Samuel Mayworm</u></b>, Daniel Delmonaco, and Oliver L. Haimson. 2022. <a href="https://doi.org/10.1177/14614448221109804" target="_blank"><b>(In)Visible Moderation: A Digital Ethnography of Marginalized Users and Content Moderation on Twitch and Reddit.</b></a> <i>New Media & Society.</i>  
 
-#### Workshop Papers (Non-Archival)
+<h4>Workshop Papers (Non-Archival)</h4>
 <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, Oliver L. Haimson. 2025. <b>Trans Resistance to AI Technologies.</b> <i>CHI
-Conference on Human Factors in Computing Systems workshop on Resisting AI Solutionism: Where Do We Go From Here?</i>
+Conference on Human Factors in Computing Systems workshop on Resisting AI Solutionism: Where Do We Go From Here?</i>    
 
 ---  
 
-### Presentations   
-#### Conference Presentations  
+<h3>Presentations</h3>
+<h4>Conference Presentations</h4>
+
 **Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users**  
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2024)  
 San Jose, Costa Rica
@@ -73,7 +75,8 @@ San Jose, Costa Rica
 Michigan Archival Association Annual Conference  
 Grand Rapids, MI  
 
-#### Guest Lectures and Talks   
+<h4>Guest Lectures and Talks</h4>
+
 **Algorithms and Online Communities**   
 Guest lecture for Online Communities (School of Information 429)   
 University of Michigan   
@@ -91,7 +94,8 @@ March 2025
 
 ---
 
-### Honors and Awards
+<h3>Honors and Awards</h3>
+
 **Rackham Merit Fellowship**  
 University of Michigan  
 2024 - present
@@ -102,7 +106,8 @@ University of Michigan
 
 ---
 
-### Professional Experience
+<h3>Professional Experience</h3>
+
 **Research Associate**  
 University of Michigan School of Information (CRIT Lab)  
 June 2021 - Aug. 2024
@@ -115,7 +120,8 @@ Jan. 2023 - Aug. 2024
 Newaygo Area District Library  
 Dec. 2017 - July 2020
 
-#### Past Client Projects
+<h4>Past Client Projects</h4>
+
 **Statewide Library Digitization Survey**  
 Library of Michigan  
 Jan. 2022 - April 2022

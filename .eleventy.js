@@ -1,6 +1,42 @@
+// eleventy.config.js (ESM)
 import { DateTime } from 'luxon';
 
+// robust imports to handle both ESM and possible CJS interop
+import * as markdownItModule from "markdown-it";
+import * as anchorModule from "markdown-it-anchor";
+
+const markdownIt = markdownItModule.default ?? markdownItModule;
+const anchor = anchorModule.default ?? anchorModule;
+
+import pluginTOC from 'eleventy-plugin-nesting-toc'; // <--- static ESM import
+
 export default function(eleventyConfig) {
+  // Markdown-it + markdown-it-anchor setup
+  const md = markdownIt({
+    html: true,
+    breaks: false,
+    linkify: true,
+  });
+
+  // configure anchor permalinks (insert the '#' inside header)
+  md.use(anchor, {
+    permalink: anchor.permalink.linkInsideHeader({
+      symbol: `<span aria-hidden="true">#</span>`,
+      placement: 'before'
+    })
+  });
+  // md.use(anchor, {
+  // permalink: anchor.permalink.headerLink({ safariReaderFix: true })}); <-- fixes Safari Reader mode BUT breaks Table of Contents plug-in (god damn it!)
+
+  // tell Eleventy to use this markdown-it instance
+  eleventyConfig.setLibrary("md", md);
+
+  // Handle CJS vs ESM export surface
+  const tocPlugin = pluginTOC?.default ?? pluginTOC;
+
+  // Add TOC plugin (now tocPlugin is defined)
+  eleventyConfig.addPlugin(tocPlugin, { ignoredElements: ['span'] });
+
   // Passthrough and watch targets
   eleventyConfig.addPassthroughCopy("./src/styles");
   eleventyConfig.addWatchTarget("./src/styles/");
@@ -26,34 +62,24 @@ export default function(eleventyConfig) {
 
   // Date formatting
   eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc+9' }).toFormat(
-      'yyyy-LL-dd'
-    );
+    return DateTime.fromJSDate(dateObj, { zone: 'utc+9' }).toFormat('yyyy-LL-dd');
   });
-
   eleventyConfig.addFilter('topDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc+9' }).toFormat(
-      'yyyy LLLL dd'
-    );
+    return DateTime.fromJSDate(dateObj, { zone: 'utc+9' }).toFormat('yyyy LLLL dd');
   });
 
   // BaguetteBox code
   eleventyConfig.addPassthroughCopy({
     "./node_modules/baguettebox.js/dist/baguetteBox.js": "/assets/js/baguetteBox.js",
   });
-
   eleventyConfig.addPassthroughCopy({
-    "./node_modules/baguettebox.js/dist/baguetteBox.css" : "/styles/baguetteBox.css",
+    "./node_modules/baguettebox.js/dist/baguetteBox.css": "/styles/baguetteBox.css",
   });
-
   eleventyConfig.addPassthroughCopy({
-    "./samuelscode.js" : "/assets/js/samuelscode.js",
+    "./samuelscode.js": "/assets/js/samuelscode.js",
   });
 
   return {
-    dir: {
-      input: "src",
-      output: "public",
-    },
+    dir: { input: "src", output: "public" },
   };
 }

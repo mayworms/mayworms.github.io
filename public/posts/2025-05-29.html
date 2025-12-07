@@ -87,12 +87,14 @@
                     <a href="../tags/research.html">research</a>
                     
                 </div>
-                
-                <div class="gallery">
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <div class="gallery">
     <a href="../images/a2rain-2025.jpg" data-caption="Downtown right before the rain (Ann Arbor, MI)"><img src="../images/a2rain-2025.jpg" alt="A sunset photo of downtown Ann Arbor before a thunderstorm; the buildings and the campus bell tower are lit bright orange, but the sky is cloudy and grey."></a>
 </div>
 <p>Hello there! It's been getting warmer in Ann Arbor since I returned from Yokohama a few weeks ago. With warm spring temperatures comes budding leaves, blooming flowers, and the worst seasonal allergies I've dealt with in years -- I knew lingering by that Bradford pear tree was a bad idea! (╥﹏╥)</p>
-<h3>In research news:</h3>
+<h3 id="in-research-news%3A" tabindex="-1"><a class="header-anchor" href="#in-research-news%3A"><span aria-hidden="true">#</span></a> In research news:</h3>
 <p>Several of my colleagues' papers have been accepted to multiple conferences in the past few months. My friend <a href="https://www.iamfriak.com" target="blank"><b>F.R. Khan's</b></a> work-in-progress has been accepted to the ACM Designing Interactive Systems Conference 2025 (aka <a href="https://dis.acm.org/2025/" target="blank"><b>DIS 2025</a></b>) -- congratulations! ( ˶ˆᗜˆ˵ )</p>
 <ul>
 <li><em><strong><a href="https://programs.sigchi.org/dis/2025/program/content/200606" target="blank">The Vibes are Off: Considering Embodied Reflections by TBIPOC to Account for Displacement and Discomfort in Makerspaces</a>,</strong></em> authored by F.R. Khan, Apryl Williams, Tawanna Dillahunt, and Oliver L. Haimson</li>
@@ -104,7 +106,7 @@
 <li><em><strong><a href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/197726/facct2025-final168.pdf" target="blank">Distinguishing Emotion AI: Factors Shaping Perceptions Including Input Data, Emotion Data Recipients, and Identity</a>,</strong></em> authored by Alexis Shore Ingber, Oliver L. Haimson, and Nazanin Andalibi</li>
 </ul>
 <p>I wish I could travel to Greece for ACM FAccT 2025, but unfortunately cannot make it this year; I hope everyone else attending has a good time! ദ്ദി´ ˘ `)✧</p>
-<h3>In PhD news:</h3>
+<h3 id="in-phd-news%3A" tabindex="-1"><a class="header-anchor" href="#in-phd-news%3A"><span aria-hidden="true">#</span></a> In PhD news:</h3>
 <p>I'm just about ready to submit my pre-candidacy proposal, aka the first major milestone of my PhD program! Thinking about completing one of my PhD milestones feels so surreal -- the first year of my program sure flew by quickly, didn't it? Academia in the USA changed so much in that brief time... feels like a very different world from when my program began.</p>
 <p>Also: the University of Michigan School of Information (<a href="https://www.si.umich.edu" target="blank"><b>UMSI</b></a>) recently moved from the North Quad building in Central Campus to the new <a href="https://leinweber.bldg.umich.edu" target="blank"><b>Leinweber Building</b></a> in North Campus! The Leinweber Building is really nice, though they're still working on the finishing touches (the walls and hallways are very blank at the moment, so it's very easy to get lost looking for your office LOL).</p>
 <div class="gallery">
@@ -116,7 +118,7 @@
     </figure>
 </div>
 <p>Though I miss our old downtown location, I appreciate the new facilities as well. Leinweber feels a little empty with so many faculty members and students out of town at the moment, but those of us here are doing our best to (quoting Ria Khan) <em>&quot;make this cage a house!&quot;</em> ( ◡̀_◡́)ᕤ</p>
-<h3>In personal news:</h3>
+<h3 id="in-personal-news%3A" tabindex="-1"><a class="header-anchor" href="#in-personal-news%3A"><span aria-hidden="true">#</span></a> In personal news:</h3>
 <p>My friends and I visited the <a href="https://toledomuseum.org" target="blank"><b>Toledo Museum of Art</b></a> a few weeks ago, the <b><a href="https://toledomuseum.org/exhibitions/rachel-ruysch-nature-into-art" target="blank">Rachel Ruysch exhibit</a></b> was amazing! It struck me at one point that the exhibit's paintings were all around 300 years old... I wonder if anyone will look at my art (or read my papers!) 300 years from now? (,,•o•,,)</p>
 <div class="gallery">
     <figure>
@@ -128,16 +130,16 @@
 </div>
 <p>I also started playing <a href="https://metaphor.atlus.com/index.html?lang=en" target="blank"><b>Metaphor: ReFantazio</b></a> a few weeks ago, and am really enjoying it! Metaphor's my first Atlus game (I've watched playthroughs of Persona 3/4/5 but never had consoles to play them on); while the learning curve was a little tough at first, I feel like I'm cruising pretty comfortably through the game now. It's hard to tell how <em>far</em> I am in the game though -- I'm about 20~25 hours in, but it still feels like I'm in the early game? Some folks have told me that an ordinary Metaphor playthrough can take upward to 100 hours to complete... we'll see how long my playthrough goes! ( • ̀ω•́ )✧</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2025-06-11.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2025-05-05.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2025-06-11.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2025-05-05.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -188,6 +190,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

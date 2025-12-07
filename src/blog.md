@@ -5,7 +5,7 @@ title: Blog
 description: Past blog posts
 featured_image: favicon.png
 ---
-### Tags
+<h3>Tags</h3>
 
 <!--This next part shows links to all the tags you have on your posts, ordered by frequency-->
 <ul class="none">
@@ -13,7 +13,7 @@ featured_image: favicon.png
 </ul> 
 
 ---
-### Posts
+<h3>Posts</h3>
 <!--This next part shows all of your posts tagged "posts" in reverse chronological order-->
 <ul class="none">
 {% assign top_posts = collections.posts | reverse %}

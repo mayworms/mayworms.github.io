@@ -3,18 +3,17 @@
   --font-family-monospace: Jost, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
-/* Theme colors: also, for personal reference: npx @11ty/eleventy --serve */
 :root {
 	--xkcd-light-grey: #d8dcd6;
-	--xkcd-peach: #9b330e; /* was b33a0e */
+	--xkcd-peach: #9b330e; 
   --cream: #ffffe4;
   --light-cream: #fffff2;
 	--light-peach: #FFC099;
   --blockquote: #ffffe4;
 	--dark-peach: #E65722; /* #E65722, aka Original Orange */
-	--mint: #007856; /* formerly #02815d*/
-	--light-mint: #8cdc9b; /* formerly #9FFEB0 */
-	--link-color: #E65722; /* a45639 */
+	--mint: #007856; 
+	--light-mint: #8cdc9b; 
+	--link-color: #E65722; 
 
 	--background-color: var(--light-peach);
 	--text-color: var(--xkcd-peach);
@@ -26,20 +25,20 @@
 	--syntax-tab-size: 2;
 }
 
-/* Main + Desktop View Styles */ 
+/* main/desktop */ 
 body {
     overflow-y: scroll;
     background-color: var(--background-color);
     background-image: url("../images/web-bg.png");
     font-size: calc(.9vw + .9vh);
-    font-family: 'Jost';
+    font-family: var(--font-family);
     margin: 0;
     color: var(--xkcd-peach);
     line-height: 1.5em;
   }
   
   a, a:visited {
-    color: var(--xkcd-peach);
+    color: var(--xkcd-peach); 
     text-decoration: underline;
     text-decoration-color: var(--link-color);
   }
@@ -49,18 +48,17 @@ body {
     text-decoration-color: var(--light-peach);
   }
 
-  /* Wrapper for the website */
+  /* site wrapper */
   .site-wrapper {
     max-width: 80%;
-    margin: 0 auto; /* centers site-wrapper */
+    margin: 0 auto; /* centers site wrapper */
   }
 
-  /* Sets navbar + footer width to 100% */
   #navbar, #footer {
     width: 100%;
   }
   
-  /* Header + Navbar Styles */
+  /* header/navbar */
   #navbar {
     background-color: var(--cream);
     box-sizing: border-box;
@@ -109,9 +107,9 @@ body {
     margin: 0;
   }
 
-  /* hamburger menu icon style */
+  /* hamburger menu icon -- do NOT screw with this, you WILL break it */
   .hamburger {
-    display: none; /* hidden by default on desktop/tablet view */
+    display: none; /* hidden on desktop/tablet view */
     cursor: pointer;
     font-size: 1.5em;
     color: var(--mint);
@@ -132,7 +130,7 @@ body {
     width: 100%;
   }
 
-    /* Main Content Styles */
+  /* main content */
   #container {
     flex: 3;
     padding-inline: 3em;
@@ -146,7 +144,7 @@ body {
     border-radius: 10px;
   }
 
-  /* Sidebar Styles */
+  /* sidebar stuff */
   #sidebar {
     position: sticky;
     position: -webkit-sticky;
@@ -158,7 +156,7 @@ body {
     padding-bottom: 1em;
     background-color: var(--cream);
     border-radius: 10px;
-    font-size: calc(.7vw + .7vh); /* was 75% */
+    font-size: calc(.7vw + .7vh);
   }
 
   #profile img {
@@ -192,10 +190,15 @@ body {
     color: var(--light-mint);
   }
   
-  /* "article": body text inside "flex-2", nested inside "container" (the cream-coloured block behind it) */
+  /* "article": 
+  body text inside "flex-2", nested inside "container" 
+  (aka the cream-coloured block behind it).
+  In other words: the blog post text! 
+  */
   article { 
     flex-grow: 1;
     padding: 10px;
+    /* margin-top: 0; */
     margin: auto;
     top: auto;
     display: block;
@@ -240,6 +243,256 @@ body {
     height: auto;
   }
 
+  /* table of contents styling!
+  be careful with this, one wrong line and you ruin everything
+  */
+  
+  /* You are now entering the Table of Contents Hell Zone */
+  nav.toc,
+  .table-of-contents,
+  .toc {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: calc(.75vw + .75vh);
+    color: var(--xkcd-peach);
+  }
+
+  /* Toggle bar: 25% of article width, cap at 320px.
+    Make sure there are NO other later rules that set 
+    .toc-toggle width: 100% */
+  .toc-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    gap: 0.6rem;
+    width: fit-content;
+    max-width: 100%;
+    background: var(--mint);
+    color: var(--cream);
+    border: 2px solid #2c6454;
+    padding: 0.45rem 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: calc(.7vw + .7vh);
+    font-weight: 700;
+    text-align: left;
+    box-sizing: border-box;
+    transition: background-color 180ms ease, color 180ms ease;
+  }
+
+  /* keeps toggle away from content */
+  .toc-toggle + .toc-list {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  /* plus icon (CSS +) */
+  .toc-toggle .toc-icon {
+    position: relative;
+    width: 1.1rem;
+    height: 1.1rem;
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-left: 0.5rem;
+    transition: transform 260ms ease;
+    transform-origin: center center;
+  }
+
+  .toc-toggle .toc-icon::before,
+  .toc-toggle .toc-icon::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: var(--cream);
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+    transition: background 180ms ease;
+  }
+
+  /* vertical bar */
+  .toc-toggle .toc-icon::before { 
+    width: 3px; 
+    height: 70%; 
+  }
+
+  /* horizontal bar */
+  .toc-toggle .toc-icon::after  { 
+    width: 70%; 
+    height: 3px; 
+  }
+
+  /* icon rotation */
+  nav.toc.expanded .toc-icon { 
+    transform: rotate(45deg); 
+  }
+
+  .toc-toggle:hover .toc-icon::before,
+  .toc-toggle:hover .toc-icon::after { 
+    background: var(--cream); 
+    transition: background 180ms ease;
+  }
+
+  /* focus outline (keyboard users) */
+  .toc-toggle:focus {
+    outline: 3px solid rgba(8,120,80,0.16);
+    outline-offset: 3px;
+  }
+
+  .toc-toggle:hover,
+  .toc-toggle:focus {
+    background: var(--light-mint);
+    color: var(--mint);
+  }
+
+  .toc-toggle:focus {
+    outline: 3px solid rgba(8,120,80,0.16);
+    outline-offset: 3px;
+  }
+
+  .toc-toggle:hover .toc-title,
+  .toc-toggle:focus .toc-title {
+    color: var(--mint);
+  }
+  .toc-toggle:hover .toc-icon::before,
+  .toc-toggle:focus .toc-icon::before,
+  .toc-toggle:hover .toc-icon::after,
+  .toc-toggle:focus .toc-icon::after {
+    background: var(--mint);
+  }
+
+  /* Table of Contents text inside the button */
+  .toc-title { 
+    font-size: inherit;
+    color: var(--cream); 
+    transition: color 180ms ease;
+  }
+
+  .toc-list {
+    position: static; /* pushes page down */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.2rem;
+    overflow: hidden;
+    max-height: 0; /* collapsed by default */
+    transition: max-height 260ms ease;
+    padding-left: 1rem;
+    z-index: auto;
+    background: transparent;
+  }
+
+  /* When expanded, JS will set maxHeight inline. */
+  nav.toc.expanded .toc-list {
+    max-height: 2000px; /* large fallback; JS will supply the exact pixel value for better animation */
+  }
+
+  /* ToC list stuff */
+  nav.toc ol,
+  nav.toc ul,
+  .toc-list ol,
+  .toc-list ul {
+    list-style: decimal;
+    list-style-position: outside;
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  nav.toc li,
+  .toc-list li {
+    display: list-item;
+    margin: 0.15rem 0;
+    line-height: 1.35;
+  }
+
+  nav.toc a,
+  .toc-list a {
+    color: var(--toc-link, var(--xkcd-peach));
+    display: inline-block;
+    text-decoration: underline;
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: var(--body-font-size);
+    line-height: 1.35;
+  }
+
+  /* marker stuff */
+  nav.toc li::marker,
+  .toc-list li::marker {
+    color: var(--mint); 
+    font-weight: 700;
+    font-size: 0.95em;
+    margin-inline-end: 0.35rem;
+  }
+
+  nav.toc a:hover,
+  .toc-list a:hover,
+  nav.toc a:focus,
+  .toc-list a:focus {
+    color: var(--toc-link-hover, var(--light-mint));
+    transform: translateX(2px);
+  }
+
+  nav.toc ol ol,
+  nav.toc ul ul,
+  .toc-list ol ol,
+  .toc-list ul ul {
+    margin-left: 0.9rem;
+    padding-left: 0.6rem;
+    border-left: 1px dashed rgba(0,0,0,0.03);
+  }
+
+  nav.toc ol ol,
+  .toc-list ol ol {
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+  }
+
+  /* TOC icon rotates */
+  nav.toc.expanded .toc-icon {
+    transform: rotate(45deg); 
+  }
+
+  /* TOC mobile view code */
+  @media only screen and (max-width: 480px) {
+    .toc-toggle {
+      width: 100% !important;
+      padding: 0.6rem 0.9rem;
+      font-size: calc(.7em + 1vw + 1vh) !important;
+    }
+
+    nav.toc li,
+    .toc-list li {
+      margin: 0.16em 0;
+      font-size: calc(1em + 2vw);
+      line-height: 1.4;
+    }
+
+    nav.toc a,
+    .toc-list a {
+      padding: 2px 2px;
+      font-size: inherit;
+      line-height: 1.5;
+    }
+  }
+
+  /* note to self: 
+  should I have image galleries as grids instead of flex?
+  Might fix some of the weird alignment issues... 
+  */
+  
+  /* note: 
+  use <figure></figure> for multi-image galleries
+  omit <figure></figure> for single-image uploads 
+  */
+
+  /* You are now entering: Gallery Hell 
+  (you thought the Table of Contents was bad??) */
   .gallery {
     display: flex;
     justify-content: center;
@@ -252,18 +505,14 @@ body {
     outline: 2px dotted #FFC099;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-  }
-  
-  /* note: use <figure></figure> for multi-image galleries, omit for single-image uploads */
+  } 
 
   .gallery figure {
     flex: 0 1 48%;
-    /* width: fit-content; 
-    height: 400px; */
     aspect-ratio: 4 / 3; /* new 11/09/25: maintains proportional preview boxes across screen sizes */
     margin: 0;
     overflow: hidden;
-    position: relative; /* hover-over effect */
+    position: relative; /* hover effect */
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -272,12 +521,12 @@ body {
   
   .gallery img {
     width: 100%;
-    height: 100%; /* was auto */ 
-    object-fit: cover; /* crops edges evenly, prevents distortion */
+    height: 100%;
+    object-fit: cover;
     display: block;
     border-radius: 10px;
-    transition: transform 0.4s ease, filter 0.4s ease; /* hover-over effect */
-    transform-origin: center center; /* hover-over effect */
+    transition: transform 0.4s ease, filter 0.4s ease; /* hover effect */
+    transform-origin: center center; /* hover effect */
   }
 
   /* hover/focus effect */
@@ -287,12 +536,11 @@ body {
   }
   .gallery figure:hover img,
   .gallery figure:focus-within img {
-    transform: scale(1.05); /* gentle zoom-in */
-    /* filter: brightness(1.05); /* slight brightness pop */
+    transform: scale(1.05);
     cursor: pointer;
   }
 
-  /* hover-zoom on mobile (slower/gentler) */
+  /* hover-zoom on mobile */
   @media (hover: none) and (pointer: coarse) {
   .gallery img {
     transition: transform 0.7s ease, filter 0.7s ease;
@@ -300,8 +548,7 @@ body {
 
   .gallery figure:hover img,
   .gallery figure:focus-within img {
-    transform: scale(1.02); /* smaller zoom on touch */
-    /* filter: brightness(1.03); /* gentle brightness change */
+    transform: scale(1.02);
   }
   }
   
@@ -310,7 +557,6 @@ body {
       list-style-type: none;
   }
   
-  /* alignment */
   .right {
     float: right;
     margin-left: 1em;
@@ -337,10 +583,6 @@ body {
     background-color: var(--cream);
     width: fit-content;
     text-align: left;
-    /* outline-width: 2px;
-    outline-style: dotted;
-    outline-color: var(--light-peach);
-    border-radius: 10px; */
   }
   
   /* navigation text at the bottom of blog posts */
@@ -348,78 +590,10 @@ body {
     text-align: center;
     margin-top: 1.4em;
   }
-
-  /* Post Grid (took this right from Renkotsuban lol, may or may not use) */
-  /* .post-grid {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    gap: 10px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .post-grid .post-grid-item {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
-    color: initial;
-    border-radius: 10px;
-    outline-width: 1px;
-    outline-style: solid;
-    outline-color: #BBCFEA;
-    padding: 5px;
-    width: 300px;
-    height: 200px;
-  }
-  .post-grid-image {
-    max-height: 200px;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-  .post-grid-title {
-    background-color: #1E2030;
-    padding: 5px;
-    border-radius: 10px;
-  }
-  .post-grid .post-grid-item .post-grid-title {
-    font-weight: bold;
-    background-color: rgba(30,32,48,0.8);
-    color: #A6DA95;
-    padding: 8px;
-    overflow: hidden;
-    text-decoration: none;
-    border-radius: 10px;
-  }
-  .post-grid .post-grid-item .post-grid-date {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 5px;
-    gap: 5px;
-  }
-  .post-grid .post-grid-item .post-grid-date  {
-    padding: 4px;
-    box-sizing: border-box;
-    display: inline-block;
-    border-radius: 10px;
-  }
-  .post-grid .post-grid-item .post-grid-date {
-    background-color: rgba(30,32,48,0.8);
-    color: #F5BDE6;
-    width: 111px;
-    background-size: auto;
-  } */
   
   @media only screen and (max-width: 820px) { /* tablet view! */
     .site-wrapper {
-      max-width: 90%; /* less side margin on tablet view */
+      max-width: 90%;
       margin: 0 auto;
     }
     
@@ -442,16 +616,21 @@ body {
 
     .gallery {
       padding: 5px;
-      gap: 5px; /* Reduced gap on smaller screens */
+      gap: 5px;
     }
-  
-    /* chose to stop using this, prefer using 4 / 3 ratio even on smaller displays
-    .gallery figure {
-      aspect-ratio: 1 / 1;
-    } */
+
+    .toc-toggle + .toc-list { 
+      margin-top: 0.2rem; 
+    }
+    
+    nav.toc, 
+    .table-of-contents, 
+    .toc { 
+      margin-bottom: 0.6rem; 
+    }
   }
 
-  @media screen and (min-width: 481px) { /* lowkey don't remember why I formatted this code like this */
+  @media screen and (min-width: 481px) { /* lowkey don't remember why I formatted this code like this, like 481? Why? But I'm afraid of breaking something if I change it lol */
     #contact-toggle {
       display: none;
     }
@@ -537,14 +716,14 @@ body {
       transform-origin: center; /* Rotate around the center */
     }
     .hamburger.active .bar1 {
-      transform: rotate(45deg) translate(6.35px, 6.35px); /* Adjust positions */
+      transform: rotate(45deg) translate(6.35px, 6.35px);
       width: 21px;
     }
     .hamburger.active .bar2 {
       opacity: 0;
     }
     .hamburger.active .bar3 {
-      transform: rotate(-45deg) translate(6.35px, -6.35px); /* Adjust positions */
+      transform: rotate(-45deg) translate(6.35px, -6.35px);
       width: 21px;
     }
   
@@ -652,20 +831,17 @@ body {
     }
 
     blockquote { /* mobile blockquote formatting */
-    background: var(--blockquote);
-    padding-left: 1em;
-    border-left: 6px solid var(--mint);
-    margin-left: 1em; /* was 1 */
-    margin-right: 1em; /* was 1 */
-    font-size: .9em;
-    line-height: 1.4em;
+      background: var(--blockquote);
+      padding-left: 1em;
+      border-left: 6px solid var(--mint);
+      margin-left: 1em;
+      margin-right: 1em;
+      font-size: .9em;
+      line-height: 1.4em;
     }
 
     .gallery figure {
-      /* flex: 0 1 100%; */
       aspect-ratio: 3 / 4;
-      /* width: 180px;
-      height: 180px; */
     }
 
     #footer {

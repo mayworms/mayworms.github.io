@@ -87,8 +87,10 @@
                     <a href="../tags/research.html">research</a>
                     
                 </div>
-                
-                <p>It’s quite cold outside today!</p>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>It’s quite cold outside today!</p>
 <p>What was I up to this past week? I worked on a literature review for my advisor's paper, co-worked with a friend at a lovely cafe downtown, wrapped up an IRB resubmission, caught a shiny Absol in Pokémon Go, drew an illustration of some old library friends, and complained about Ben Johnson going to the Bears. Every once in a while I would check my phone notifications, glimpse another nightmare horror looming over trans people (and everyone else) in the United States, then turn my phone back off and shove it deep, deep, deep into my pocket.</p>
 <p>In brighter news: I am very proud of my friend <a href="https://www.iamfriak.com" target="blank"><b>F. Ria Khan</b></a>, whose first full-length first-authored paper was just accepted to the ACM (Association for Computing Machinery) CHI conference on Human Factors in Computing Systems (aka <a href="https://chi2025.acm.org" target="blank"><b>CHI 2025</b></a>)! I am very happy for all members of our research lab whose works were accepted to CHI this year (not to flex, but I'm a co-author on some of these too ;-) ):</p>
 <ul>
@@ -100,16 +102,16 @@
 <p>I am very proud of my friends for their accomplishments, and that I look forward to traveling with them to Yokohama in the spring :D</p>
 <p>(On that note: remind me to outline that workshop paper!)</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2025-03-21.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2024-12-17.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2025-03-21.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2024-12-17.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -160,6 +162,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

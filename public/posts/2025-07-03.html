@@ -86,8 +86,10 @@
                     <a href="../tags/research.html">research</a>
                     
                 </div>
-                
-                <div class="gallery">
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <div class="gallery">
     <figure>
         <a href="../images/julycloud1-2025.jpg" data-caption="A cumulus cloud I saw the other day (Ann Arbor, MI)"><img src="../images/julycloud1-2025.jpg" alt="A daytime photo of a large white cumulus cloud floating above some trees against a clear blue sky."></a>
     </figure>
@@ -96,9 +98,9 @@
     </figure>
 </div>
 <p>Hello there! It's been quite hot in Ann Arbor recently (which makes sense, it's July, but that doesn't mean I like it!). It rained last week but has been completely dry since then... hopefully this changes by Sunday! (٥*˘▿˘) ﾞ☂･˙｡°･ˇ</p>
-<h3>In research news:</h3>
+<h3 id="in-research-news%3A" tabindex="-1"><a class="header-anchor" href="#in-research-news%3A"><span aria-hidden="true">#</span></a> In research news:</h3>
 <p>The University of Michigan School of Information (UMSI) released a <a href="https://www.si.umich.edu/about-umsi/news/marginalized-americans-are-highly-skeptical-artificial-intelligence" target="blank"><b>news article</b></a> on our newest ACM FAccT publication, <em><strong><a href="https://doi.org/10.1145/3715275.3732081" target="blank">AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes</a></strong></em> (led by Oliver L. Haimson and coauthored by myself, Alexis Shore Ingber, and Nazanin Andalibi)! I've included the paper's abstract (aka a quick summary) below; give it a read if you find it interesting ( ੭ ･ᴗ･ )੭</p>
-<h4><em>AI Attitudes Among Marginalized Populations in the U.S.</em> abstract:</h4>
+<h4 id="ai-attitudes-among-marginalized-populations-in-the-u.s.-abstract%3A" tabindex="-1"><a class="header-anchor" href="#ai-attitudes-among-marginalized-populations-in-the-u.s.-abstract%3A"><span aria-hidden="true">#</span></a> <em>AI Attitudes Among Marginalized Populations in the U.S.</em> abstract:</h4>
 <blockquote cite="https://doi.org/10.1145/3715275.3732081">
   <p>
     As artificial intelligence (AI) technologies become increasingly pervasive, understanding public perceptions of AI is crucial for ensuring equitable adoption and impact. <b>Attitudes toward AI</b>, such as whether it is seen as <b>helpful or harmful</b>, may <b>vary based on social identities and lived experiences.</b>
@@ -110,7 +112,7 @@
     We argue that these disparities highlight a critical issue: <b>negative AI attitudes among marginalized communities signals a continued failure to account for their needs and concerns in AI design and use.</b> That marginalized Americans have more negative views towards AI should prompt reflection and critical examination of the prevalent rhetoric of AI’s purported inevitability and its framing as a universal social good. 
   </p>
 </blockquote>    
-<h3>In personal news:</h3>
+<h3 id="in-personal-news%3A" tabindex="-1"><a class="header-anchor" href="#in-personal-news%3A"><span aria-hidden="true">#</span></a> In personal news:</h3>
 <p>My week's been pretty good! Really enjoyed Pokemon Go Fest 2025 in downtown Ann Arbor last weekend. Ann Arbor/Ypsilanti has a big Pokemon Go community, so many people showed up downtown to look for raids and catch shiny Pokemon (and to make friends with one another!). I spent some Go Fest time exploring Ann Arbor (mostly in Kerrytown) with a good friend, and spent some time playing on my own, wandering around looking for raids, talking to other players, and enjoying the sun ◝(ᵔᵕᵔ)◜</p>
 <div class="gallery">
     <figure>
@@ -126,16 +128,16 @@
 <hr>
 <p>(Oh right, on that note: my 30th birthday is tomorrow!! I'll have more to say about it once I actually turn 30, but for the time being, I'm going to focus on birthday party preparations ヾ( ˃ᴗ˂ )◞ • *✰)</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2025-07-17.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2025-06-11.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2025-07-17.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2025-06-11.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -186,6 +188,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

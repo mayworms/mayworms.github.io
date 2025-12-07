@@ -88,25 +88,27 @@
                     <a href="../tags/website.html">website</a>
                     
                 </div>
-                
-                <p>Happy second day of spring! It's funny, Ann Arbor hit 72°F (22°C) on the last day of winter, and then it snowed on the first day of spring. Still, I'm thankful for the warmer months ahead -- I always forget how badly seasonal depression affects me until the sun comes back out.</p>
-<h3>In research news:</h3>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>Happy second day of spring! It's funny, Ann Arbor hit 72°F (22°C) on the last day of winter, and then it snowed on the first day of spring. Still, I'm thankful for the warmer months ahead -- I always forget how badly seasonal depression affects me until the sun comes back out.</p>
+<h3 id="in-research-news%3A" tabindex="-1"><a class="header-anchor" href="#in-research-news%3A"><span aria-hidden="true">#</span></a> In research news:</h3>
 <p>I am happy to announce that <strong>Trans Resistance to AI Technologies</strong> (my workshop paper co-authored by <a href="https://oliverhaimson.com" target="blank"><b>Oliver L. Haimson</b></a> and <a href="https://michaelannethomas.com" target="blank"><b>Michaelanne Thomas</b></a>) has been accepted to the &quot;Resisting AI Solutionism&quot; workshop at the 2025 Association for Computing Machinery (ACM) Conference on Human Factors in Computing Systems (aka <a href="https://chi2025.acm.org" target="blank"><b>CHI 2025</b></a>)! Will update this post with more details as they come -- in the meantime, I am deeply thankful for the opportunity to participate in the workshop and to attend CHI '25 with my peers (˶ˆᗜˆ˵)</p>
-<h3>In website news:</h3>
+<h3 id="in-website-news%3A" tabindex="-1"><a class="header-anchor" href="#in-website-news%3A"><span aria-hidden="true">#</span></a> In website news:</h3>
 <p>I finally installed <a href="https://github.com/feimosi/baguetteBox.js" target="blank"><b>baguetteBox.js</b></a> (a lightbox script that adds mobile-friendly image galleries, image captions, and responsive image support) to my website! Images should load more quickly on this website from now on; full-resolution images in blog posts should now be visible in &quot;gallery view.&quot; Improving image handling has been a big website goal for a while now, happy to finally have that out of the way (^◡^)</p>
-<h3>In personal news:</h3>
+<h3 id="in-personal-news%3A" tabindex="-1"><a class="header-anchor" href="#in-personal-news%3A"><span aria-hidden="true">#</span></a> In personal news:</h3>
 <p>I've had a decent week so far! Some ups and some downs (such is life), but there's plenty to be happy about. Spoke with a good friend about rock formations and <em>Star Trek</em> (which Star Trek movie is your favourite? Mine is <em>The Voyage Home</em>), had a good time at karaoke, and accomplished the most urgent tasks on my to-do list (now to finish everything else!). I'm also preparing a guest lecture for my advisor's class next week -- I'm a little nervous about speaking in front of so many students, but am also excited for the learning experience ᕕ( ᐛ )ᕗ</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2025-04-14.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2025-01-22.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2025-04-14.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2025-01-22.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -157,6 +159,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

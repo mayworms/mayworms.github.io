@@ -5,10 +5,11 @@ title: Publications
 description: Publications
 featured_image: favicon.png
 ---
-### 2025
----
-#### Peer-Reviewed Works
-<a href="https://doi.org/10.1145/3715275.3732081" target="blank"><b>AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes.</b></a>   
+<h3>2025</h3>
+<hr>
+<h4>Peer-Reviewed Works</h4>
+
+<a href="https://doi.org/10.1145/3715275.3732081" target="blank"><b>AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes.</b></a>  
 Authors: Oliver L. Haimson, <b><u>Samuel Mayworm</b></u>, Alexis Shore Ingber, and Nazanin Andalibi.   
 Published in: <i>Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT 2025).</i>     
 
@@ -20,15 +21,16 @@ Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Comp
 Authors: F.R. Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson.  
 Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
-#### Workshop Papers (Non-Archival)
+<h4>Workshop Papers (Non-Archival)</h4>
 <b>Trans Resistance to AI Technologies.</b>   
 Authors: <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, Oliver L. Haimson.   
 Workshop: <i>Resisting AI Solutionism: Where Do We Go From Here?</i>    
 Conference: <i>2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>   
 
-### 2024
----
-#### Peer-Reviewed Works
+<h3>2024</h3>
+<hr>
+<h4>Peer-Reviewed Works</h4>
+
 <a href="https://doi.org/10.1145/3630106.3658907" target="_blank"><b>Misgendered During Moderation: How Trans Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement on Social Media Platforms.</b></a>  
 Authors: <b><u>Samuel Mayworm</u></b>, Kendra Albert, and Oliver L. Haimson.  
 Published in: <i>Proceedings of the 2024 ACM Conference on Fairness, Accountability, & Transparency (FAccT 2024)</i>.  
@@ -49,9 +51,10 @@ Published in: <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i
 Authors: Daniel Delmonaco, <b><u>Samuel Mayworm</u></b>, Josh Guberman, Hibby Thach, Aurelia Augusta, and Oliver L. Haimson.  
 Published in: <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i> CSCW [Computer-Supported Cooperative & Social Computing]    
 
-### 2022
----
-#### Peer-Reviewed Works
+<h3>2022</h3>
+<hr>
+<h4>Peer-Reviewed Works</h4>
+
 <a href="https://doi.org/10.1177/14614448221109804" target="_blank"><b>(In)Visible Moderation: A Digital Ethnography of Marginalized Users and Content Moderation on Twitch and Reddit.</b></a>  
 Authors: Hibby Thach, <b><u>Samuel Mayworm</u></b>, Daniel Delmonaco, and Oliver L. Haimson.  
 Published in: <i>New Media & Society.</i>  
