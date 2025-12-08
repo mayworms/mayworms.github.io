@@ -6,6 +6,7 @@ import * as anchorModule from "markdown-it-anchor";
 const markdownIt = markdownItModule.default ?? markdownItModule;
 const anchor = anchorModule.default ?? anchorModule;
 
+// @ts-ignore
 import pluginTOC from 'eleventy-plugin-nesting-toc';
 
 export default function(eleventyConfig) {
