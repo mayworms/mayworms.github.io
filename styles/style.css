@@ -338,7 +338,6 @@ body {
     transition: background 180ms ease;
   }
 
-  /* focus outline (keyboard users) */
   .toc-toggle:focus {
     outline: 3px solid rgba(8,120,80,0.16);
     outline-offset: 3px;
@@ -844,8 +843,28 @@ body {
       aspect-ratio: 3 / 4;
     }
 
+    /* idle/closed */
+    nav.toc:not(.expanded) .toc-toggle {
+      background: var(--mint);
+      color: var(--cream);
+    }
+    /* hover/focus closed */
+    nav.toc:not(.expanded) .toc-toggle:hover,
+    nav.toc:not(.expanded) .toc-toggle:focus {
+      background: var(--light-mint);
+      color: var(--mint);
+    }
+    /* open (light mint bg, dark mint text) */
+    nav.toc.expanded .toc-toggle,
+    nav.toc.expanded .toc-toggle:hover,
+    nav.toc.expanded .toc-toggle:focus {
+      background: var(--light-mint) !important;
+      color: var(--mint) !important;
+    }
+  }
+
     #footer {
       margin-top: 1.5em;
       font-size: 1.3em;
     }
-  }
+  
