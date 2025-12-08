@@ -1,14 +1,12 @@
 // eleventy.config.js (ESM)
 import { DateTime } from 'luxon';
-
-// robust imports to handle both ESM and possible CJS interop
 import * as markdownItModule from "markdown-it";
 import * as anchorModule from "markdown-it-anchor";
 
 const markdownIt = markdownItModule.default ?? markdownItModule;
 const anchor = anchorModule.default ?? anchorModule;
 
-import pluginTOC from 'eleventy-plugin-nesting-toc'; // <--- static ESM import
+import pluginTOC from 'eleventy-plugin-nesting-toc';
 
 export default function(eleventyConfig) {
   // Markdown-it + markdown-it-anchor setup
