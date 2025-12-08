@@ -87,24 +87,26 @@
                     <a href="../tags/website.html">website</a>
                     
                 </div>
-                
-                <p>This week, I wrapped up my final few classes (and final projects) for the first semester of my PhD program. How do I feel afterward? Tired, very tired.</p>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>This week, I wrapped up my final few classes (and final projects) for the first semester of my PhD program. How do I feel afterward? Tired, very tired.</p>
 <p>I took the opportunity to do some fun things last night: visited friends in Ypsilanti, saw an IMAX re-screening of <a href="https://letterboxd.com/film/the-green-knight/" target="_blank">The Green Knight</a>, got caught in a snowstorm during my drive home (pulled over at a gas station to let the worst of it pass), went to bed early to make up for all the stress.</p>
 <p>It's so easy to de-prioritize &quot;fun&quot; during the semester, isn't it? Then suddenly you're joking around with friends at the Steak &amp; Shake about whether <em>Kraven the Hunter</em> will be any good or not, or whether MVP's going to Josh Allen or Lamar Jackson this year, and your brain feels less sluggish than it did before.</p>
 <p>What will I be up to between this semester and the next? Partially Christmas-time travel, partially last-minute gift-buying. Hopefully I will relax, visit the new queer bar downtown with friends more often, finally (finally!) deploy that website update, maybe start <em>Metaphor: ReFantazio</em> or keep playing <em>Caves of Qud.</em> My biggest priority is to just sleep more, too little sleep for me as of late. I wonder what next semester will bring?</p>
 <hr>
 <p>A note: the code for my website redesign is 99% finished; I am confident that I can deploy it by late December/early January. <em>Will</em> I deploy it by late December/early January? We will see.</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2024-12-17.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2024-11-12.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2024-12-17.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2024-11-12.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -155,6 +157,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

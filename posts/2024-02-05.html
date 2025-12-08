@@ -86,24 +86,26 @@
                     <a href="../tags/website.html">website</a>
                     
                 </div>
-                
-                <p>Some cool things I did today:</p>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>Some cool things I did today:</p>
 <ul>
 <li>uploaded the CV to my website</li>
 <li>watched an episode of Australian Survivor with friends</li>
 <li>did some laundry</li>
 </ul>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2024-04-07.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2023-03-19.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2024-04-07.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2023-03-19.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -154,6 +156,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

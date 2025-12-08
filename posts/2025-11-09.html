@@ -88,8 +88,10 @@
                     <a href="../tags/website.html">website</a>
                     
                 </div>
-                
-                <div class="gallery">
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <div class="gallery">
     <figure>
         <a href="../images/11-09-2025-snow1.jpg" data-caption="First snow of the season! (Ann Arbor, MI)"><img src="../images/thumbnails/thumb-11-09-2025-snow1.jpg" alt="A photo of a neighborhood street; there is snow on the ground and green/yellow leaves still on the trees."></a>
     </figure>
@@ -98,10 +100,10 @@
     </figure>
 </div>
 Hello there! The first snow of the season arrived last night (and is still falling as we speak!). I took a walk outside to enjoy the sights, then went back inside to warm up. Snow gently falling on green leaves -- how often do you see that? (・o・)
-<h3>In PhD and research news:</h3>
+<h3 id="phd-and-research-news" tabindex="-1"><a class="header-anchor" href="#phd-and-research-news"><span aria-hidden="true">#</span></a> PhD and research news</h3>
 <p>Pre-candidacy research continues to go well! The final interview wrapped up last week; now it's time for open coding, analysis, and (eventually) writing... I wonder how long it'll take to complete? Hopefully I'll have a draft done before February (ᵕ,—ᴗ—,)</p>
 <p>I wonder how I will approach ethnographic writing for this study. Most of my writing is for HCI/social computing audiences, which means my work (up to this point) has followed a very rigid structure: here's the state of the world, here's our study, here the results, here's their Implications For Design, here's how Future Work could build off ours, etc etc etc. Ethnographic writing may give my work more room to focus on the humans... we'll see where the final work takes us! („• ֊ •„)੭</p>
-<h3>In personal news:</h3>
+<h3 id="personal-news" tabindex="-1"><a class="header-anchor" href="#personal-news"><span aria-hidden="true">#</span></a> Personal news</h3>
 <p>These past few weeks have been... stressful, but also fun! Halloween is one of my favourite times of the year, and I got to celebrate it several weeks in a row -- what a joy! .˚⊹.🎃₊˚𖦹⋆</p>
 <div class="gallery">
     <figure>
@@ -112,17 +114,17 @@ Hello there! The first snow of the season arrived last night (and is still falli
     </figure>
 </div>
 <p>This year, I dressed as Cesare from <i><a href="https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/" target="_blank">Das Cabinet des Dr. Caligari</a></i> (<i>The Cabinet of Dr. Caligari</i>), a 1920 German expressionist/early horror film! The film depicts Dr. Caligari, a hypnotist who unveils a somnambulist named Cesare at the town fair; unbeknownst to the public, Caligari controls Cesare and uses him to commit murders in his stead! The movie leans into... failure to reject authoritarianism, and madness at the hands of unhinged tyrants (in the context of post-WWI Germany!). Highly recommend giving it a watch (˶ᵔ ᵕ ᵔ˶ )</p>
-<h3>In website news:</h3>
+<h3 id="website-news" tabindex="-1"><a class="header-anchor" href="#website-news"><span aria-hidden="true">#</span></a> Website news</h3>
 <p>Good news: just finished implementing a tag system to my website's blog! Visitors can now view categories per blog post (e.g. posts about research, life updates, etc), and can browse blog posts per category. I once again drew from Renkon's <a href="https://renkotsuban.com/posts/2025-07-25-Updates-to-the-Eleventy-guide.html" target="_blank">excellent tutorial</a> while implementing the tag system -- thank you, Renkon!</p>
 
-                
-                <nav id="nextprev">
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2025-10-17.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2025-10-17.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -173,6 +175,63 @@ Hello there! The first snow of the season arrived last night (and is still falli
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

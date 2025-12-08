@@ -85,21 +85,23 @@
                     <a href="../tags/website.html">website</a>
                     
                 </div>
-                
-                <h1>Next weekend's goal: overhauling this website's theme</h1>
-<p>mayworms.info will go down intermittently next weekend as I overhaul the website theme. I'm not super experienced with Ruby/Jekyll/GitHub Pages as a whole, so this may take a little while! Worst case scenario, I'll go back to the old theme and pretend none of this ever happened.</p>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>Next weekend's goal: overhauling this website's theme!</p>
+<p><a href="http://mayworms.info">mayworms.info</a> will go down intermittently next weekend as I overhaul the website theme. I'm not super experienced with Ruby/Jekyll/GitHub Pages as a whole, so this may take a little while! Worst case scenario, I'll go back to the old theme and pretend none of this ever happened.</p>
 <p>Update: didn't have time to work on the website last weekend, next weekend it is lol</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2024-06-07.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2024-04-30.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2024-06-07.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2024-04-30.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -150,6 +152,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

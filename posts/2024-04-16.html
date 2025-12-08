@@ -85,23 +85,25 @@
                     <a href="../tags/research.html">research</a>
                     
                 </div>
-                
-                <p>Quoted in a <a href="https://news.umich.edu/shadowbanning-some-marginalized-social-media-users-believe-their-content-is-suppressed/" target="blank"><b>University of Michigan press release</b></a> on <a href="https://deepblue.lib.umich.edu/handle/2027.42/192621" target="blank"><b>“What are you doing, TikTok?”: How Marginalized Social Media Users Perceive, Theorize, and “Prove” Shadowbanning</b></a>, first-authored by <a href="https://www.libraries.rutgers.edu/directory/daniel-delmonaco" target="blank">Daniel Delmonaco</a> and co-authored by <a href="https://www.hibbythach.com/" target="blank">Hibby Thach</a>, <a href="https://www.si.umich.edu/people/josh-guberman" target="blank">Josh Guberman</a>, <a href="https://www.aeva.dev/" target="blank">Aurelia Augusta</a>, and <a href="https://oliverhaimson.com/" target="_blank">Oliver L. Haimson</a>.</p>
-<h3>&quot;What are you doing, TikTok?&quot; Abstract:</h3>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>Quoted in a <a href="https://news.umich.edu/shadowbanning-some-marginalized-social-media-users-believe-their-content-is-suppressed/" target="blank"><b>University of Michigan press release</b></a> on <a href="https://deepblue.lib.umich.edu/handle/2027.42/192621" target="blank"><b>“What are you doing, TikTok?”: How Marginalized Social Media Users Perceive, Theorize, and “Prove” Shadowbanning</b></a>, first-authored by <a href="https://www.libraries.rutgers.edu/directory/daniel-delmonaco" target="blank">Daniel Delmonaco</a> and co-authored by <a href="https://www.hibbythach.com/" target="blank">Hibby Thach</a>, <a href="https://www.si.umich.edu/people/josh-guberman" target="blank">Josh Guberman</a>, <a href="https://www.aeva.dev/" target="blank">Aurelia Augusta</a>, and <a href="https://oliverhaimson.com/" target="_blank">Oliver L. Haimson</a>.</p>
+<h3 id="%22what-are-you-doing%2C-tiktok%3F%22-abstract%3A" tabindex="-1"><a class="header-anchor" href="#%22what-are-you-doing%2C-tiktok%3F%22-abstract%3A"><span aria-hidden="true">#</span></a> &quot;What are you doing, TikTok?&quot; Abstract:</h3>
 <p>&quot;Shadowbanning is a unique content moderation strategy receiving recent media attention for the ways it impacts marginalized social media users and communities. Social media companies often deny this content moderation practice despite user experiences online. In this paper, we use qualitative surveys and interviews to understand how marginalized social media users make sense of shadowbanning, develop folk theories about shadowbanning, and attempt to prove its occurrence.</p>
 <p>We find that marginalized social media users collaboratively develop and test algorithmic folk theories to make sense of their unclear experiences with shadowbanning. Participants reported direct consequences of shadowbanning, including frustration, decreased engagement, the inability to post specific content, and potential financial implications. They reported holding negative perceptions of platforms where they experienced shadowbanning, sometimes attributing their shadowbans to platforms’ deliberate suppression of marginalized users’ content. Some marginalized social media users acted on their theories by adapting their social media behavior to avoid potential shadowbans.</p>
 <p>We contribute collaborative algorithm investigation: a new concept describing social media users’ strategies of collaboratively developing and testing algorithmic folk theories. Finally, we present design and policy recommendations for addressing shadowbanning and its potential harms.&quot;</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2024-04-30.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2024-04-07.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2024-04-30.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2024-04-07.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -152,6 +154,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

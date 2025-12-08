@@ -87,8 +87,10 @@
                     <a href="../tags/research.html">research</a>
                     
                 </div>
-                
-                <div class="gallery">
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <div class="gallery">
     <figure>
         <a href="../images/blowingsnow-2025.jpg" data-caption="Blowing snow in Ann Arbor, MI"><img src="../images/thumbnails/thumb-blowingsnow-2025.jpg" alt="Thick blowing snow downtown at night; Ann Arbor, Michigan"></a>
     </figure>
@@ -97,11 +99,11 @@
     </figure>
 </div>
 <p>Hello there! It is a beautiful day here in Ann Arbor, MI -- 67°F, mostly sunny, gentle breeze. To think it was snowing just last Wednesday -- perhaps I can finally put my parka away for the year! („ᵕᴗᵕ„)</p>
-<h3>In research news:</h3>
+<h3 id="in-research-news%3A" tabindex="-1"><a class="header-anchor" href="#in-research-news%3A"><span aria-hidden="true">#</span></a> In research news:</h3>
 <p>I am happy to announce that <b><a href="https://doi.org/10.1145/3715275.3732081" target="blank">AI Attitudes Among Marginalized Populations: Nonbinary, Transgender, and Disabled Individuals Report Higher AI Hesitancy</a></b> (led by <a href="https://oliverhaimson.com" target="blank"><b>Oliver L. Haimson</b></a>, co-authored by myself, <a href="https://www.alexisshoreingber.com" target="blank"><b>Alexis Shore Ingber</a></b>, and <a href="https://www.nazaninandalibi.net" target="blank"><b>Nazanin Andalibi</a></b>) has been accepted to the ACM Conference on Fairness, Accountability, and Transparency (ACM FAccT) 2025!</p>
 <p>I would also like to congratulate fellow CRIT Lab member <a href="https://francescalameiro.com" target="blank"><b>Francesca Lameiro</a></b>, whose first first-authored paper -- <strong>TIDEs: A Transgender and Nonbinary Community-Labeled Dataset and Model for Transphobia Identification in Digital Environments</strong> -- was also just accepted to ACM FAccT 2025!</p>
 <p>Will update this post with more details on the FAccT 2025 acceptances (and links to papers) once available (˶ˆᗜˆ˵)</p>
-<h3>In PhD news:</h3>
+<h3 id="in-phd-news%3A" tabindex="-1"><a class="header-anchor" href="#in-phd-news%3A"><span aria-hidden="true">#</span></a> In PhD news:</h3>
 <p>I gave my first-ever guest lecture a few weeks ago! The guest lecture was for SI 315, and focused on how social media users develop folk theories about unclear/opaque algorithmic systems. I spoke a little about my own paper (on marginalized social media users' <a href="https://dl.acm.org/doi/epdf/10.1145/3632741" target="blank">content moderation folk theories</a>) during the lecture -- it felt surreal speaking to a class full of students who all read my paper. They read my paper! They asked questions about it! ...Wow! Wowowowowowowow!!</p>
 <ul>
 <li><strong>Algorithms, AI, and Social Media</strong><br>
@@ -117,19 +119,19 @@ University of Michigan<br>
 April 2025</li>
 </ul>
 <p>These were my first-ever guest lecture/talk experiences, so I felt a little nervous at first -- but they both went quite well, I'm very thankful! (੭˃ᴗ˂)੭</p>
-<h3>In personal news:</h3>
+<h3 id="in-personal-news%3A" tabindex="-1"><a class="header-anchor" href="#in-personal-news%3A"><span aria-hidden="true">#</span></a> In personal news:</h3>
 <p>It's been an interesting few weeks! I thankfully found time for fun -- met <a href="https://www.instagram.com/plasmanyc/?hl=en" target="blank"><b>Plasma</a></b> from RuPaul season 16 at Uplift Ann Arbor (I appreciate her support for U-M students after the DEI shutdown!), and also attended my friend <a href="https://andrewnosay.com" target="blank"><b>Andrew Nosay's</a></b> art show at Eastern Michigan University. Also did plenty of work/life stuff -- drove around town with my roommate to look for apartments (scheduled a few unit tours!), attended Oliver L. Haimson's <a href="https://mitpress.mit.edu/9780262551861/trans-technologies/" target="blank"><b>Trans Technologies</a></b> book talks (so happy to see this book out in the world!), and also helped run an app feedback workshop with other members of the CRIT Lab... whew, what a list! No wonder I've been so tired lately -- I be sure to rest before flying to Yokohama next week (⸝⸝ᴗ⩊ᴗ⸝⸝) ᶻ 𝗓 𐰁</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2025-04-27.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2025-03-21.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2025-04-27.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2025-03-21.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -180,6 +182,63 @@ April 2025</li>
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

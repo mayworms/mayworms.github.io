@@ -85,9 +85,11 @@
                     <a href="../tags/research.html">research</a>
                     
                 </div>
-                
-                <p>Interviewed for a University of Michigan School of Information <a href="https://www.si.umich.edu/about-umsi/news/study-transgender-and-nonbinary-social-media-users-experience-disproportionate" target="blank">news article</a> on <a href="https://dl.acm.org/doi/abs/10.1145/3630106.3658907" target="blank"><b><i>Misgendered During Moderation: How Transgender Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement in a Meta Oversight Board Case</i></b></a>, co-authored by <a href="https://kendraalbert.com" target="blank">Kendra Albert</a> (Clinical Instructor at the <a href="https://hls.harvard.edu/clinics/in-house-clinics/cyberlaw-clinic/" target="blank">Harvard Law School Cyberlaw Clinic</a>) and <a href="https://oliverhaimson.com/" target="blank">Oliver L. Haimson</a> (Assistant Professor at the <a href="https://www.si.umich.edu" target="blank">University of Michigan School of Information)</a>.</p>
-<h3>Misgendered During Moderation abstract:</h3>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>Interviewed for a University of Michigan School of Information <a href="https://www.si.umich.edu/about-umsi/news/study-transgender-and-nonbinary-social-media-users-experience-disproportionate" target="blank">news article</a> on <a href="https://dl.acm.org/doi/abs/10.1145/3630106.3658907" target="blank"><b><i>Misgendered During Moderation: How Transgender Bodies Make Visible Cisnormative Content Moderation Policies and Enforcement in a Meta Oversight Board Case</i></b></a>, co-authored by <a href="https://kendraalbert.com" target="blank">Kendra Albert</a> (Clinical Instructor at the <a href="https://hls.harvard.edu/clinics/in-house-clinics/cyberlaw-clinic/" target="blank">Harvard Law School Cyberlaw Clinic</a>) and <a href="https://oliverhaimson.com/" target="blank">Oliver L. Haimson</a> (Assistant Professor at the <a href="https://www.si.umich.edu" target="blank">University of Michigan School of Information)</a>.</p>
+<h3 id="misgendered-during-moderation-abstract%3A" tabindex="-1"><a class="header-anchor" href="#misgendered-during-moderation-abstract%3A"><span aria-hidden="true">#</span></a> Misgendered During Moderation abstract:</h3>
 <blockquote cite="https://dl.acm.org/doi/10.1145/3630106.3658907">
 <p>
 "Transgender and nonbinary social media users experience disproportionate content removals on social media platforms, even when content does not violate platforms’ guidelines. In 2022, the Oversight Board, which oversees Meta platforms’ content moderation decisions, invited public feedback on Instagram’s removal of two trans users’ posts featuring their bare chests, introducing a unique opportunity to hear trans users’ feedback on how nudity and sexual activity policies impacted them. 
@@ -99,16 +101,16 @@ We conducted a qualitative analysis of 83 comments made public during the Oversi
 We then discuss how the Oversight Board’s public comment process demonstrates the value of incorporating trans people’s feedback while developing policies related to gender and nudity, while arguing that Meta must go beyond only revising policy language by reevaluating how cisnormative values are encoded in all aspects of its content moderation systems."
 </p>
 </blockquote>
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2024-09-23.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2024-06-07.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2024-09-23.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2024-06-07.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -159,6 +161,63 @@ We then discuss how the Oversight Board’s public comment process demonstrates 
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

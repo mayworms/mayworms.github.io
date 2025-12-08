@@ -85,23 +85,25 @@
                     <a href="../tags/research.html">research</a>
                     
                 </div>
-                
-                <p>Very excited to share my first first-authored paper, <a href="https://doi.org/10.1145/3632741" target="_blank"><b>Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users</b></a>, co-authored by <a href="https://michaelanndevito.com/" target="_blank">Michael Ann DeVito</a>, <a href="https://www.libraries.rutgers.edu/directory/daniel-delmonaco" target="_blank">Daniel Delmonaco</a>, <a href="https://www.hibbythach.com/" target="_blank">Hibby Thach</a>, and <a href="https://oliverhaimson.com/" target="_blank">Oliver L. Haimson</a>!</p>
-<h3>Abstract:</h3>
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <p>Very excited to share my first first-authored paper, <a href="https://doi.org/10.1145/3632741" target="_blank"><b>Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users</b></a>, co-authored by <a href="https://michaelanndevito.com/" target="_blank">Michael Ann DeVito</a>, <a href="https://www.libraries.rutgers.edu/directory/daniel-delmonaco" target="_blank">Daniel Delmonaco</a>, <a href="https://www.hibbythach.com/" target="_blank">Hibby Thach</a>, and <a href="https://oliverhaimson.com/" target="_blank">Oliver L. Haimson</a>!</p>
+<h3 id="abstract%3A" tabindex="-1"><a class="header-anchor" href="#abstract%3A"><span aria-hidden="true">#</span></a> Abstract:</h3>
 <p>&quot;Social media users create folk theories to help explain how elements of social media operate. Marginalized social media users face disproportionate content moderation and removal on social media platforms. We conducted a qualitative interview study (<em>n</em> = 24) to understand how marginalized social media users may create folk theories in response to content moderation and their perceptions of platforms’ spirit, and how these theories may relate to their marginalized identities.</p>
 <p>We found that marginalized social media users develop folk theories informed by their perceptions of platforms’ spirit to explain instances where their content was moderated in ways that violate their perceptions of how content moderation should work in practice. These folk theories typically address content being removed despite not violating community guidelines, along with bias against marginalized users embedded in guidelines.</p>
 <p>We provide implications for platforms, such as using marginalized users’ folk theories as tools to identify elements of platform moderation systems that function incorrectly and disproportionately impact marginalized users.&quot;</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2024-04-16.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2024-02-05.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2024-04-16.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2024-02-05.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -152,6 +154,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>

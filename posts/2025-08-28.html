@@ -88,8 +88,10 @@
                     <a href="../tags/website.html">website</a>
                     
                 </div>
-                
-                <div class="gallery">
+                  <!-- Table of Contents code -->
+                  
+                  
+                  <div class="gallery">
     <figure>
         <a href="../images/f25-diag.jpg" data-caption="Students walking by the University of Michigan diag (Ann Arbor, MI)"><img src="../images/f25-diag.jpg" alt="Students walking by the University of Michigan diag."></a>
     </figure>
@@ -98,26 +100,26 @@
     </figure>
 </div>
 <p>Hello there! The weather cooled rapidly in Ann Arbor this past week, mostly drizzly in the mid-70s around here. Good weather for taking a walk downtown -- let's hope it stays that way for a while! (˶ˆᗜˆ˵)</p>
-<h3>In PhD news:</h3>
+<h3 id="in-phd-news%3A" tabindex="-1"><a class="header-anchor" href="#in-phd-news%3A"><span aria-hidden="true">#</span></a> In PhD news:</h3>
 <p>Fall 2025 semester (and year 2 of my PhD program) started this week! This is probably the last year in which I'll have to take classes... I wonder how I feel about that? Maybe &quot;bittersweet&quot; -- though I look forward to finishing classes for good, I <em>have</em> been a student in some capacity for most of my life, and completing that part of my life could feel weird.</p>
 <p>But that's all the more reason to make the most of my classes while I'm in them! I'm particularly excited to take an ethnographic writing course with <a href="https://lsa.umich.edu/idpah/people/faculty/rbehar.html" target="blank"><b>Ruth Behar</b></a> this year -- my writing has much room for improvement!</p>
-<h3>In personal news:</h3>
+<h3 id="in-personal-news%3A" tabindex="-1"><a class="header-anchor" href="#in-personal-news%3A"><span aria-hidden="true">#</span></a> In personal news:</h3>
 <p>My roommate and I moved apartments last Friday! The past week has been spent unloading furniture and unpacking boxes between classes, lab meetings, and other PhD-related tasks. My bed frame broke during the move as well, so I need to find another one around here soon too. ...No wonder I've been so tired lately! zzz(´〜｀*)</p>
 <p>The new apartment's location is excellent, much closer to downtown (and a wider range of bus stops) than our old place. It's fairly easy for me to head downtown to play Pokemon Go, visit friends, grab a bite to eat... it rules not having to drive everywhere anymore. (⁠ ⁠ꈍ⁠ᴗ⁠ꈍ⁠)</p>
 <p>I also had lunch with a friend on Wednesday at my favourite hoagie place. We spoke for a while about his philosophies as a karaoke DJ, his most and least favourite types of karaoke guests, intentionally fostering an inclusive space for all attendees, and how to sing a song that may not fit our vocal ranges (turns out he can pitch songs down for you!). You ever spend time with friends and feel your community (and world!) grow? I enjoy those moments very much. (˶˃ ᵕ ˂˶)</p>
-<h3>In website news:</h3>
-<p>Currently implementing a tag cloud system on mayworms.info (based on Renkon's tag cloud system on their <a href="https://renkotsuban.com/posts/2025-07-25-Updates-to-the-Eleventy-guide.html#install-everything" target="blank"><b>updated Eleventy starter guide</b></a> -- thank you for the amazing guide, Renkon!). You might not know it, but I've included invisible &quot;category&quot; tags on each blog post so far (e.g. &quot;PhD,&quot; &quot;Research,&quot; &quot;Website,&quot; &quot;Updates,&quot; etc), but never figured out how to make these tags searchable on my website. Hopefully they will be soon!</p>
+<h3 id="in-website-news%3A" tabindex="-1"><a class="header-anchor" href="#in-website-news%3A"><span aria-hidden="true">#</span></a> In website news:</h3>
+<p>Currently implementing a tag cloud system on <a href="http://mayworms.info">mayworms.info</a> (based on Renkon's tag cloud system on their <a href="https://renkotsuban.com/posts/2025-07-25-Updates-to-the-Eleventy-guide.html#install-everything" target="blank"><b>updated Eleventy starter guide</b></a> -- thank you for the amazing guide, Renkon!). You might not know it, but I've included invisible &quot;category&quot; tags on each blog post so far (e.g. &quot;PhD,&quot; &quot;Research,&quot; &quot;Website,&quot; &quot;Updates,&quot; etc), but never figured out how to make these tags searchable on my website. Hopefully they will be soon!</p>
 
-                
-                <nav id="nextprev">
-                
-                <a class="next" href="/posts/2025-10-17.html">« Next</a> |
-                
-                <a href="../blog.html">Blog</a>
-                
-                | <a class="previous" href="/posts/2025-07-17.html">Previous »</a>
-                
-                </nav>
+                  
+                  <nav id="nextprev">
+                  
+                  <a class="next" href="/posts/2025-10-17.html">« Next</a> |
+                  
+                  <a href="../blog.html">Blog</a>
+                  
+                  | <a class="previous" href="/posts/2025-07-17.html">Previous »</a>
+                  
+                  </nav>
               </article>
             </div>
           </main>
@@ -168,6 +170,63 @@
             hamburger.classList.remove('active');
           });
         });
+
+          // Collapsible TOC: toggles .expanded on the nav.toc + animates max-height
+          (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+              const tocs = document.querySelectorAll('nav.toc');
+
+              tocs.forEach(function (toc, idx) {
+                const toggle = toc.querySelector('.toc-toggle');
+                const list = toc.querySelector('.toc-list');
+
+                if (!toggle || !list) return;
+
+                if (!list.id) list.id = 'toc-list-' + (idx + 1);
+                toggle.setAttribute('aria-controls', list.id);
+
+                // collapsed by default
+                toggle.setAttribute('aria-expanded', 'false');
+                toc.classList.remove('expanded');
+
+                function collapse() {
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  list.getBoundingClientRect(); // force repaint
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = '0';
+                  toc.classList.remove('expanded');
+                  toggle.setAttribute('aria-expanded', 'false');
+                }
+
+                function expand() {
+                  list.style.transition = 'max-height 260ms ease';
+                  list.style.maxHeight = list.scrollHeight + 'px';
+                  toc.classList.add('expanded');
+                  toggle.setAttribute('aria-expanded', 'true');
+
+                  list.addEventListener('transitionend', function _clear() {
+                    if (toc.classList.contains('expanded')) {
+                      list.style.maxHeight = 'none';
+                    }
+                    list.removeEventListener('transitionend', _clear);
+                  });
+                }
+
+                toggle.addEventListener('click', function () {
+                  const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                  if (expanded) collapse();
+                  else {
+                    if (list.style.maxHeight === 'none') {
+                      list.style.maxHeight = list.scrollHeight + 'px';
+                      list.getBoundingClientRect();
+                    }
+                    expand();
+                  }
+                });
+              });
+            });
+          })();
+
       </script>
     </div>
   </body>
