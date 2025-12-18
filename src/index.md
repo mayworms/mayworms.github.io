@@ -7,7 +7,7 @@ featured_image: favicon.png
 ---
 I am a PhD student at the <a href="https://www.si.umich.edu" target="_blank">University of Michigan School of Information</a> (UMSI), advised by <a href="https://oliverhaimson.com/index.html" target="_blank">Oliver L. Haimson</a> and <a href="https://michaelannethomas.com" target="_blank">Michaelanne Thomas</a>. I am a member of the <a href="https://oliverhaimson.com/team.html" target="_blank">Community Research on Identity and Technology (CRIT) Lab</a> and the <a href="https://michaelannethomas.com/anthropology-and-technology-lab/" target="_blank">Anthropology & Technology Lab (ATL)</a>.
 
-Some of my current research interests include trans-centered online communities, content moderation, platform governance, folk theorization, and alternative online infrastructures.
+Some of my current research interests include trans-centered online communities, content moderation, platform governance, folk theories, and community-built online infrastructures.
 
 I graduated from Michigan State University with a Bachelor of Arts in Social Relations and Policy in 2017, and from UMSI with a Master of Science in Information in 2022. Prior to graduate school, I worked in public and academic libraries.
 

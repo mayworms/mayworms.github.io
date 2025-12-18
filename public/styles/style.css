@@ -116,7 +116,7 @@ body {
     align-self: center;
   }
 
-  /* Main Content Wrapper (sidebar + main stuff) */
+  /* main content wrapper (sidebar + main stuff) */
   #content-wrapper {
     display: flex;
     flex-direction: column;
@@ -243,10 +243,6 @@ body {
     height: auto;
   }
 
-  /* table of contents styling!
-  be careful with this, one wrong line and you ruin everything
-  */
-  
   /* You are now entering the Table of Contents Hell Zone */
   nav.toc,
   .table-of-contents,
@@ -385,9 +381,9 @@ body {
     background: transparent;
   }
 
-  /* When expanded, JS will set maxHeight inline. */
+  /* makes JS set maxHeight inline when ToC is expanded */
   nav.toc.expanded .toc-list {
-    max-height: 2000px; /* large fallback; JS will supply the exact pixel value for better animation */
+    max-height: 2000px;
   }
 
   /* ToC list stuff */
@@ -452,7 +448,7 @@ body {
     list-style-type: decimal;
   }
 
-  /* TOC icon rotates */
+  /* TOC icon rotation */
   nav.toc.expanded .toc-icon {
     transform: rotate(45deg); 
   }
