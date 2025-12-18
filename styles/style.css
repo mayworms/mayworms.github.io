@@ -221,6 +221,11 @@ body {
   h1, h2, h3, h4 {
     color: var(--mint);
   }
+
+  h1 {
+    line-height: 1.25;
+    margin-bottom: 0.6em;
+  }
   
   hr {
     border: solid var(--xkcd-peach);
@@ -644,6 +649,12 @@ body {
     #content-wrapper, #flex {   
       flex-direction: column;
       width: 100%;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      line-height: 1.1;
+      margin-bottom: 1em; /* padding between title and date/tags */
     }
     
     #navbar {
