@@ -7,7 +7,7 @@ featured_image: favicon.png
 ---
 [Email](mayworms@umich.edu) • [LinkedIn](https://www.linkedin.com/in/sammayworm/)
 
-**Research Areas:** Social Computing, Social Media, Online Communities, Trans Technologies, Content Moderation, Algorithmic Bias, Folk Theorization
+**Research Areas:** Social Computing, Social Media, Online Communities, Trans Technologies, Content Moderation, Algorithmic Bias, Folk Theories
 
 ---
 
