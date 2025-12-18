@@ -21,11 +21,12 @@ Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Comp
 Authors: F.R. Khan, Kat Brewster, Aloe DeGuia, Denny L. Starks, Malaya Mañacop, <b><u>Samuel Mayworm</u></b>, Tawanna R. Dillahunt, and Oliver L. Haimson.  
 Published in: <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>  
 
-<h4>Workshop Papers (Non-Archival)</h4>
-<b>Trans Resistance to AI Technologies.</b>   
-Authors: <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, Oliver L. Haimson.   
-Workshop: <i>Resisting AI Solutionism: Where Do We Go From Here?</i>    
-Conference: <i>2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>   
+<h4>Workshop Papers (Non-Archival)</h4>   
+
+<b>Trans Resistance to AI Technologies.</b>     
+Authors: <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, Oliver L. Haimson.        
+Workshop: <i>Resisting AI Solutionism: Where Do We Go From Here?</i>         
+Conference: <i>2025 CHI Conference on Human Factors in Computing Systems (CHI 2025).</i>        
 
 <h3>2024</h3>
 <hr>
