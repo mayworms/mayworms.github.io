@@ -24,6 +24,11 @@
 	--syntax-tab-size: 2;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%; /* Ensures nothing forces a wider layout */
+}
+
 /* main/desktop */ 
 body {
     overflow-y: scroll;
