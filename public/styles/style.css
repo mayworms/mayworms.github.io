@@ -1,7 +1,7 @@
 :root {
 	--font-family: Jost, -apple-system, system-ui, sans-serif;
   --font-family-monospace: Jost, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-    /* } :root {*/
+
 	--xkcd-light-grey: #d8dcd6;
 	--xkcd-peach: #833500; /* was #9b330e */
   --cream: #F5ECD7; /* was #ffffe4, then #FAEAD1 */
@@ -191,9 +191,9 @@ body {
   }
   
   /* "article": 
-  body text inside "flex-2", nested inside "container" 
-  (aka the cream-coloured block behind it).
-  In other words: the blog post text! 
+    body text inside "flex-2", nested inside "container" 
+    (aka the cream-coloured block behind it).
+    In other words: the blog post text! 
   */
   article { 
     flex-grow: 1;
@@ -248,7 +248,9 @@ body {
     height: auto;
   }
 
-  /* You are now entering the Table of Contents Hell Zone */
+  /* 
+    You are now entering the Table of Contents Hell Zone 
+  */
   nav.toc,
   .table-of-contents,
   .toc {
@@ -261,9 +263,11 @@ body {
     color: var(--xkcd-peach);
   }
 
-  /* Toggle bar: 25% of article width, cap at 320px.
+  /* 
+    Toggle bar: 25% of article width, cap at 320px.
     Make sure there are NO other later rules that set 
-    .toc-toggle width: 100% */
+    .toc-toggle width: 100% 
+    */
   .toc-toggle {
     display: inline-flex;
     align-items: center;
@@ -491,8 +495,10 @@ body {
   omit <figure></figure> for single-image uploads 
   */
 
-  /* You are now entering: Gallery Hell 
-  (you thought the Table of Contents was bad??) */
+  /* 
+    You are now entering: Gallery Hell 
+    (you thought the Table of Contents was bad??) 
+  */
   .gallery {
     display: flex;
     justify-content: center;
@@ -578,7 +584,7 @@ body {
     list-style-type: none;
   }
 
-  /* 11-04-2025 -- Date/tags bar at the top of blog posts */
+  /* Date/tags bar at the top of blog posts */
   .postMetadata {
     background-color: var(--cream);
     width: fit-content;
@@ -846,8 +852,36 @@ body {
       line-height: 1.4em;
     }
 
-    .gallery figure {
+    .gallery { /* 01-24-2026: fix gallery thumbnail formatting on mobile */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+    }
+
+    .gallery figure { /* 01-24-26 */
+      flex: 0 1 48%;
       aspect-ratio: 3 / 4;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery img { /* 01-24-26 */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+      aspect-ratio: 3 / 4;
+      max-width: 100%;
+      max-height: 100%;
+      min-width: 100%;
+      min-height: 100%;
     }
 
     /* idle/closed */
