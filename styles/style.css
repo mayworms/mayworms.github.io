@@ -438,7 +438,8 @@ body {
   .toc-list a:hover,
   nav.toc a:focus,
   .toc-list a:focus {
-    color: var(--toc-link-hover, var(--light-mint));
+    color: var(--link-hover-peach) !important;
+    /* color: var(--toc-link-hover, var(--light-mint)); */
     transform: translateX(2px);
   }
 
