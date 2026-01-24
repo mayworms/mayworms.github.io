@@ -470,10 +470,21 @@ body {
       font-size: calc(.7em + 1vw + 1vh) !important;
     }
 
-    nav.toc li,
+    /* nav.toc li,
     .toc-list li {
       margin: 0.16em 0;
       font-size: calc(1em + 2vw);
+      line-height: 1.4;
+    } */
+
+    nav.toc li, /* should fix ToC list item font size on mobile */
+    nav.toc ol li,
+    nav.toc ul li,
+    .toc-list li,
+    .toc-list ol li,
+    .toc-list ul li {
+      font-size: 1rem !important;
+      margin: 0.16rem 0;
       line-height: 1.4;
     }
 
