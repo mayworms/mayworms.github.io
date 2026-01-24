@@ -1,24 +1,23 @@
 :root {
 	--font-family: Jost, -apple-system, system-ui, sans-serif;
   --font-family-monospace: Jost, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-}
-
-:root {
+    /* } :root {*/
 	--xkcd-light-grey: #d8dcd6;
-	--xkcd-peach: #9b330e; 
-  --cream: #ffffe4;
-  --light-cream: #fffff2;
+	--xkcd-peach: #833500; /* was #9b330e */
+  --cream: #F5ECD7; /* was #ffffe4, then #FAEAD1 */
 	--light-peach: #FFC099;
-  --blockquote: #ffffe4;
+  --link-hover-peach: #ed9762;
+  --blockquote: #F5ECD7;
 	--dark-peach: #E65722; /* #E65722, aka Original Orange */
-	--mint: #007856; 
+	--mint: #24613b; /* was mint colour, aka #007856 */
 	--light-mint: #8cdc9b; 
-	--link-color: #E65722; 
+  --dark-mint: #68a67d; /* bg colour, was #003D2C */
+	--link-color: #F18F01; /* was #E65722 */
 
-	--background-color: var(--light-peach);
+	--background-color: var(--dark-mint); /* was: var(--light-peach) */
 	--text-color: var(--xkcd-peach);
 	--text-color-link: var(--xkcd-peach);
-	--text-color-link-active: var(--light-mint);
+	--text-color-link-active: var(--light-mint); 
 	--text-color-link-visited: var(--xkcd-peach);
 	--text-color-h3: var(--dark-peach);
 
@@ -30,6 +29,7 @@ body {
     overflow-y: scroll;
     background-color: var(--background-color);
     background-image: url("../images/web-bg.png");
+    background-blend-mode: soft-light;
     font-size: calc(.9vw + .9vh);
     font-family: var(--font-family);
     margin: 0;
@@ -43,7 +43,7 @@ body {
     text-decoration-color: var(--link-color);
   }
   a:hover {
-    color: var(--light-peach);
+    color: var(--link-hover-peach); /* was --light-peach */
     text-decoration: underline;
     text-decoration-color: var(--light-peach);
   }
@@ -99,7 +99,7 @@ body {
     padding: 3px;
   }
   #navbar li a:hover {
-    color: var(--light-mint);
+    color: var(--dark-mint); /* was light-mint */
     text-decoration: none;
   }
   .site-title {
@@ -187,7 +187,7 @@ body {
   }
 
   #sidebar-links a:hover {
-    color: var(--light-mint);
+    color: var(--dark-mint); /* was light-mint */
   }
   
   /* "article": 
@@ -366,7 +366,7 @@ body {
     background: var(--mint);
   }
 
-  /* Table of Contents text inside the button */
+  /* ToC text inside button */
   .toc-title { 
     font-size: inherit;
     color: var(--cream); 
