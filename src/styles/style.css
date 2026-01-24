@@ -470,13 +470,6 @@ body {
       font-size: calc(.7em + 1vw + 1vh) !important;
     }
 
-    /* nav.toc li,
-    .toc-list li {
-      margin: 0.16em 0;
-      font-size: calc(1em + 2vw);
-      line-height: 1.4;
-    } */
-
     nav.toc li, /* should fix ToC list item font size on mobile */
     nav.toc ol li,
     nav.toc ul li,
@@ -494,6 +487,45 @@ body {
       font-size: inherit;
       line-height: 1.5;
     }
+
+    /* ToC button behaves correctly when opened/closed on mobile */
+    nav.toc:not(.expanded) .toc-toggle,
+    nav.toc:not(.expanded) .toc-toggle:focus,
+    nav.toc:not(.expanded) .toc-toggle:active {
+      background: var(--mint) !important;
+      color: var(--cream) !important;
+      border: 2px solid #2c6454 !important;
+      transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    nav.toc.expanded .toc-toggle,
+    nav.toc.expanded .toc-toggle:hover,
+    nav.toc.expanded .toc-toggle:focus {
+      background: var(--light-mint) !important;
+      color: var(--mint) !important;
+      border: 2px solid #2c6454 !important;
+      transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    /* ToC button text changes font colour correctly */
+    nav.toc.expanded .toc-toggle .toc-title {
+      color: var(--mint) !important;
+    }
+
+    nav.toc:not(.expanded) .toc-toggle .toc-title {
+      color: var(--cream) !important;
+    }
+
+    /* ToC plus/x icon changes colour correctly */
+    nav.toc:not(.expanded) .toc-toggle .toc-icon::before,
+    nav.toc:not(.expanded) .toc-toggle .toc-icon::after {
+      background: var(--cream) !important;
+    }
+
+    nav.toc.expanded .toc-toggle .toc-icon::before,
+    nav.toc.expanded .toc-toggle .toc-icon::after {
+      background: var(--mint) !important;
+    }
   }
 
   /* note to self: 
@@ -501,7 +533,7 @@ body {
   Might fix some of the weird alignment issues... 
   */
   
-  /* note: 
+  /* note to self: 
   use <figure></figure> for multi-image galleries
   omit <figure></figure> for single-image uploads 
   */
@@ -546,7 +578,7 @@ body {
     transform-origin: center center; /* hover effect */
   }
 
-  /* hover/focus effect */
+  /* gallery hover/focus effect */
   .gallery figure:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
@@ -557,7 +589,7 @@ body {
     cursor: pointer;
   }
 
-  /* hover-zoom on mobile */
+  /* gallery hover-zoom on mobile */
   @media (hover: none) and (pointer: coarse) {
   .gallery img {
     transition: transform 0.7s ease, filter 0.7s ease;
