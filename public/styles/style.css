@@ -24,10 +24,10 @@
 	--syntax-tab-size: 2;
 }
 
-html, body {
+/* html, body {
   overflow-x: hidden;
-  max-width: 100%; /* Ensures nothing forces a wider layout */
-}
+  max-width: 100%;
+} I WANTED THIS TO WORK BUT IT BROKE THE STICKY SIDEBAR UGHLKJSDHGLKJSH */
 
 /* main/desktop */ 
 body {
