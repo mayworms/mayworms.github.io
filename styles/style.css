@@ -696,9 +696,11 @@ body {
 
   @media screen and (max-width: 480px) { /* mobile (phone) view! */
     .site-wrapper {
-      width: 95%;
-      max-width: 95%;
-      padding: 1em;
+      width: 100vw; /* was 95% */
+      max-width: 100vw; /* was 95% */ 
+      padding: 1em; /* was 1em */
+      box-sizing: border-box; /* 1-24-26 */
+      overflow-x: hidden; /* 1-24-26 */
     }
 
     #content-wrapper, #flex {   
