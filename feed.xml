@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>mayworms.info</title>
+  <subtitle>Samuel Reiji Mayworm&#39;s blog</subtitle>
+  <link href="https://mayworms.info/public/feed.xml" rel="self" />
+  <link href="https://mayworms.info/public/" />
+  <updated>2026-01-23T00:00:00Z</updated>
+  <id>https://mayworms.info/public/</id>
+  <author>
+    <name>Samuel Reiji Mayworm</name>
+  </author>
+  <entry>
+    <title>Winter 2026 semester begins, cold weather, feelin&#39; green</title>
+    <link href="https://mayworms.info/public/posts/2026-01-23.html" />
+    <updated>2026-01-23T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2026-01-23.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/01-23-2026-snow3.jpg&quot; data-caption=&quot;Dramatic snowfall downtown (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-01-23-2026-snow3.jpg&quot; alt=&quot;Thick snow falling from the sky in downtown Ann Arbor.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/01-23-2026-snow2.jpg&quot; data-caption=&quot;Seriously, it&#39;s been really snowy (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-01-23-2026-snow2.jpg&quot; alt=&quot;An Ann Arbor neighborhood street at night completely covered by heavy, unplowed snow.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+Hello there! A major winter storm is about to slam a massive part of the country; though Michigan is lucky enough to dodge the worst of it, it will be brutally cold around here for the next week or so, and probably snowy as well... I&#39;d better remember to keep my scarf on me!  ⋆⁺₊❅。 
+&lt;h3 id=&quot;phd&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2026-01-23.html#phd&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; PhD&lt;/h3&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/01-23-2026-umich1.jpg&quot; data-caption=&quot;Sunset on a chilly day (University of Michigan, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-01-23-2026-umich1.jpg&quot; alt=&quot;A beautiful pink and purple sunset over the University of Michigan campus.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/01-23-2026-campus2.jpg&quot; data-caption=&quot;A warm place to sit and work (Hatcher Graduate Library, University of Michigan, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-01-23-2026-campus2.jpg&quot; alt=&quot;A photo taken inside the Hatcher Graduate Library Reference Room.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+I am officially presenting my pre-candidacy paper (my second PhD milestone) in mid-February! Though many aspects of my pre-candidacy study (participant recruitment difficulties, IRB delays, some State Of The World™ concerns, etc) were quite challenging, navigating these challenges definitely helped me grow as a researcher. I&#39;ll have more to say once the pre-candidacy paper is officially out in the world; I&#39;m excited to finally share it with you all (˶ᵔ ᵕ ᵔ˶)
+&lt;p&gt;The Winter 2026 semester also began a few weeks ago... I can&#39;t believe this is (most likely) my last semester taking classes! I think (hope!) courses will be easier to navigate once I&#39;ve completed my pre-candidacy work! ...Though I will have that GSRA paper to work on... and that workshop paper... and preparing for summer research too... hrm... (𖦹﹏𖦹;)&lt;/p&gt;
+&lt;h3 id=&quot;research&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2026-01-23.html#research&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Research&lt;/h3&gt;
+&lt;p&gt;LGBTQ Nation recently published &lt;a href=&quot;https://www.lgbtqnation.com/2025/12/ai-disproportionately-discriminates-against-trans-people-it-doesnt-have-to-be-this-way/&quot; target=&quot;_blank&quot;&gt;an article&lt;/a&gt; highlighting &lt;b&gt;&lt;i&gt;&lt;a href=&quot;https://dl.acm.org/doi/10.1145/3715275.3732081&quot; target=&quot;_blank&quot;&gt;AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes&lt;/a&gt;&lt;/i&gt;&lt;/b&gt;, an ACM FAccT 2025 paper led by Oliver L. Haimson and co-authored by myself, Alexis Shore Ingber, and Nazanin Andalibi. The paper featured in this LGBTQ Nation article describes how marginalized populations (especially trans and disabled populations) report particularly negative attitudes toward AI technologies!&lt;/p&gt;
+&lt;h4 id=&quot;ai-attitudes-among-marginalized-populations-in-the-u.s.-abstract&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2026-01-23.html#ai-attitudes-among-marginalized-populations-in-the-u.s.-abstract&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; AI Attitudes Among Marginalized Populations in the U.S. abstract&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+As artificial intelligence (AI) technologies become increasingly pervasive, understanding public perceptions of AI is crucial for ensuring equitable adoption and impact. Attitudes toward AI, such as whether it is seen as helpful or harmful, may vary based on social identities and lived experiences. 
+&lt;/p&gt;
+&lt;p&gt;
+In this study, we conducted a survey (n = 742) including a representative U.S. sample and an oversample of gender minorities, racial minorities, and disabled individuals to examine how demographic factors shape AI attitudes. 
+&lt;/p&gt;
+&lt;p&gt;
+Our findings reveal that in the U.S. context, participants who are nonbinary, transgender, and/or women, and disabled participants, particularly those who are neurodivergent or have mental health conditions, report significantly more negative attitudes towards AI compared to majority groups. 
+&lt;/p&gt;
+&lt;p&gt;
+We argue that these disparities highlight a critical issue: negative AI attitudes among marginalized communities signals a continued failure to account for their needs and concerns in AI design and use. That marginalized Americans have more negative views towards AI should prompt reflection and critical examination of the prevalent rhetoric of AI’s purported inevitability and its framing as a universal social good.
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;I would also like to congratulate several of my peers whose papers were accepted to &lt;a href=&quot;https://chi2026.acm.org&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;CHI 2026&lt;/b&gt;&lt;/a&gt;! Will update this post with full details once available -- in the meantime, congratulations to Denny Starks, Hibby Thach, Aloe DeGuia, and Senami Kojah on the CHI acceptances! (˶ˆᗜˆ˵)&lt;/p&gt;
+&lt;p&gt;Additionally, I would like to congratulate Hibby Thach, whose book chapter with Oliver L. Haimson was recently published in &lt;a href=&quot;https://www.bloomsbury.com/us/epistemic-genres-9798765125571/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Epistemic Genres: New Formations of Play&lt;/b&gt;&lt;/a&gt; -- well done, Hibby! ヾ( ˃ᴗ˂ )◞&lt;/p&gt;
+&lt;h3 id=&quot;personal&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2026-01-23.html#personal&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Personal&lt;/h3&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/01-23-2026-snow1.jpg&quot; data-caption=&quot;New Years Eve was snowy too! (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-01-23-2026-snow1.jpg&quot; alt=&quot;Snowy Main Street on New Years Eve.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/01-23-2026-bird1.jpg&quot; data-caption=&quot;The roof protects him from the elements (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-01-23-2026-bird1.jpg&quot; alt=&quot;A round, cute red Northern Cardinal sits and eats in a roofed bird feeder.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;In the past month, I&#39;ve driven back and forth across the state for Christmas, celebrated New Years downtown with friends, met some owls at the &lt;a href=&quot;https://aadl.org/node/646207&quot; target=&quot;_blank&quot;&gt;Ann Arbor District Library&lt;/a&gt;, enjoyed a Lord of the Rings watch party, helped collect eggs from a chicken coop, played Pokémon Go with a good friend, kept up with the NFL playoffs, continued maintaining my bird feeders... in other words, the usual! Between the holidays, research, spending time with friends, and the winter semester starting up, this past month has kept me quite busy -- I don&#39;t mind that at all though, I enjoy when my life is full. (◜◡◝)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/01-23-2026-lofi1.jpg&quot; data-caption=&quot;Lo-Fi night (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-01-23-2026-lofi2.jpg&quot; alt=&quot;A basement bar packed with visitors during karaoke night.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/01-23-2026-lofi2.jpg&quot; data-caption=&quot;Door shut, sign off :( (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-01-23-2026-lofi1.jpg&quot; alt=&quot;The Lo-Fi entrance door is locked shut, the window is covered with paper, and the neon Lo-Fi sign is turned off.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;I would like to bid &amp;quot;farewell&amp;quot; to &lt;a href=&quot;https://www.instagram.com/lofi_a2/?hl=en&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Lo-Fi&lt;/b&gt;&lt;/a&gt;, the basement bar where my friends and I used to attend karaoke every Thursday night. In mid-December, we discovered quite abruptly that Lo-Fi will remodel and reopen in mid-2026 as a more upscale cocktail bar (excellent, just what Ann Arbor&#39;s missing!), and that karaoke would no longer be hosted at the venue. Though there are plenty of other places for karaoke... that was &lt;i&gt;our&lt;/i&gt; karaoke bar, you know? Sigh... Ann Arbor&#39;s lost quite a few community institutions and third places lately, and it feels awful watching another one disappear, especially one we visited every week. ( ;´ - `;)&lt;/p&gt;
+&lt;h3 id=&quot;website&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2026-01-23.html#website&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Website&lt;/h3&gt;
+&lt;p&gt;Alright, let&#39;s address the elephant in the room: the website&#39;s green. I originally set a placeholder colour scheme for my website, and didn&#39;t wind up changing it for another year. The orange was great, but I felt like it was time for a change.&lt;/p&gt;
+&lt;p&gt;I will probably continue iterating on the website&#39;s colour scheme over the coming months -- probably no major changes, but who knows what might happen? (ᵕᴗ ᵕ⁎)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>End-of-semester, bird feeders, website update (table of contents)</title>
+    <link href="https://mayworms.info/public/posts/2025-12-17.html" />
+    <updated>2025-12-17T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-12-17.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-dec1.jpg&quot; data-caption=&quot;Some roses in the snow (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-12-17-2025-dec1.jpg&quot; alt=&quot;A photo of two wilting red roses growing in the snow.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-life1.jpg&quot; data-caption=&quot;A beautiful aurora I saw while taking a walk (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-12-17-2025-life1.jpg&quot; alt=&quot;A beautiful blue, green, and purple aurora streaking through the night sky above a dimly-lit neighborhood street&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+Hello there! Ann Arbor (and Michigan generally) got quite snowy and cold these past few weeks. I forgot to scrape the snow off my car the other day, which melted and froze overnight into ice -- an unpleasant surprise before my morning commute (˃̣̣̥ ︿ ˂̣̣̥)
+&lt;h3 id=&quot;phd-%26-research&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-12-17.html#phd-%26-research&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; PhD &amp;amp; Research&lt;/h3&gt;
+&lt;p&gt;Fall 2025 semester is coming to a close -- funny, it feels like this year&#39;s classes just started (I think I said that last Fall, too). I&#39;m particularly thankful for my experience taking Ruth Behar&#39;s ethnographic writing course this year! Dr. Behar&#39;s course made me critically about how I’ll approach ethnographic writing in HCI research… is there room for more creativity in how I write about online communities? I think there is! (っ •ᴗ•)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-hanachung.jpg&quot; data-caption=&quot;Hana Chung&#39;s pre-candidacy oral defense! Image courtesy of Dr. Gabriela Marcu (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/12-17-2025-hanachung.jpg&quot; alt=&quot;A photo of Hana Chung, her committee members, and many friends/peers attending her pre-candidacy oral defense&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;I would also like to congratulate my friend &lt;a href=&quot;https://www.si.umich.edu/people/hana-chung&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Hana Chung&lt;/b&gt;&lt;/a&gt; for successfully defending her &lt;a href=&quot;https://www.linkedin.com/posts/gabriela-marcu-1b33014_congratulations-to-hana-chung-on-a-successful-activity-7404931822570119169--qMJ/&quot; target=&quot;_blank&quot;&gt;pre-candidacy milestone&lt;/a&gt;! Very excited to fully explore her pre-candidacy work, titled: &lt;b&gt;&lt;i&gt;“Investigating mobile applications for survivors of intimate partner violence to design in support of LGBTQ+ populations.”&lt;/i&gt;&lt;/b&gt; Hana, if you’re reading this: I’m very proud of you, well done! ( ^▽^ )&lt;/p&gt;
+&lt;h3 id=&quot;personal&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-12-17.html#personal&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Personal&lt;/h3&gt;
+&lt;p&gt;It feels surreal every time the semester ends and I finally get (some of) my personal time back! When Fall semester ended last year, I &lt;a href=&quot;https://www.mayworms.info/posts/2024-12-12.html&quot; target=&quot;_blank&quot;&gt;reflected on&lt;/a&gt; visiting Steak &amp;amp; Shake before watching &lt;em&gt;The Green Knight&lt;/em&gt; with friends, debating amongst ourselves whether Josh Allen or Lamar Jackson would win NFL MVP that year (it went to Josh Allen). I&#39;m seeing a movie this Thursday with the exact same friends, and we&#39;ll probably talk about the exact same things: work, school, and this year&#39;s MVP race (this time between Matt Stafford and Drake &amp;quot;&lt;a href=&quot;https://www.instagram.com/drakemayelover/&quot; target=&quot;_blank&quot;&gt;&lt;i&gt;Drake Maye&lt;/i&gt;&lt;/a&gt;&amp;quot; Maye). Life since starting the PhD has been turbulent and ever-changing, which makes me thankful for the good things (friends, places, hobbies, and other sources of joy) that I can always depend on.&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-snow2.jpg&quot; data-caption=&quot;Downtown Ann Arbor all dressed up for the holidays! (Hidden King Cafe &amp; Bar, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-12-17-2025-snow2.jpg&quot; alt=&quot;Hidden King Cafe &amp; Bar in downtown Ann Arbor; lots of snow on the ground by the outdoor seats, and Christmas lights wrapped around the streetlamp.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-life2.jpg&quot; data-caption=&quot;KindleFest! (Main Street, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-12-17-2025-life2.jpg&quot; alt=&quot;Main Street (Ann Arbor) decorated for Christmas and filled with festival-goers&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;I&#39;ve found time between work/research for fun too! Visited &lt;a href=&quot;http://kerrytowndistrict.org/kindlefest&quot; target=&quot;_blank&quot;&gt;KindleFest&lt;/a&gt; in Kerrytown/Main St. and the &lt;a href=&quot;https://aadl.org/tinyexpo&quot; target=&quot;_blank&quot;&gt;Tiny Expo&lt;/a&gt; in the downtown Ann Arbor District Library branch (this town is so active around the holidays!). I&#39;ve also kept up with &lt;i&gt;Pokémon Go&lt;/i&gt; (and the &lt;i&gt;Pokémon Legends: Z-A&lt;/i&gt; DLC!) and this year&#39;s Detroit Lions season (I miss when half our roster wasn&#39;t injured).&lt;/p&gt;
+&lt;p&gt;Life keeps happening no matter how much I shove it aside for work; perhaps there&#39;s a lesson to learn from this (ᵕ,—ᴗ—,)&lt;/p&gt;
+&lt;h3 id=&quot;birds&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-12-17.html#birds&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Birds&lt;/h3&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-bird1.jpg&quot; data-caption=&quot;A cardinal pair that visits my balcony often (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-12-17-2025-bird1.jpg&quot; alt=&quot;A brown and a red cardinal sitting together on a snowy apartment balcony&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-bird3.jpg&quot; data-caption=&quot;Downy woodpecker (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-12-17-2025-bird3.jpg&quot; alt=&quot;A downy woodpecker visiting my suet feeder&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;One thing I love about our current apartment is its small outdoor balcony, a great place to to sit, relax, grow plants in warmer months... and to hang a few bird feeders!&lt;/p&gt;
+&lt;p&gt;I added a bird feeder to the balcony in late November (and a smaller suet feeder just last week), wondering if it would help the local bird population during the winter. It took a week for the first bird to visit the original bird feeder (a small brown finch who only stayed for a moment, darting away before I could take a photo). Imagine my surprise when an entire flock of finches (along with some sparrows and juncos) visited the next day!&lt;/p&gt;
+&lt;p&gt;We have quite the regular bird community visiting our balcony now; mostly the same crew of finches, sparrows, and juncos, along with some nuthatches, downy woodpeckers, chickadees, several cardinal pairs, and some Carolina wrens. There are also some shyer visitors who only come every once in a while, such as a mourning dove (who&#39;s become more comfortable near the finches lately), several blue jays (I set some peanuts out for them!), a beautiful red-bellied woodpecker (the reason I bought the suet feeder last week), a gorgeous northern flicker (easily our largest visitor), and a crow who never approaches, but watches from afar.&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-bird2.jpg&quot; data-caption=&quot;A mourning dove began visiting lately (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-12-17-2025-bird2.jpg&quot; alt=&quot;A mourning dove pecking at seeds alongside some finches&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/12-17-2025-bird4.jpg&quot; data-caption=&quot;A Northern Flicker! (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-12-17-2025-bird4.jpg&quot; alt=&quot;A large Northern Flicker visiting my suet feeder&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;Our balcony has a few features that make it easier to maintain the bird feeders. There are no easy routes for squirrels or other critters to visit, so I haven&#39;t had to worry about them competing for bird seed. Sometimes I worry about what might happen if a hawk enters the neighborhood... I don&#39;t get to choose which birds enter the area, but I do hope no one scares the smaller, more vulnerable birds away (╥﹏╥)&lt;/p&gt;
+&lt;p&gt;I personally chose not to adopt any pets until I move out from Ann Arbor. Our bird neighbors have been a nice compromise in that way; though it&#39;s ultimately their choice whether to visit our balcony, I do enjoy their company when they do (˘͈ ᵕ ˘͈)&lt;/p&gt;
+&lt;h3 id=&quot;website&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-12-17.html#website&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Website&lt;/h3&gt;
+&lt;p&gt;You may have noticed the &amp;quot;Table of Contents&amp;quot; button on top of this blog post -- a new feature I added to the website last weekend! Some of my blog posts (such as longer reflections on &lt;a href=&quot;https://www.mayworms.info/posts/2025-10-17.html&quot; target=&quot;_blank&quot;&gt;PhD milestones&lt;/a&gt; or &lt;a href=&quot;https://www.mayworms.info/posts/2025-04-27.html&quot; target=&quot;_blank&quot;&gt;research conference travel&lt;/a&gt;) can run quite long, making it difficult to scroll through the whole thing. The &amp;quot;Table of Contents&amp;quot; feature should hopefully improve navigation for longer blog posts -- I like how it works so far! (˶ˆᗜˆ˵)&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Table of Contents plugins:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/markdown-it-anchor&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;markdown-it-anchor&lt;/b&gt;&lt;/a&gt;: &lt;i&gt;&quot;A markdown-it plugin that adds an id attribute to headings and optionally permalinks&quot;&lt;/i&gt;
+    &lt;/li&gt; 
+    &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/eleventy-plugin-nesting-toc#install&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;eleventy-plugin-nesting-toc&lt;/b&gt;&lt;/a&gt;: &lt;i&gt;&quot;generates a (property nested) TOC from page content using an Eleventy filter&quot;&lt;/i&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Still tweaking the styling (for both the Table of Contents and the markdown anchors themselves) and deciding whether I&#39;ll use the ToC feature for every blog post or only particularly long ones. Let me know what you think (or if you run into any issues)! (&amp;gt;ᴗ•)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ethnographic writing, Halloween, first snow</title>
+    <link href="https://mayworms.info/public/posts/2025-11-09.html" />
+    <updated>2025-11-09T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-11-09.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/11-09-2025-snow1.jpg&quot; data-caption=&quot;First snow of the season! (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-11-09-2025-snow1.jpg&quot; alt=&quot;A photo of a neighborhood street; there is snow on the ground and green/yellow leaves still on the trees.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/11-09-2025-snow2.jpg&quot; data-caption=&quot;Overcast skies! (Argus Museum, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-11-09-2025-snow2.jpg&quot; alt=&quot;Snow falling in front of the Argus Museum building; grey skies in the background.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+Hello there! The first snow of the season arrived last night (and is still falling as we speak!). I took a walk outside to enjoy the sights, then went back inside to warm up. Snow gently falling on green leaves -- how often do you see that? (・o・)
+&lt;h3 id=&quot;phd-and-research-news&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-11-09.html#phd-and-research-news&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; PhD and research news&lt;/h3&gt;
+&lt;p&gt;Pre-candidacy research continues to go well! The final interview wrapped up last week; now it&#39;s time for open coding, analysis, and (eventually) writing... I wonder how long it&#39;ll take to complete? Hopefully I&#39;ll have a draft done before February (ᵕ,—ᴗ—,)&lt;/p&gt;
+&lt;p&gt;I wonder how I will approach ethnographic writing for this study. Most of my writing is for HCI/social computing audiences, which means my work (up to this point) has followed a very rigid structure: here&#39;s the state of the world, here&#39;s our study, here the results, here&#39;s their Implications For Design, here&#39;s how Future Work could build off ours, etc etc etc. Ethnographic writing may give my work more room to focus on the humans... we&#39;ll see where the final work takes us! („• ֊ •„)੭&lt;/p&gt;
+&lt;h3 id=&quot;personal-news&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-11-09.html#personal-news&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Personal news&lt;/h3&gt;
+&lt;p&gt;These past few weeks have been... stressful, but also fun! Halloween is one of my favourite times of the year, and I got to celebrate it several weeks in a row -- what a joy! .˚⊹.🎃₊˚𖦹⋆&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/11-09-2025-halloween1.jpg&quot; data-caption=&quot;My Cesare makeup! (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-11-09-2025-halloween1.jpg&quot; alt=&quot;A bathroom selfie of myself wearing black eyeshadow and lipstick.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/11-09-2025-halloween2.jpg&quot; data-caption=&quot;Come join us for karaoke &gt;:) (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-11-09-2025-halloween2.jpg&quot; alt=&quot;Me taking a dramatic, low-light selfie on stage before a karaoke performance.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;This year, I dressed as Cesare from &lt;i&gt;&lt;a href=&quot;https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/&quot; target=&quot;_blank&quot;&gt;Das Cabinet des Dr. Caligari&lt;/a&gt;&lt;/i&gt; (&lt;i&gt;The Cabinet of Dr. Caligari&lt;/i&gt;), a 1920 German expressionist/early horror film! The film depicts Dr. Caligari, a hypnotist who unveils a somnambulist named Cesare at the town fair; unbeknownst to the public, Caligari controls Cesare and uses him to commit murders in his stead! The movie leans into... failure to reject authoritarianism, and madness at the hands of unhinged tyrants (in the context of post-WWI Germany!). Highly recommend giving it a watch (˶ᵔ ᵕ ᵔ˶ )&lt;/p&gt;
+&lt;h3 id=&quot;website-news&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-11-09.html#website-news&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Website news&lt;/h3&gt;
+&lt;p&gt;Good news: just finished implementing a tag system to my website&#39;s blog! Visitors can now view categories per blog post (e.g. posts about research, life updates, etc), and can browse blog posts per category. I once again drew from Renkon&#39;s &lt;a href=&quot;https://renkotsuban.com/posts/2025-07-25-Updates-to-the-Eleventy-guide.html&quot; target=&quot;_blank&quot;&gt;excellent tutorial&lt;/a&gt; while implementing the tag system -- thank you, Renkon!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pre-candidacy research showcase, overwork, cropping shirts</title>
+    <link href="https://mayworms.info/public/posts/2025-10-17.html" />
+    <updated>2025-10-17T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-10-17.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/septemberpierpont-2025.jpg&quot; data-caption=&quot;Leinweber Computer Science and Information Building + Lurie Tower (University of Michigan, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-septemberpierpont-2025.jpg&quot; alt=&quot;Leinweber building and Lurie Tower.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/octoberclouds-2025.jpg&quot; data-caption=&quot;Ominous clouds, but no rain! (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-octoberclouds-2025.jpg&quot; alt=&quot;Dark grey clouds above a parking lot.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+Hello there! The weather has finally cooled down in Ann Arbor; autumn feels like autumn at last. I&#39;ve pulled my jacket out of the closet already... how long until I need my parka? ༄ ⋆⁺₊❅.
+&lt;h3 id=&quot;phd-%26-research&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-10-17.html#phd-%26-research&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; PhD &amp;amp; research&lt;/h3&gt;
+&lt;p&gt;Last Friday, I presented a poster at the second annual University of Michigan School of Information (UMSI) &lt;a href=&quot;https://www.si.umich.edu/about-umsi/events/pre-candidacy-proposal-showcase&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Pre-Candidacy Proposal Showcase&lt;/b&gt;&lt;/a&gt;! During the pre-can showcase, second-year UMSI students present on our pre-candidacy research projects (the first major research project we conduct between the first and second years of our programs). Presenting on my in-progress (nearly complete!) project was lots of fun, and I received lots of helpful feedback from other UMSI students and faculty along the way. (˶ˆᗜˆ˵)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/octoberposter-2025.jpg&quot; data-caption=&quot;My UMSI pre-candidacy proposal showcase poster (University of Michigan, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-octoberposter-2025.jpg&quot; alt=&quot;A photograph of my pre-candidacy research poster.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;My pre-candidacy research study examines how trans social media users use Bluesky for purposes related to trans community support and care (which can include lots of things! Mutual aid/fundraising, promoting trans art, interpreting trans-related policy updates, sharing trans healthcare news, etc). The study has branched out from the original proposal though, touching on platform migration broadly, how trans people use platforms other than Bluesky for similar purposes, etc... I&#39;m excited to see how things look once the study is complete (˵ •̀ ᴗ •́ ˵ ) ✧&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/octoberposter3-2025.jpg&quot; data-caption=&quot;Me and Dr. Michaelanne Thomas (one of my faculty advisors!) (University of Michigan, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-octoberposter3-2025.jpg&quot; alt=&quot;A photograph of me and Dr. Michaelanne Thomas standing in front of my pre-candidacy research poster.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;I always feel a bit nervous presenting trans-specific research to a predominantly cisgender audience, partially because I never know how much &lt;em&gt;they&lt;/em&gt; know about trans people&#39;s experiences (online and in general). It feels kind of surreal explaining things like, &amp;quot;yeah, there&#39;s a relationship between how we use social media and how we experience exclusion in the physical world,&amp;quot; or &amp;quot;despite this, social media platforms treat us like garbage too&amp;quot; -- facts I take for granted and forget that many cis people don&#39;t know. The audience I spoke with was very eager to learn however, I&#39;m glad they were receptive of my work. :)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/octoberposter2-2025.jpg&quot; data-caption=&quot;Ria, Hana, and I&#39;s research posters displayed in our office (University of Michigan, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/thumbnails/thumb-octoberposter2-2025.jpg&quot; alt=&quot;A photo of Ria, Hana, and I&#39;s research posters.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;(Check out these &lt;a href=&quot;https://www.instagram.com/p/DPzN7pFj1NJ/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;photos&lt;/b&gt;&lt;/a&gt; from the showcase! Lots of excellent presentations showcased here, such as &lt;a href=&quot;https://www.iamfriak.com&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;F. Ria Khan&lt;/b&gt;&lt;/a&gt; and &lt;a href=&quot;https://www.si.umich.edu/people/hana-chung&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Hana Chung&#39;s&lt;/b&gt;&lt;/a&gt; work!).&lt;/p&gt;
+&lt;h3 id=&quot;personal&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-10-17.html#personal&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Personal&lt;/h3&gt;
+&lt;p&gt;One of my professors once warned me that the second (and third!) years of the PhD are usually the busiest. Judging by how little time I&#39;ve had to update my blog since Fall semester began, I think he is probably right. Overwork has been a serious issue for me throughout my adult life, and I&#39;m doing everything in my power to finish all my work this semester without falling backwards into burnout! (𖦹﹏𖦹;)&lt;/p&gt;
+&lt;p&gt;My therapist suggested that I make time every week for fun things completely unrelated to work, and I think I&#39;ve managed to do this so far. I attend karaoke with friends most weeks, keep up with football (and all those Lions defensive injuries...), play Pokémon Go (and will play &lt;a href=&quot;https://legends.pokemon.com/en-us&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Pokémon Legends: Z-A&lt;/b&gt;&lt;/a&gt;), find time for movies sometimes. I visited a friend to celebrate her cat&#39;s 23rd birthday party, helped some other friends press apple cider, and found some time to reapply rain repellant on my car&#39;s windshields. All that to say: while life will be very busy these next few years, I&#39;ll try not to let work take everything over!&lt;/p&gt;
+&lt;p&gt;Side note: I also checked out a sewing machine from the &lt;a href=&quot;https://aadl.org&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Ann Arbor District Library&lt;/b&gt;&lt;/a&gt; last weekend, and used it to crop one of my oversized t-shirts! I hadn&#39;t used a sewing machine before, and mostly went off tutorials I found on TikTok and YouTube -- the end result came out really well! I have to return the sewing machine to the library this weekend, but perhaps I&#39;ll check it out again sometime (or maybe invest in my own! Lord knows I own too many shirts that are just a little too long for me lol).&lt;/p&gt;
+&lt;h3 id=&quot;website&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-10-17.html#website&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; Website&lt;/h3&gt;
+&lt;p&gt;I am strongly considering adding a new section to this website for creative work (non-research writing, art, etc). Finding time for creative work can be difficult while doing a PhD, where high-priority writing is usually for conferences and journals. But between Ethnographic Writing (taught by Ruth Behar), zine-making, and even drawing comics again, I&#39;ve had more opportunities for creative work this semester than I have in a while! I&#39;d like to make a space on this website to share with work with the world (˶◜ᵕ◝˶)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>PhD (year 2), Fall 2025 semester begins, karaoke &amp; hoagies</title>
+    <link href="https://mayworms.info/public/posts/2025-08-28.html" />
+    <updated>2025-08-28T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-08-28.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/f25-diag.jpg&quot; data-caption=&quot;Students walking by the University of Michigan diag (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/f25-diag.jpg&quot; alt=&quot;Students walking by the University of Michigan diag.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/f25-bee.jpg&quot; data-caption=&quot;A bumblebee enjoying the warm weather (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/f25-bee.jpg&quot; alt=&quot;A daytime photo of a bee crawling on a purple flower.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;Hello there! The weather cooled rapidly in Ann Arbor this past week, mostly drizzly in the mid-70s around here. Good weather for taking a walk downtown -- let&#39;s hope it stays that way for a while! (˶ˆᗜˆ˵)&lt;/p&gt;
+&lt;h3 id=&quot;in-phd-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-08-28.html#in-phd-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In PhD news:&lt;/h3&gt;
+&lt;p&gt;Fall 2025 semester (and year 2 of my PhD program) started this week! This is probably the last year in which I&#39;ll have to take classes... I wonder how I feel about that? Maybe &amp;quot;bittersweet&amp;quot; -- though I look forward to finishing classes for good, I &lt;em&gt;have&lt;/em&gt; been a student in some capacity for most of my life, and completing that part of my life could feel weird.&lt;/p&gt;
+&lt;p&gt;But that&#39;s all the more reason to make the most of my classes while I&#39;m in them! I&#39;m particularly excited to take an ethnographic writing course with &lt;a href=&quot;https://lsa.umich.edu/idpah/people/faculty/rbehar.html&quot; target=&quot;blank&quot;&gt;&lt;b&gt;Ruth Behar&lt;/b&gt;&lt;/a&gt; this year -- my writing has much room for improvement!&lt;/p&gt;
+&lt;h3 id=&quot;in-personal-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-08-28.html#in-personal-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In personal news:&lt;/h3&gt;
+&lt;p&gt;My roommate and I moved apartments last Friday! The past week has been spent unloading furniture and unpacking boxes between classes, lab meetings, and other PhD-related tasks. My bed frame broke during the move as well, so I need to find another one around here soon too. ...No wonder I&#39;ve been so tired lately! zzz(´〜｀*)&lt;/p&gt;
+&lt;p&gt;The new apartment&#39;s location is excellent, much closer to downtown (and a wider range of bus stops) than our old place. It&#39;s fairly easy for me to head downtown to play Pokemon Go, visit friends, grab a bite to eat... it rules not having to drive everywhere anymore. (⁠ ⁠ꈍ⁠ᴗ⁠ꈍ⁠)&lt;/p&gt;
+&lt;p&gt;I also had lunch with a friend on Wednesday at my favourite hoagie place. We spoke for a while about his philosophies as a karaoke DJ, his most and least favourite types of karaoke guests, intentionally fostering an inclusive space for all attendees, and how to sing a song that may not fit our vocal ranges (turns out he can pitch songs down for you!). You ever spend time with friends and feel your community (and world!) grow? I enjoy those moments very much. (˶˃ ᵕ ˂˶)&lt;/p&gt;
+&lt;h3 id=&quot;in-website-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-08-28.html#in-website-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In website news:&lt;/h3&gt;
+&lt;p&gt;Currently implementing a tag cloud system on &lt;a href=&quot;http://mayworms.info&quot;&gt;mayworms.info&lt;/a&gt; (based on Renkon&#39;s tag cloud system on their &lt;a href=&quot;https://renkotsuban.com/posts/2025-07-25-Updates-to-the-Eleventy-guide.html#install-everything&quot; target=&quot;blank&quot;&gt;&lt;b&gt;updated Eleventy starter guide&lt;/b&gt;&lt;/a&gt; -- thank you for the amazing guide, Renkon!). You might not know it, but I&#39;ve included invisible &amp;quot;category&amp;quot; tags on each blog post so far (e.g. &amp;quot;PhD,&amp;quot; &amp;quot;Research,&amp;quot; &amp;quot;Website,&amp;quot; &amp;quot;Updates,&amp;quot; etc), but never figured out how to make these tags searchable on my website. Hopefully they will be soon!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Improv comedy, leasing office fire, website updates</title>
+    <link href="https://mayworms.info/public/posts/2025-07-17.html" />
+    <updated>2025-08-05T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-07-17.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/augustsmoke1-2025.jpg&quot; data-caption=&quot;A view of downtown covered in wildfire smoke (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/augustsmoke1-2025.jpg&quot; alt=&quot;A daytime photo of the Ann Arbor skyline covered in wildfire smoke.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/augustsmoke2-2025.jpg&quot; data-caption=&quot;Sunny skies (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/augustsmoke2-2025.jpg&quot; alt=&quot;A view of the clear blue sky.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;Hello there! It is currently 05 August, 2025, and the weather outside (minus the wildfire smoke) is beautiful. It may or may not rain sometime tomorrow, and maybe some more after that. I&#39;d better enjoy the rain while it&#39;s still warm outside -- I know I&#39;ll resent the rain once it&#39;s chilly.&lt;/p&gt;
+&lt;h3 id=&quot;in-research-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-07-17.html#in-research-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In research news:&lt;/h3&gt;
+&lt;p&gt;This past Sunday (03 August), my colleagues &lt;a href=&quot;https://www.si.umich.edu/people/lu-xian&quot; target=&quot;blank&quot;&gt;&lt;b&gt;Lu Xian&lt;/b&gt;&lt;/a&gt;, &lt;a href=&quot;https://shwetharajaram.github.io&quot; target=&quot;blank&quot;&gt;&lt;b&gt;Shwetha Rajaram&lt;/b&gt;&lt;/a&gt;, and I spoke at the &lt;b&gt;Extra Credit improv show&lt;/b&gt; hosted by &lt;a href=&quot;https://www.heardotsay.com/shows&quot; target=&quot;blank&quot;&gt;&lt;b&gt;hear.say brewing + theater&lt;/b&gt;&lt;/a&gt; in Ann Arbor, MI! The premise of Extra Credit is really cool: on the first Sunday of every month, researchers, faculty, and students from the University of Michigan School of Information are invited to give a 10 minute talk or interview about their research at the show; following their talk, the Extra Credit improv crew perform 10 minutes of skits themed around the speakers&#39; research!&lt;/p&gt;
+&lt;p&gt;UMSI Associate Professor &lt;a href=&quot;http://www.gabrielamarcu.com&quot; target=&quot;blank&quot;&gt;&lt;b&gt;Gabriela Marcu&lt;/b&gt;&lt;/a&gt; interviewed me about my work on trans user communities on social media, along with my experiences completing year one of my PhD -- I had so, so much fun sharing my work with the audience! I&#39;ll update this post with links to interview footage once it&#39;s available ദ്ദി ( ᵔ ᗜ ᵔ )&lt;/p&gt;
+&lt;h3 id=&quot;in-phd-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-07-17.html#in-phd-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In PhD news:&lt;/h3&gt;
+&lt;p&gt;The precandidacy study (a digital ethnographic study of trans Bluesky users&#39; community support and care practices) continues to go well! There&#39;s so much to learn from how trans people create and sustain community on social media platforms that weren&#39;t necessarily built in ways that accomodate them. Sometimes I find myself reluctant to &amp;quot;participate&amp;quot; on the platform (a necessary part of participant-observation), but the more I think about it, the more I think my reluctance is a product of the platform itself. Can&#39;t wait to learn from trans users&#39; insights during the project&#39;s interview study phase! (˵ •̀ ᴗ •́ ˵ ) ✧&lt;/p&gt;
+&lt;p&gt;On another note: holy cow, classes start back up in about 3 weeks! If everything goes correctly, I should complete my final required courses this year -- this will probably be the last year in which I ever take university classes. How do I feel about it? Hm... relieved? Bittersweet? Thankful? Melancholy? Most of my life was spent as a student in some capacity, and watching that era come to an end feels more surreal than turning 30 last month. ...Good god, I turned 30 last month! ( ˶°ㅁ°) !!&lt;/p&gt;
+&lt;h3 id=&quot;in-personal-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-07-17.html#in-personal-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In personal news:&lt;/h3&gt;
+&lt;p&gt;I experienced quite a few hardships these past few weeks, between two dentist appointments, a serious medication reaction that I&#39;m still recovering from (it was scary, but don&#39;t worry, I&#39;m okay!), and my current apartment&#39;s leasing office catching on fire and burning to the ground.&lt;/p&gt;
+&lt;p&gt;Right: our apartment&#39;s leasing office burned to the ground yesterday! No one was harmed as far as I know (thank god), and it&#39;s still not clear how the fire actually started. Many basement units near the office were severely flooded from firefighting activity, several tenants have had to evacuate as a result (to where? Do they all have somewhere to go?).&lt;/p&gt;
+&lt;p&gt;My roommate and I are incredibly fortunate in that 1) our unit is located far from the leasing office, 2) we do not live on the basement floor, and 3) we&#39;re moving out in about 2 weeks. But I feel absolutely horrible for the tenants who experienced flooding damage and displacement because of the fire, particularly those who just moved in a few days ago... good lord.&lt;/p&gt;
+&lt;h3 id=&quot;in-website-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-07-17.html#in-website-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In website news:&lt;/h3&gt;
+&lt;p&gt;I recently installed the Lite YouTube Embed plugin to this website; embedded YouTube links should render quite a bit faster now! To test the new plugin, I&#39;ve embedded a link to my friends&#39; 2021 short film &lt;i&gt;Heads or Tails 2&lt;/i&gt; below:&lt;/p&gt;
+&lt;p&gt;&lt;lite-youtube videoid=&quot;W5LNlOhgFcg&quot; playlabel=&quot;Play: Heads or Tails 2&quot;&gt;&lt;/lite-youtube&gt;&lt;/p&gt;
+&lt;p&gt;Let me know if you encounter any playback errors! ദ്ദി ( ᵔ ᴗ ᵔ )&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>UMSI article on FAccT 2025 paper, Pokemon Go Fest 2025, turning 30 tomorrow</title>
+    <link href="https://mayworms.info/public/posts/2025-07-03.html" />
+    <updated>2025-07-03T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-07-03.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/julycloud1-2025.jpg&quot; data-caption=&quot;A cumulus cloud I saw the other day (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/julycloud1-2025.jpg&quot; alt=&quot;A daytime photo of a large white cumulus cloud floating above some trees against a clear blue sky.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/julycloud3-2025.jpg&quot; data-caption=&quot;Cloudy sunset right after the rain (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/julycloud3-2025.jpg&quot; alt=&quot;A dramatic sunset photo of dark blue, orange, and white clouds shortly after rainfall; I think these are stratocumulus clouds? I should ask my weather friend what he thinks.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;Hello there! It&#39;s been quite hot in Ann Arbor recently (which makes sense, it&#39;s July, but that doesn&#39;t mean I like it!). It rained last week but has been completely dry since then... hopefully this changes by Sunday! (٥*˘▿˘) ﾞ☂･˙｡°･ˇ&lt;/p&gt;
+&lt;h3 id=&quot;in-research-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-07-03.html#in-research-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In research news:&lt;/h3&gt;
+&lt;p&gt;The University of Michigan School of Information (UMSI) released a &lt;a href=&quot;https://www.si.umich.edu/about-umsi/news/marginalized-americans-are-highly-skeptical-artificial-intelligence&quot; target=&quot;blank&quot;&gt;&lt;b&gt;news article&lt;/b&gt;&lt;/a&gt; on our newest ACM FAccT publication, &lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://doi.org/10.1145/3715275.3732081&quot; target=&quot;blank&quot;&gt;AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt; (led by Oliver L. Haimson and coauthored by myself, Alexis Shore Ingber, and Nazanin Andalibi)! I&#39;ve included the paper&#39;s abstract (aka a quick summary) below; give it a read if you find it interesting ( ੭ ･ᴗ･ )੭&lt;/p&gt;
+&lt;h4 id=&quot;ai-attitudes-among-marginalized-populations-in-the-u.s.-abstract%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-07-03.html#ai-attitudes-among-marginalized-populations-in-the-u.s.-abstract%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; &lt;em&gt;AI Attitudes Among Marginalized Populations in the U.S.&lt;/em&gt; abstract:&lt;/h4&gt;
+&lt;blockquote cite=&quot;https://doi.org/10.1145/3715275.3732081&quot;&gt;
+  &lt;p&gt;
+    As artificial intelligence (AI) technologies become increasingly pervasive, understanding public perceptions of AI is crucial for ensuring equitable adoption and impact. &lt;b&gt;Attitudes toward AI&lt;/b&gt;, such as whether it is seen as &lt;b&gt;helpful or harmful&lt;/b&gt;, may &lt;b&gt;vary based on social identities and lived experiences.&lt;/b&gt;
+ &lt;/p&gt;
+ &lt;p&gt;
+    In this study, we conducted a survey (&lt;i&gt;n&lt;/i&gt; = 742) including a representative U.S. sample and an oversample of gender minorities, racial minorities, and disabled individuals to examine how demographic factors shape AI attitudes. Our findings reveal that in the U.S. context, &lt;b&gt;participants who are nonbinary, transgender, and/or women,&lt;/b&gt; and &lt;b&gt;disabled participants,&lt;/b&gt; particularly those who are neurodivergent or have mental health conditions, &lt;b&gt;report significantly more negative attitudes towards AI compared to majority groups.&lt;/b&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    We argue that these disparities highlight a critical issue: &lt;b&gt;negative AI attitudes among marginalized communities signals a continued failure to account for their needs and concerns in AI design and use.&lt;/b&gt; That marginalized Americans have more negative views towards AI should prompt reflection and critical examination of the prevalent rhetoric of AI’s purported inevitability and its framing as a universal social good. 
+  &lt;/p&gt;
+&lt;/blockquote&gt;    
+&lt;h3 id=&quot;in-personal-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-07-03.html#in-personal-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In personal news:&lt;/h3&gt;
+&lt;p&gt;My week&#39;s been pretty good! Really enjoyed Pokemon Go Fest 2025 in downtown Ann Arbor last weekend. Ann Arbor/Ypsilanti has a big Pokemon Go community, so many people showed up downtown to look for raids and catch shiny Pokemon (and to make friends with one another!). I spent some Go Fest time exploring Ann Arbor (mostly in Kerrytown) with a good friend, and spent some time playing on my own, wandering around looking for raids, talking to other players, and enjoying the sun ◝(ᵔᵕᵔ)◜&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/pogofest1-2025.jpg&quot; data-caption=&quot;Shiny Zacian I caught on Sunday (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/pogofest1-2025.jpg&quot; alt=&quot;A Pokemon Go screenshot featuring a shiny Zacian, a legendary Pokemon that looks like a blue and white wolf.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/pogofest2-2025.jpg&quot; data-caption=&quot;Zero IV Klefki I also caught on Sunday (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/pogofest2-2025.jpg&quot; alt=&quot;A Pokemon Go screenshot featuring a Klefki, a silver Pokemon that looks like a keyring with some metal keys dangling from it; this Klefki has 0 IVs, meaning it is particularly weak.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;There was a slight incident on Go Fest Day 2 though; a man on the street saw my earrings and started shouting angry homophobic comments at me! One of his comments stuck out to me -- &lt;em&gt;&amp;quot;what is this, national Gay Day??&amp;quot;&lt;/em&gt; A part of me wanted to respond, &lt;em&gt;&amp;quot;Pride Month, actually!&amp;quot;&lt;/em&gt;, and another part of me wanted to respond, &lt;em&gt;&amp;quot;is that the best you&#39;ve got?&amp;quot;&lt;/em&gt; But yet another part of me wanted to avoid escalating the situation (he was walking a large, very unhappy-looking dog -- not as unhappy as the man though), so I wound up saying nothing until he walked off. A few PoGo players looked at me sympathetically, and I didn&#39;t know what I was supposed to say, so I tried to laugh it off -- &lt;em&gt;&amp;quot;can you believe that&#39;s the second time that&#39;s happened this week?&amp;quot;&lt;/em&gt; Which is &lt;em&gt;true,&lt;/em&gt; but (judging by the other players&#39; reactions) probably wasn&#39;t very reassuring. Blagh.&lt;/p&gt;
+&lt;p&gt;I&#39;ve experienced more homophobic/transphobic harassment in public these past few months than I have since leaving West Michigan in 2020. West Michigan bigotry was mundane -- I &lt;em&gt;expect&lt;/em&gt; violent homophobia and transphobia in the deeply evangelical part of the state, I grew up in it, it sucked. It sucks feeling it here too. Nowhere is perfect, but it hurts feeling less safe (no matter where!) by the day.&lt;/p&gt;
+&lt;p&gt;Things have been nice outside that homophobic incident though! Watched &lt;a href=&quot;https://www.instagram.com/zorarooibos/?hl=en&quot; target=&quot;blank&quot;&gt;&lt;b&gt;Zora Rooibos&lt;/b&gt;&lt;/a&gt; perform at Ziggy&#39;s in downtown Ypsilanti two weeks ago (my sister&#39;s friend played the drums!), picked another good friend up from the airport the other night (getting to DTW was fine, but dealing with all the 4th of July traffic at arrivals/baggage? Nightmare!), and made progress on my usual research/precandidacy study tasks. I also won my very first game of Fortnite last night -- granted, it was my first game, I was probably queued against bots and brand-new players... but still, got my first Fortnite win before 30 (⌐■‿■)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;(Oh right, on that note: my 30th birthday is tomorrow!! I&#39;ll have more to say about it once I actually turn 30, but for the time being, I&#39;m going to focus on birthday party preparations ヾ( ˃ᴗ˂ )◞ • *✰)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Precandidacy research, summer incoming, Metaphor: ReFantazio</title>
+    <link href="https://mayworms.info/public/posts/2025-06-11.html" />
+    <updated>2025-06-11T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-06-11.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/a2cloudy-2025.jpg&quot; data-caption=&quot;Downtown moments before the rain (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/a2cloudy-2025.jpg&quot; alt=&quot;A cloudy photo of downtown Ann Arbor facing westward/Main Street; the sky is cloudy and grey, and some buildings and trees look somewhat hazy in the distance.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Hello there! Summer quickly approaches as we make our way through June. I&#39;ve been getting outdoors and exercising more lately now that the weather&#39;s improved. I had a rough time with seasonal allergies late last month, but the worst of it seems to have passed for the year (thank goodness!).&lt;/p&gt;
+&lt;h3 id=&quot;in-phd-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-06-11.html#in-phd-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In PhD news:&lt;/h3&gt;
+&lt;p&gt;Good news: I recently completed my first PhD milestone! My submitted precandidacy proposal was approved about two weeks ago; the actual study will take place throughout the summer. The focus of my study (at least at this stage) is better understanding how trans Bluesky users conduct community care and support practices on the platform during the current wave of anti-trans political sentiment in the United States. What are they doing to look after one another on this new platform? How are they using Bluesky&#39;s unique affordances to look after one another on this platform? Is Bluesky supporting their online goals in a way that would make the platform count as a &amp;quot;trans technology?&amp;quot; ...We will see! (ᵕ,•ᴗ•)&lt;/p&gt;
+&lt;h3 id=&quot;in-personal-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-06-11.html#in-personal-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In personal news:&lt;/h3&gt;
+&lt;p&gt;(Spoiler-free description of Metaphor: ReFantazio below!)&lt;/p&gt;
+&lt;p&gt;Finally finished the final &lt;strong&gt;Metaphor: ReFantazio&lt;/strong&gt; boss battle this morning, which means I&#39;ve all but completed the game! Metaphor: ReFantazio was somehow my first Atlus game (I&#39;ve watched Persona playthroughs and the Persona 4 anime before, but have never played Persona or Shin Megami Tensei before), and the first JRPG I&#39;ve played outside of Pokemon (Pokemon counts, right?) since... god, since I was a teenager. The length of the game surprised me at first, as did the time management system, but I got the hang of how to balance all my ingame tasks, conversations, dungeon crawls, etc as I continued through the game. 100 hours later and I was confronting [SPOILER] at the [SPOILER] after discovering that [SPOILER] is actually the [SPOILER] of [SPOILER] -- crazy, right? (  ≧ᗜ≦)&lt;/p&gt;
+&lt;p&gt;Metaphor: ReFantazio&#39;s writing received lots of praise when it came out, including for its depiction of (sorta) electoral politics, of (fantasy) racism, and of society&#39;s descent into apathy in the face of systemic oppression and despair. I... do not share that praise of the game&#39;s political writing LOL. For all of Metaphor&#39;s amazing character-writing and world-building, it didn&#39;t really approach (fantasy) racism, classism, systemic oppression, warfare, etc, &lt;em&gt;that&lt;/em&gt; differently from titles like the Tellius Fire Emblem games (Path of Radiance and Radiant Dawn).&lt;/p&gt;
+&lt;p&gt;I&#39;ll say more about Metaphor Re:Fantazio (and my mixed feelings on its social commentary) in the future, perhaps once I&#39;ve set up a spoiler tag system for my website! But in the meantime... it&#39;s a fun game, the characters and the world itself are amazingly written -- its politics are what you&#39;d expect from an anime-adjacent JRPG, but what else is new? Either way, I deeply hope that Atlus does more with the Metaphor franchise in the future. I also wonder if... sorry, it&#39;s hard to muse on a 100+ hour game without including &lt;em&gt;some&lt;/em&gt; spoilers. (ᵕ,—ᴗ—,)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Leinweber Building, PhD milestones, colleagues&#39; paper acceptances</title>
+    <link href="https://mayworms.info/public/posts/2025-05-29.html" />
+    <updated>2025-05-29T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-05-29.html</id>
+    <content type="html">&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/a2rain-2025.jpg&quot; data-caption=&quot;Downtown right before the rain (Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/a2rain-2025.jpg&quot; alt=&quot;A sunset photo of downtown Ann Arbor before a thunderstorm; the buildings and the campus bell tower are lit bright orange, but the sky is cloudy and grey.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Hello there! It&#39;s been getting warmer in Ann Arbor since I returned from Yokohama a few weeks ago. With warm spring temperatures comes budding leaves, blooming flowers, and the worst seasonal allergies I&#39;ve dealt with in years -- I knew lingering by that Bradford pear tree was a bad idea! (╥﹏╥)&lt;/p&gt;
+&lt;h3 id=&quot;in-research-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-05-29.html#in-research-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In research news:&lt;/h3&gt;
+&lt;p&gt;Several of my colleagues&#39; papers have been accepted to multiple conferences in the past few months. My friend &lt;a href=&quot;https://www.iamfriak.com&quot; target=&quot;blank&quot;&gt;&lt;b&gt;F.R. Khan&#39;s&lt;/b&gt;&lt;/a&gt; work-in-progress has been accepted to the ACM Designing Interactive Systems Conference 2025 (aka &lt;a href=&quot;https://dis.acm.org/2025/&quot; target=&quot;blank&quot;&gt;&lt;b&gt;DIS 2025&lt;/b&gt;&lt;/a&gt;) -- congratulations! ( ˶ˆᗜˆ˵ )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://programs.sigchi.org/dis/2025/program/content/200606&quot; target=&quot;blank&quot;&gt;The Vibes are Off: Considering Embodied Reflections by TBIPOC to Account for Displacement and Discomfort in Makerspaces&lt;/a&gt;,&lt;/strong&gt;&lt;/em&gt; authored by F.R. Khan, Apryl Williams, Tawanna Dillahunt, and Oliver L. Haimson&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And an update to one of my &lt;a href=&quot;https://www.mayworms.info/posts/2025-04-14.html&quot; target=&quot;blank&quot;&gt;earlier posts&lt;/a&gt;: three papers from our lab (including one that I helped co-author!) have been accepted to the ACM Conference on Fairness, Accountability, and Transparency 2025 (aka &lt;a href=&quot;https://facctconference.org&quot; target=&quot;blank&quot;&gt;&lt;b&gt;ACM FAccT 2025&lt;/b&gt;&lt;/a&gt;) -- congratulations to all authors of these works! ٩(ˊᗜˋ*)و&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://doi.org/10.1145/3715275.3732081&quot; target=&quot;blank&quot;&gt;AI Attitudes Among Marginalized Populations in the U.S.: Nonbinary, Transgender, and Disabled Individuals Report More Negative AI Attitudes&lt;/a&gt;,&lt;/strong&gt;&lt;/em&gt; authored by Oliver L. Haimson, &lt;b&gt;Samuel Mayworm,&lt;/b&gt; Alexis Shore Ingber, and Nazanin Andalibi&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://deepblue.lib.umich.edu/handle/2027.42/197724&quot; target=&quot;blank&quot;&gt;TIDEs: A Transgender and Nonbinary Community-Labeled Dataset and Model for Transphobia Identification in Digital Environments&lt;/a&gt;,&lt;/strong&gt;&lt;/em&gt; authored by Francesca Lameiro, Lavinia Dunagan, Dallas Card, Oliver L. Haimson, and Eric Gilbert&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://deepblue.lib.umich.edu/bitstream/handle/2027.42/197726/facct2025-final168.pdf&quot; target=&quot;blank&quot;&gt;Distinguishing Emotion AI: Factors Shaping Perceptions Including Input Data, Emotion Data Recipients, and Identity&lt;/a&gt;,&lt;/strong&gt;&lt;/em&gt; authored by Alexis Shore Ingber, Oliver L. Haimson, and Nazanin Andalibi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I wish I could travel to Greece for ACM FAccT 2025, but unfortunately cannot make it this year; I hope everyone else attending has a good time! ദ്ദി´ ˘ `)✧&lt;/p&gt;
+&lt;h3 id=&quot;in-phd-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-05-29.html#in-phd-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In PhD news:&lt;/h3&gt;
+&lt;p&gt;I&#39;m just about ready to submit my pre-candidacy proposal, aka the first major milestone of my PhD program! Thinking about completing one of my PhD milestones feels so surreal -- the first year of my program sure flew by quickly, didn&#39;t it? Academia in the USA changed so much in that brief time... feels like a very different world from when my program began.&lt;/p&gt;
+&lt;p&gt;Also: the University of Michigan School of Information (&lt;a href=&quot;https://www.si.umich.edu&quot; target=&quot;blank&quot;&gt;&lt;b&gt;UMSI&lt;/b&gt;&lt;/a&gt;) recently moved from the North Quad building in Central Campus to the new &lt;a href=&quot;https://leinweber.bldg.umich.edu&quot; target=&quot;blank&quot;&gt;&lt;b&gt;Leinweber Building&lt;/b&gt;&lt;/a&gt; in North Campus! The Leinweber Building is really nice, though they&#39;re still working on the finishing touches (the walls and hallways are very blank at the moment, so it&#39;s very easy to get lost looking for your office LOL).&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/leinweber2-2025.jpg&quot; data-caption=&quot;Leinweber Building (North Campus, Ann Arbor, MI)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/leinweber2-2025.jpg&quot; alt=&quot;A photograph of the Leinweber Building from the front entrance parking lot.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/leinweber1-2025.jpg&quot; data-caption=&quot;A view of our office door (illustrations by F.R. Khan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/leinweber1-2025.jpg&quot; alt=&quot;Several hand-drawn pictures of UMSI students taped to an office door&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;Though I miss our old downtown location, I appreciate the new facilities as well. Leinweber feels a little empty with so many faculty members and students out of town at the moment, but those of us here are doing our best to (quoting Ria Khan) &lt;em&gt;&amp;quot;make this cage a house!&amp;quot;&lt;/em&gt; ( ◡̀_◡́)ᕤ&lt;/p&gt;
+&lt;h3 id=&quot;in-personal-news%3A&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-05-29.html#in-personal-news%3A&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; In personal news:&lt;/h3&gt;
+&lt;p&gt;My friends and I visited the &lt;a href=&quot;https://toledomuseum.org&quot; target=&quot;blank&quot;&gt;&lt;b&gt;Toledo Museum of Art&lt;/b&gt;&lt;/a&gt; a few weeks ago, the &lt;b&gt;&lt;a href=&quot;https://toledomuseum.org/exhibitions/rachel-ruysch-nature-into-art&quot; target=&quot;blank&quot;&gt;Rachel Ruysch exhibit&lt;/a&gt;&lt;/b&gt; was amazing! It struck me at one point that the exhibit&#39;s paintings were all around 300 years old... I wonder if anyone will look at my art (or read my papers!) 300 years from now? (,,•o•,,)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/ruysch1-2025.jpg&quot; data-caption=&quot;Flowers in a Glass Vase - Rachel Ruysch, 1704&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/ruysch1-2025.jpg&quot; alt=&quot;A detailed still-life painting of multiple red, white, orange, and pink flowers in a vase against a black background.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/ruysch2-2025.jpg&quot; data-caption=&quot;Still Life with Fruit, Bird&#39;s Nest and Insects - Rachel Ruysch, 1716&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/ruysch2-2025.jpg&quot; alt=&quot;A detailed still-life painting of vines, corn, apricots, and grapes arranged next to a bird&#39;s nest with small white eggs and various insects.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;I also started playing &lt;a href=&quot;https://metaphor.atlus.com/index.html?lang=en&quot; target=&quot;blank&quot;&gt;&lt;b&gt;Metaphor: ReFantazio&lt;/b&gt;&lt;/a&gt; a few weeks ago, and am really enjoying it! Metaphor&#39;s my first Atlus game (I&#39;ve watched playthroughs of Persona 3/4/5 but never had consoles to play them on); while the learning curve was a little tough at first, I feel like I&#39;m cruising pretty comfortably through the game now. It&#39;s hard to tell how &lt;em&gt;far&lt;/em&gt; I am in the game though -- I&#39;m about 20~25 hours in, but it still feels like I&#39;m in the early game? Some folks have told me that an ordinary Metaphor playthrough can take upward to 100 hours to complete... we&#39;ll see how long my playthrough goes! ( • ̀ω•́ )✧&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>CHI 2025 in Yokohama, Japan! (Pt. 2)</title>
+    <link href="https://mayworms.info/public/posts/2025-05-05.html" />
+    <updated>2025-05-05T00:00:00Z</updated>
+    <id>https://mayworms.info/public/posts/2025-05-05.html</id>
+    <content type="html">&lt;p&gt;Greetings from... Ann Arbor! I returned from Yokohama to Ann Arbor late last week; after spending the weekend trudging through jet lag, I am now back to work as usual. Here is a recap of the second half of my CHI 2025 experience:&lt;/p&gt;
+&lt;h3 id=&quot;29-april-(tuesday)&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-05-05.html#29-april-(tuesday)&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; 29 April (Tuesday)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Day 2 of CHI 2025:&lt;/strong&gt; Today was a little more subdued than the past few days; no big Tokyo trips or queer get-togethers this time, just a day spent conference-ing (with a few detours!).&lt;/p&gt;
+&lt;p&gt;After attending a morning paper session, I stood in line for an hour to grab a commemorative CHI 2025 &lt;em&gt;maneki-neko&lt;/em&gt; plushie! I was lucky enough to get in line early and buy a plushie before the all sold out... they were incredibly popular! ₍^. .^₎⟆&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/manekineko-2025.jpg&quot; data-caption=&quot;CHI 2025 Manekineko plushie!&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/manekineko-2025.jpg&quot; alt=&quot;A white cat-shaped manekineko plush toy wearing a pink neckwrap that reads: CHI 2025&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Later, my friend Kevin and I had &lt;em&gt;tonkatsu&lt;/em&gt; for lunch; we talked a bit about conducting research in 2025, visiting our respective &amp;quot;motherlands,&amp;quot; and making sure to have fun while we&#39;re here in Japan! Prioritizing &amp;quot;fun&amp;quot; can be difficult for me (I&#39;m a bit of a &amp;quot;workaholic&amp;quot;), but I think Kevin&#39;s right: I only get so many chances to visit The Motherland™, so I might as well enjoy my time here. (´ ˘ `)&lt;/p&gt;
+&lt;p&gt;Later today, I had an awful realization: my eyesight was really, &lt;em&gt;really&lt;/em&gt; bad! My prescription was at least two years out of date, and I really struggled throughout the day to see my friends&#39; presentation slides. After attending a few more paper sessions, I snuck back to the Minato Mirai JINS location to complete an eye exam, update my prescription, and buy a new pair of glasses! Though I was nervous about completing an eye exam in Japanese, everything went completely fine. My replacement glasses are excellent, took only 40 minutes to make, and were much more affordable than most glasses in the USA (even with insurance!). The JINS detour was an excellent decision, it feels great to see again! ദ്ദി(⎚_⎚)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/jins-2025.jpg&quot; data-caption=&quot;New glasses selfie lol (Shibuya, Tokyo, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/jins-2025.jpg&quot; alt=&quot;A selfie of a young man wearing black and gold-rimmed round glasses; Shibuya, Tokyo, Japan&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Later, a few friends and I got &lt;em&gt;yakiniku&lt;/em&gt; for dinner in downtown Yokohama. It&#39;s funny, despite having lived in/near Yokohama for several years of my life, I&#39;d never actually been downtown at night before this trip. It dawned on me why most of my memories of Japan were in the daytime: I was a child back then, so I was probably in bed by night time! &amp;quot;(っ- ‸ - ς)ᶻ 𝗓 𐰁&lt;/p&gt;
+&lt;h3 id=&quot;30-april-(wednesday)&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-05-05.html#30-april-(wednesday)&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; 30 April (Wednesday)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Day 3 of CHI 2025:&lt;/strong&gt; One problem I&#39;ve had throughout this trip is very, very poor sleep. I only get around 5 hours of sleep most nights; there was little time for me to get past jet lag before the conference began, which really impacted me today. Do you ever lie there in bed just &lt;em&gt;begging&lt;/em&gt; for your brain to fall back asleep, and it just... won&#39;t? Not fun! .·°՞(≧o≦)՞°·.&lt;/p&gt;
+&lt;p&gt;Grabbed breakfast at 7-Eleven (I think had konbini breakfast literally every day I was in Japan LOL), walked back to PACIFICO North for the conference, watched a presentation, then checked out the poster presentation with my friend (and our lab&#39;s postdoc) Kat Brewster. We talked a bit about food in Japan, and how many major Japanese rail hubs double as shopping malls (imagine if American transit hubs worked similarly!). We also talked about the sheer amount of AI-related sessions at CHI this year -- that&#39;s every tech conference these days, but still, sheesh! (𖦹﹏𖦹;)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/pacifico1-2025.jpg&quot; data-caption=&quot;The north entrance to PACIFICO Yokohama, the CHI 2025 convention center (Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/pacifico1-2025.jpg&quot; alt=&quot;The entrance to a convention center with some CHI 2025 stands by the door.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The &lt;b&gt;&lt;a href=&quot;https://dl.acm.org/doi/10.1145/3706599.3716287&quot; target=&quot;blank&quot;&gt;Transnational lgbTq+ SIG&lt;/a&gt;&lt;/b&gt; took place later in the morning; most conversation focused on the current wave of anti-trans executive orders and political activity in the United States (including the cancellations of trans-related research grants), and how to conduct trans-related research in such conditions. It felt really nice talking to other queer and trans researchers who have suffered similarly under these conditions, not unlike how I felt at the CHI Queers get-together a few nights prior. It helps to not feel alone, doesn&#39;t it? ( ⸝⸝´꒳`⸝⸝)&lt;/p&gt;
+&lt;p&gt;Took the train to the Yokohama Pokemon Center after today&#39;s conference activities wrapped up -- it was really nice! Though I had visited a Pokemon Center in Tokyo before, this was my first time visiting the one in Yokohama. Bought a few plushies and figurines as gifts for friends (and a few plushies for myself, had to grab that West Side Gastrodon lol). The cashier asked me whether I was learning Japanese in school; when I explained to her that I lived in Japan as a child before immigrating, she laughed and said that my Japanese is quite good! I appreciated her kind words -- I sometimes feel very insecure about my so-so Japanese skills, and feel relieved that I can speak well enough to get by (as a visitor, anyways).&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/pokemon1-2025.jpg&quot; data-caption=&quot;Pokemon Center Yokohama (Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/pokemon1-2025.jpg&quot; alt=&quot;A Pokemon-themed store with statues of Manaphy, Turtwig, and Quaxly standing at the entrance&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/pokemon2-2025.jpg&quot; data-caption=&quot;A Johto-themed Pokemon card deck at Pokemon Center Yokohama (Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/pokemon2-2025.jpg&quot; alt=&quot;A store plaque advertising a Johto-themed Pokemon TCG starter deck&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;I returned to downtown Yokohama at night to get &lt;em&gt;omakase&lt;/em&gt; dinner with Hibby and several other friends. &lt;em&gt;Omakase&lt;/em&gt; was also a new experience for me, and I deeply enjoyed it (even if the chef put &lt;em&gt;lots&lt;/em&gt; of wasabi under some of those salmon slices)! Japanese &lt;em&gt;miso&lt;/em&gt; soup sometimes includes lots of baby clams; whenever I see them, I think about those hot, humid July afternoons in Fukuoka where I&#39;d go clam-digging with family on the beach. ...How long has it been since I&#39;ve visited a beach? (⊙_⊙)&lt;/p&gt;
+&lt;h3 id=&quot;01-may-(thursday)&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-05-05.html#01-may-(thursday)&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; 01 May (Thursday)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Day 4 of CHI 2025:&lt;/strong&gt; Woke up and walked to the convention center feeling very glum about leaving Yokohama tomorrow. Last day of CHI 2025, last day in Japan... for me, anyways! My roommate, professor, and many friends would stay longer for personal vacation time -- despite the cost, I wish I&#39;d chosen to stay longer too.&lt;/p&gt;
+&lt;p&gt;Watched Kat Brewster&#39;s presentation on co-designing AR face filter technologies with trans people themselves -- they noted at the end of their presentation that our lab had to stop development of their AR face filter app prototype after the NSF grant funding the project was terminated. ...What a bleak, unfair, cruel, and senseless state of affairs.&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/katchi-2025.jpg&quot; data-caption=&quot;&#39;That Moment of Curiosity&#39;: Augmented Reality Face Filters for Transgender Identity Exploration, Gender Affirmation, and Radical Possibility&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/katchi-2025.jpg&quot; alt=&quot;A researcher standing in front of a projector screen and giving a presentation at a research conference; the slide states that future work has been cancelled due to an NSF grant termination&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;I spoke with some friends and handed out some business cards before making my way to the closing plenary. The closing presentation was given by Masako Wakamiya; she spoke about learning to code in her 80s, creating art in Microsoft Excel based on traditional Japanese fabric patterns, and developing inclusive technologies for aging populations. What a beautiful presentation! I wonder if I&#39;ll still be thinking about technology at her age? („★o★„)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/CHIclosing1-2025.jpg&quot; data-caption=&quot;CHI 2025 Closing Plenary (Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/CHIclosing1-2025.jpg&quot; alt=&quot;Masako Wakamiya presenting on technological development within her lifetime.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/CHIclosing2-2025.jpg&quot; data-caption=&quot;CHI 2025 Closing Plenary (Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/CHIclosing2-2025.jpg&quot; alt=&quot;Masako Wakamiya presenting on designing artwork and fabric patterns in Microsoft Excel.&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;A few closing words and acknowledgements later, CHI 2025 officially came to an end. I said &amp;quot;until next time!&amp;quot; to a few more conference-goers as we exited the convention center, and took some final photos of the Yokohama Bay Bridge outside the conference center windows. I&#39;ll miss seeing that bridge in the distance.&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/baybridge-2025.jpg&quot; data-caption=&quot;The Yokohama Bay Bridge (Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/baybridge-2025.jpg&quot; alt=&quot;A photo of the Yokohama Bay Bridge, a long cable stayed bridge spanning Tokyo Bay.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;I took one last look at the conference hall before walking to the train station and taking a ride to Shibuya, taking quite a few photos out the train window as we passed through Kawasaki and Ota. Some of Tokyo&#39;s special wards look more like my grandmother&#39;s hometown (a small rural mining village near Fukuoka) than places like Shibuya, Shinjuku, or Yokohama itself (though even these wards are much larger than where my grandmother lives). A sea of concrete apartment buildings, ordinary &lt;em&gt;apaato&lt;/em&gt; and &lt;em&gt;tower mansions,&lt;/em&gt; some &lt;em&gt;danchi&lt;/em&gt; complexes too -- blocky, uniform, mostly built in the 60s through 80s, balconies with laundry hangers out in the sun. Narrow alleyways winding between houses and roads, lined with concrete walls streaked with dirt running down from the top. Grocery stores, &lt;em&gt;konbini,&lt;/em&gt; and laundromats stand side-by-side just blocks away from ancient shrines and pagodas (well, &amp;quot;ancient&amp;quot; -- most were rebuilt after the war), all nestled between dense forests and mountains. Everything smells faintly of sulfer. ...I should visit my grandmother&#39;s hometown sometime.&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/nishikanagawa-2025.jpg&quot; data-caption=&quot;A view outside the train window (Ota, Tokyo, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/nishikanagawa-2025.jpg&quot; alt=&quot;Multiple concrete apartment buildings, with an old pagoda visible in the distance, probably part of Ikegami Honmon-ji.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;After arriving in Shibuya, I met up with Kevin for a little thrift shopping -- if only I&#39;d realized that it was Golden Week! Shibuya was absolutely packed with people, even more than usual. I had a great time thrifting there, found a nice shirt made from repurposed kimono cloth (I&#39;d better make sure to keep it clean, I don&#39;t want to wash it too frequently!). Kevin also got a nice pair of white and orange shoes from Onitsuka Tiger; I may have to find some next time I&#39;m in Japan, they seem quite comfortable!&lt;/p&gt;
+&lt;p&gt;Getting back to Shibuya Station that night was very challenging with all the crowds around, but also weirdly fun? I don&#39;t mind blending into a crowd from time to time; after feeling somewhat hyper-visible throughout my visit to Japan (I always feel that way when I go back), it felt nice to disappear for once. (—ᴗ—)&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/shibuya1-2025.jpg&quot; data-caption=&quot;Shibuya during Golden Week (Shibuya, Tokyo, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/shibuya1-2025.jpg&quot; alt=&quot;A crowded Shibuya street during Golden Week (Shibuya, Tokyo, Japan).&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/shibuya2-2025.jpg&quot; data-caption=&quot;Shibuya Crossing (Shibuya, Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/shibuya2-2025.jpg&quot; alt=&quot;Shibuya Crossing at night (Shibuya, Tokyo, Japan).&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;Hibby and I took one last trip to Yokohama Chinatown for &lt;em&gt;nikuman&lt;/em&gt; that night (we actually visited on Saturday night as well, but realized the hard way that most Yokohama Chinatown locations do not accept credit card payments lol). Yokohama Chinatown was very quiet and relaxed this time, few customers around, many businesses closing early; I suspect this was also due to Golden Week. Hibby and I enjoyed our &lt;em&gt;nikuman&lt;/em&gt; very much; I have fond memories of eating &lt;em&gt;nikuman&lt;/em&gt; in Yokohama Chinatown as a little child, and remember them being as large as my face! Maybe they aren&#39;t anymore, but my face &lt;em&gt;was&lt;/em&gt; a bit smaller when I was 4 years old.&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/chinatown1-2025.jpg&quot; data-caption=&quot;Yokohama Chinatown (Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/chinatown1-2025.jpg&quot; alt=&quot;A narrow Yokohama Chinatown street lined with red paper lanterns (Yokohama, Japan).&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;a href=&quot;https://mayworms.info/public/images/chinatown2-2025.jpg&quot; data-caption=&quot;Yokohama Chinatown (Yokohama, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/chinatown2-2025.jpg&quot; alt=&quot;An ornate Chinese gate at a Yokohama Chinatown street entrance (Yokohama, Japan).&quot;&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;...Damn. I&#39;m really going back tomorrow morning. Feels like I just got here. So much more I wanted to do. ...Next time.&lt;/p&gt;
+&lt;h3 id=&quot;02-may-(friday)&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://mayworms.info/public/posts/2025-05-05.html#02-may-(friday)&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt; 02 May (Friday)&lt;/h3&gt;
+&lt;p&gt;Woke up, packed my remaining things, grabbed one last &lt;em&gt;konbini&lt;/em&gt; breakfast (rice, fish, renkon, lots of other vegatables), checked out from the hotel, said bye to Hibby (who departed for a different hotel in Tokyo), then entered Sakuragichō-eki for a train to Yokohama-eki, and from there to Haneda Kūkō. God, I&#39;m going to miss these trains so much.&lt;/p&gt;
+&lt;p&gt;Met some other departing CHI attendees in-line at the airport check-in; we mostly talked about conferencing in general, navigating academia in 2025, businesses cards, and feeling burnt-out from screens. One uncomfortable pat-down (hate it everytime) and one overpriced food court &lt;em&gt;okonomiyaki&lt;/em&gt; later ($12 and it&#39;s the size of a pancake? Get real!), I sat in the terminal and caught one last glimpse of Japan out the windows before boarding my plane. Cool, grey, and rainy outside.&lt;/p&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a href=&quot;https://mayworms.info/public/images/haneda-2025.jpg&quot; data-caption=&quot;A few outside the window at Haneda Airport (Tokyo, Japan)&quot;&gt;&lt;img src=&quot;https://mayworms.info/public/images/haneda-2025.jpg&quot; alt=&quot;An airplane on a Haneda Airport runway on a grey, rainy day.&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;...Farewell, Yokohama. I didn&#39;t know how much I missed you. I will come back one day.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;One twelve hour flight (and a bus ride from DTW to Ann Arbor) later, I found myself... right where I was one week and a day ago. Ann Arbor changes quickly in early May. The trees fill with blossoms and young leaves, proud graduates walk around in caps and gowns, the roads jam up with minivans and U-Hauls (but only for a short while -- State Street&#39;s not so bad once the undergrads leave).&lt;/p&gt;
+&lt;p&gt;I felt a little disoriented at first, reminding myself to use English and to stay on the right side of the sidewalk. I thought about the pedestrian walkways in many Japanese cities that connect major transit hubs to popular destinations. My grandmother and her friends would take train rides on the weekends from her rural mining town all the way to Fukuoka. Ann Arbor is a little dorito-shaped town nestled between three major freeways; getting anywhere in under half an hour requires a car. My grandmother would struggle to visit her friends if they all lived here.&lt;/p&gt;
+&lt;p&gt;I got home, ate a cheeseburger, took a shower, and went to bed!&lt;/p&gt;
+</content>
+  </entry>
+</feed>
