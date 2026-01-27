@@ -22,12 +22,7 @@
 	--text-color-h3: var(--dark-peach);
 
 	--syntax-tab-size: 2;
-}
-
-/* html, body {
-  overflow-x: hidden;
-  max-width: 100%;
-} I WANTED THIS TO WORK BUT IT BROKE THE STICKY SIDEBAR UGHLKJSDHGLKJSH */
+  }
 
 /* main/desktop */ 
 body {
@@ -955,8 +950,8 @@ body {
     }
   }
 
-    #footer {
-      margin-top: 1.5em;
-      font-size: var(--body-font-size); /* was 1.3em */
-    }
+  #footer {
+    margin-top: 1.5em;
+    font-size: var(--body-font-size); /* was 1.3em */
+  }
   
