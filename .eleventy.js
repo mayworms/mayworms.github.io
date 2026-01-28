@@ -1,6 +1,6 @@
 // eleventy.config.js (ESM)
 import { DateTime } from 'luxon';
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+// import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import * as markdownItModule from "markdown-it";
 import * as anchorModule from "markdown-it-anchor";
 
@@ -11,24 +11,24 @@ import pluginTOC from 'eleventy-plugin-nesting-toc';
 
 export default function(eleventyConfig) {
   // RSS
-  eleventyConfig.addPlugin(feedPlugin, {
-		type: "atom", // or "rss", "json"
-		outputPath: "/rss.xml",
-		collection: {
-			name: "posts", // iterate over `collections.posts`
-			limit: 10,     // 0 means no limit
-		},
-		metadata: {
-			language: "en",
-			title: "mayworms.info",
-			subtitle: "Samuel Reiji Mayworm's blog",
-			base: "https://mayworms.info/",
-			author: {
-				name: "Samuel Reiji Mayworm",
-				email: "", // Optional
-			}
-		}
-	});
+  // eleventyConfig.addPlugin(feedPlugin, {
+	// 	type: "atom", // or "rss", "json"
+	// 	outputPath: "/rss.xml",
+	// 	collection: {
+	// 		name: "posts", // iterate over `collections.posts`
+	// 		limit: 10,     // 0 means no limit
+	// 	},
+	// 	metadata: {
+	// 		language: "en",
+	// 		title: "mayworms.info",
+	// 		subtitle: "Samuel Reiji Mayworm's blog",
+	// 		base: "https://mayworms.info/",
+	// 		author: {
+	// 			name: "Samuel Reiji Mayworm",
+	// 			email: "", // Optional
+	// 		}
+	// 	}
+	// });
 
   // Markdown-it + markdown-it-anchor setup
   const md = markdownIt({
