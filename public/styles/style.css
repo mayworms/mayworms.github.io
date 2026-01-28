@@ -65,6 +65,7 @@ body {
     padding: 0 5%;
     font-weight: bold;
     font-size: calc(.9vw + .9vh);
+    outline: 1px solid var(--xkcd-peach);
     border-radius: 24px;
     margin: 1em auto;  /* 1em padding + auto (centers navbar) */
     display: flex;
@@ -135,6 +136,7 @@ body {
     flex: 3;
     padding-inline: 3em;
     background-color: var(--cream);
+    outline: 1px solid var(--xkcd-peach); /* 01-27-2026 */
     border-radius: 10px;
     top: 1em;
     display: block;
@@ -155,6 +157,7 @@ body {
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: var(--cream);
+    outline: 1px solid var(--xkcd-peach);
     border-radius: 10px;
     font-size: calc(.7vw + .7vh);
   }
@@ -212,6 +215,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--cream);
+    outline: 1px solid var(--xkcd-peach);
     margin: 1em auto;
     padding: 10px;
     text-align: center;
