@@ -1,6 +1,7 @@
 // eleventy.config.js (ESM)
 import { DateTime } from 'luxon';
 // import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import fontAwesomePlugin from "@11ty/font-awesome";
 import * as markdownItModule from "markdown-it";
 import * as anchorModule from "markdown-it-anchor";
 
@@ -97,6 +98,9 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./samuelscode.js": "/assets/js/samuelscode.js",
   });
+
+  // FontAwesome export
+  eleventyConfig.addPlugin(fontAwesomePlugin);
 
   return {
     dir: { input: "src", output: "public" },

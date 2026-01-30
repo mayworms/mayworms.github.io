@@ -83,6 +83,9 @@ title: "{{ tag }}"
                             <!--The content of "tag.md" i.e. list of pages in this tag-->
                             {{ content | safe }}
 
+                            <!-- outputs all the icons used on the page -->
+                            {% getBundle "fontawesome" %}
+
                         </article>
                     </div>
                 </main>
