@@ -192,6 +192,14 @@ body {
   #sidebar-links a:hover {
     color: var(--dark-mint); /* was light-mint */
   }
+
+  #contact-links svg { /* aka fontawesome icon resizing */
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em; /* fixed weird text alignment issue */
+    margin-right: 0.3em;
+    fill: currentColor; /* note: consider different colour? */
+  }
   
   /* "article": 
     body text inside "flex-2", nested inside "container" 
