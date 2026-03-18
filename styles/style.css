@@ -24,7 +24,7 @@
 	--syntax-tab-size: 2;
   }
 
-/* main/desktop */ 
+/* main/desktop view */ 
 body {
     overflow-y: scroll;
     background-color: var(--background-color);
@@ -51,7 +51,7 @@ body {
   /* site wrapper */
   .site-wrapper {
     max-width: 80%;
-    margin: 0 auto; /* centers site wrapper */
+    margin: 0 auto; /* zero margin + auto (centers site wrapper) */
   }
 
   #navbar, #footer {
