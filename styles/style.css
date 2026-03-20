@@ -193,12 +193,12 @@ body {
     color: var(--dark-mint); /* was light-mint */
   }
 
-  #contact-links svg { /* aka fontawesome icon resizing */
+  #contact-links svg { /* aka fontawesome icon resizing, please don't mess with this lol */
     width: 1em;
     height: 1em;
     vertical-align: -0.15em; /* fixed weird text alignment issue */
     margin-right: 0.3em;
-    fill: currentColor; /* note: consider different colour? */
+    fill: currentColor; /* note: consider different icon colour? */
   }
   
   /* "article": 
@@ -579,6 +579,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .gallery figure > a {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
   
   .gallery img {
