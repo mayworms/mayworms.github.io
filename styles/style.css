@@ -581,18 +581,18 @@ body {
     justify-content: center;
   }
 
-  .gallery figure > a { /* attempting to fix thumbnail weirdness */ 
+  /* .gallery figure > a { 
     display: block;
     width: 100%;
     height: 100%;
   }
 
-  .gallery figure > a > img { /* attempting to fix thumbnail weirdness */ 
+  .gallery figure > a > img { 
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-  }
+  } */
   
   .gallery img {
     width: 100%;
