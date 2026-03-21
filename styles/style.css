@@ -12,6 +12,7 @@
 	--mint: #24613b; /* was mint colour, aka #007856 */
 	--light-mint: #8cdc9b; 
   --dark-mint: #68a67d; /* bg colour, was #003D2C */
+  --toggle-mint: #2c6454;
 	--link-color: #F18F01; /* was #E65722 */
 
 	--background-color: var(--dark-mint); /* was: var(--light-peach) */
@@ -290,7 +291,7 @@ body {
     max-width: 100%;
     background: var(--mint);
     color: var(--cream);
-    border: 2px solid #2c6454;
+    border: 2px solid var(--toggle-mint);
     padding: 0.45rem 0.75rem;
     border-radius: 10px;
     cursor: pointer;
@@ -507,7 +508,7 @@ body {
     nav.toc:not(.expanded) .toc-toggle:active {
       background: var(--mint) !important;
       color: var(--cream) !important;
-      border: 2px solid #2c6454 !important;
+      border: 2px solid var(--toggle-mint) !important;
       transition: background-color 180ms ease, color 180ms ease;
     }
 
@@ -516,7 +517,7 @@ body {
     nav.toc.expanded .toc-toggle:focus {
       background: var(--light-mint) !important;
       color: var(--mint) !important;
-      border: 2px solid #2c6454 !important;
+      border: 2px solid var(--toggle-mint) !important;
       transition: background-color 180ms ease, color 180ms ease;
     }
 
@@ -546,11 +547,6 @@ body {
     to move from flexbox to grid; 
     thank god tbh, works so much better already
   */
-  
-  /* note to self: 
-    use <figure></figure> for multi-image galleries
-    omit <figure></figure> for single-image uploads 
-  */
 
   /* 
     You are now entering: Gallery Hell 
@@ -563,7 +559,7 @@ body {
     padding: 10px;
     margin: 0.5em auto;
     border-radius: 10px;
-    outline: 2px dotted #FFC099;
+    outline: 2px dotted var(--light-peach);
     max-width: 100%;
     box-sizing: border-box;
   }
