@@ -1,0 +1,988 @@
+:root {
+	--font-family: Jost, -apple-system, system-ui, sans-serif;
+  --font-family-monospace: Jost, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+
+	--xkcd-light-grey: #d8dcd6;
+	--xkcd-peach: #833500; /* was #9b330e */
+  --cream: #F5ECD7; /* was #ffffe4, then #FAEAD1 */
+	--light-peach: #FFC099;
+  --link-hover-peach: #ed9762;
+  --blockquote: #F5ECD7;
+	--dark-peach: #E65722; /* #E65722, aka Original Orange */
+	--mint: #24613b; /* was mint colour, aka #007856 */
+	--light-mint: #8cdc9b; 
+  --dark-mint: #68a67d; /* bg colour, was #003D2C */
+	--link-color: #F18F01; /* was #E65722 */
+
+	--background-color: var(--dark-mint); /* was: var(--light-peach) */
+	--text-color: var(--xkcd-peach);
+	--text-color-link: var(--xkcd-peach);
+	--text-color-link-active: var(--light-mint); 
+	--text-color-link-visited: var(--xkcd-peach);
+	--text-color-h3: var(--dark-peach);
+
+	--syntax-tab-size: 2;
+  }
+
+/* 
+    NOTE: this is a backup of my CSS before I attempt surgery on gallery view, 
+    because good lord I fucked up implementing gallery view so bad, 
+    I need to fix this before it gets worse
+*/ 
+
+/* main/desktop view */ 
+body {
+    overflow-y: scroll;
+    background-color: var(--background-color);
+    background-image: url("../images/web-bg.png");
+    background-blend-mode: soft-light;
+    font-size: calc(.9vw + .9vh);
+    font-family: var(--font-family);
+    margin: 0;
+    color: var(--xkcd-peach);
+    line-height: 1.5em;
+  }
+  
+  a, a:visited {
+    color: var(--xkcd-peach); 
+    text-decoration: underline;
+    text-decoration-color: var(--link-color);
+  }
+  a:hover {
+    color: var(--link-hover-peach); /* was --light-peach */
+    text-decoration: underline;
+    text-decoration-color: var(--light-peach);
+  }
+
+  /* site wrapper */
+  .site-wrapper {
+    max-width: 80%;
+    margin: 0 auto; /* zero margin + auto (centers site wrapper) */
+  }
+
+  #navbar, #footer {
+    width: 100%;
+  }
+  
+  /* header/navbar */
+  #navbar {
+    background-color: var(--cream);
+    box-sizing: border-box;
+    padding: 0 5%;
+    font-weight: bold;
+    font-size: calc(.9vw + .9vh);
+    outline: 1px solid var(--xkcd-peach);
+    border-radius: 24px;
+    margin: 1em auto;  /* 1em padding + auto (centers navbar) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  #navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-links {
+    display: flex;
+    margin-left: auto;
+  }
+  #navbar li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-right: 1.5em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+  }
+  #navbar li a, #navbar li a:visited {
+    color: var(--mint);
+    text-decoration: none;
+    padding: 3px;
+  }
+  #navbar li a:hover {
+    color: var(--dark-mint); /* was light-mint */
+    text-decoration: none;
+  }
+  .site-title {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  /* hamburger menu icon -- do NOT screw with this, you WILL break it */
+  .hamburger {
+    display: none; /* hidden on desktop/tablet view */
+    cursor: pointer;
+    font-size: 1.5em;
+    color: var(--mint);
+    align-self: center;
+  }
+
+  /* main content wrapper (sidebar + main stuff) */
+  #content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    width: 100%;
+  }
+
+  /* main content */
+  #container {
+    flex: 3;
+    padding-inline: 3em;
+    background-color: var(--cream);
+    outline: 1px solid var(--xkcd-peach); /* 01-27-2026 */
+    border-radius: 10px;
+    top: 1em;
+    display: block;
+  }
+
+  #container img {
+    border-radius: 10px;
+  }
+
+  /* sidebar stuff */
+  #sidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 1em;
+    flex: 1;
+    overflow: auto;
+    padding-inline: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--cream);
+    outline: 1px solid var(--xkcd-peach);
+    border-radius: 10px;
+    font-size: calc(.7vw + .7vh);
+  }
+
+  #profile img {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin: 1em;
+    outline: 6px double var(--mint);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #sidebar-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #sidebar-links li {
+    margin-bottom: 10px;
+  }
+
+  #sidebar-links a {
+    text-decoration: none;
+    color: var(--mint);
+    font-weight: bold;
+  }
+
+  #sidebar-links a:hover {
+    color: var(--dark-mint); /* was light-mint */
+  }
+
+  #contact-links svg { /* aka fontawesome icon resizing, please don't mess with this lol */
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em; /* fixed weird text alignment issue */
+    margin-right: 0.3em;
+    fill: currentColor; /* note: consider different icon colour? */
+  }
+  
+  /* "article": 
+    body text inside "flex-2", nested inside "container" 
+    (aka the cream-coloured block behind it).
+    In other words: the blog post text! 
+  */
+  article { 
+    flex-grow: 1;
+    padding: 10px;
+    /* margin-top: 0; */
+    margin: auto;
+    top: auto;
+    display: block;
+    font-size: calc(.8vw + .8vh);
+  }
+  
+  footer {
+    margin-inline: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cream);
+    outline: 1px solid var(--xkcd-peach);
+    margin: 1em auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 24px;
+  }
+  
+  h1, h2, h3, h4 {
+    color: var(--mint);
+  }
+
+  h1 {
+    line-height: 1.25;
+    margin-bottom: 0.6em;
+  }
+  
+  hr {
+    border: solid var(--xkcd-peach);
+    border-width: 1px 0 0 0;
+  }
+  
+  blockquote {
+    background: var(--blockquote);
+    padding-left: 1em;
+    border-left: 6px solid var(--mint);
+    font-size: .9em;
+    line-height: 1.4em;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 85%; */
+    height: auto;
+  }
+
+  /* 
+    You are now entering the Table of Contents Hell Zone 
+  */
+  nav.toc,
+  .table-of-contents,
+  .toc {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: calc(.75vw + .75vh);
+    color: var(--xkcd-peach);
+  }
+
+  /* 
+    Toggle bar: 25% of article width, cap at 320px.
+    Make sure there are NO other later rules that set 
+    .toc-toggle width: 100% 
+    */
+  .toc-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    gap: 0.6rem;
+    width: fit-content;
+    max-width: 100%;
+    background: var(--mint);
+    color: var(--cream);
+    border: 2px solid #2c6454;
+    padding: 0.45rem 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: calc(.7vw + .7vh);
+    font-weight: 700;
+    text-align: left;
+    box-sizing: border-box;
+    transition: background-color 180ms ease, color 180ms ease;
+  }
+
+  /* keeps toggle away from content */
+  .toc-toggle + .toc-list {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  /* plus icon (CSS +) */
+  .toc-toggle .toc-icon {
+    position: relative;
+    width: 1.1rem;
+    height: 1.1rem;
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-left: 0.5rem;
+    transition: transform 260ms ease;
+    transform-origin: center center;
+  }
+
+  .toc-toggle .toc-icon::before,
+  .toc-toggle .toc-icon::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: var(--cream);
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+    transition: background 180ms ease;
+  }
+
+  /* vertical bar */
+  .toc-toggle .toc-icon::before { 
+    width: 3px; 
+    height: 70%; 
+  }
+
+  /* horizontal bar */
+  .toc-toggle .toc-icon::after  { 
+    width: 70%; 
+    height: 3px; 
+  }
+
+  /* icon rotation */
+  nav.toc.expanded .toc-icon { 
+    transform: rotate(45deg); 
+  }
+
+  .toc-toggle:hover .toc-icon::before,
+  .toc-toggle:hover .toc-icon::after { 
+    background: var(--cream); 
+    transition: background 180ms ease;
+  }
+
+  .toc-toggle:focus {
+    outline: 3px solid rgba(8,120,80,0.16);
+    outline-offset: 3px;
+  }
+
+  .toc-toggle:hover,
+  .toc-toggle:focus {
+    background: var(--light-mint);
+    color: var(--mint);
+  }
+
+  .toc-toggle:focus {
+    outline: 3px solid rgba(8,120,80,0.16);
+    outline-offset: 3px;
+  }
+
+  .toc-toggle:hover .toc-title,
+  .toc-toggle:focus .toc-title {
+    color: var(--mint);
+  }
+  .toc-toggle:hover .toc-icon::before,
+  .toc-toggle:focus .toc-icon::before,
+  .toc-toggle:hover .toc-icon::after,
+  .toc-toggle:focus .toc-icon::after {
+    background: var(--mint);
+  }
+
+  /* ToC text inside button */
+  .toc-title { 
+    font-size: inherit;
+    color: var(--cream); 
+    transition: color 180ms ease;
+  }
+
+  .toc-list {
+    position: static; /* pushes page down */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.2rem;
+    overflow: hidden;
+    max-height: 0; /* collapsed by default */
+    transition: max-height 260ms ease;
+    padding-left: 1rem;
+    z-index: auto;
+    background: transparent;
+  }
+
+  /* makes JS set maxHeight inline when ToC is expanded */
+  nav.toc.expanded .toc-list {
+    max-height: 2000px;
+  }
+
+  /* ToC list stuff */
+  nav.toc ol,
+  nav.toc ul,
+  .toc-list ol,
+  .toc-list ul {
+    list-style: decimal;
+    list-style-position: outside;
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  nav.toc li,
+  .toc-list li {
+    display: list-item;
+    margin: 0.15rem 0;
+    line-height: 1.35;
+  }
+
+  nav.toc a,
+  .toc-list a {
+    color: var(--toc-link, var(--xkcd-peach));
+    display: inline-block;
+    text-decoration: underline;
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: var(--body-font-size);
+    line-height: 1.35;
+  }
+
+  /* marker stuff */
+  nav.toc li::marker,
+  .toc-list li::marker {
+    color: var(--mint); 
+    font-weight: 700;
+    font-size: 0.95em;
+    margin-inline-end: 0.35rem;
+  }
+
+  nav.toc a:hover,
+  .toc-list a:hover,
+  nav.toc a:focus,
+  .toc-list a:focus {
+    color: var(--link-hover-peach) !important;
+    /* color: var(--toc-link-hover, var(--light-mint)); */
+    transform: translateX(2px);
+  }
+
+  nav.toc ol ol,
+  nav.toc ul ul,
+  .toc-list ol ol,
+  .toc-list ul ul {
+    margin-left: 0.9rem;
+    padding-left: 0.6rem;
+    border-left: 1px dashed rgba(0,0,0,0.03);
+  }
+
+  nav.toc ol ol,
+  .toc-list ol ol {
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+  }
+
+  /* TOC icon rotation */
+  nav.toc.expanded .toc-icon {
+    transform: rotate(45deg); 
+  }
+
+  /* TOC mobile view code */
+  @media only screen and (max-width: 480px) {
+    .toc-toggle {
+      width: 100% !important;
+      padding: 0.6rem 0.9rem;
+      font-size: calc(.7em + 1vw + 1vh) !important;
+    }
+
+    nav.toc li, /* should fix ToC list item font size on mobile */
+    nav.toc ol li,
+    nav.toc ul li,
+    .toc-list li,
+    .toc-list ol li,
+    .toc-list ul li {
+      font-size: 1rem !important;
+      margin: 0.16rem 0;
+      line-height: 1.4;
+    }
+
+    nav.toc a,
+    .toc-list a {
+      padding: 2px 2px;
+      font-size: inherit;
+      line-height: 1.5;
+    }
+
+    /* ToC button behaves correctly when opened/closed on mobile */
+    nav.toc:not(.expanded) .toc-toggle,
+    nav.toc:not(.expanded) .toc-toggle:focus,
+    nav.toc:not(.expanded) .toc-toggle:active {
+      background: var(--mint) !important;
+      color: var(--cream) !important;
+      border: 2px solid #2c6454 !important;
+      transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    nav.toc.expanded .toc-toggle,
+    nav.toc.expanded .toc-toggle:hover,
+    nav.toc.expanded .toc-toggle:focus {
+      background: var(--light-mint) !important;
+      color: var(--mint) !important;
+      border: 2px solid #2c6454 !important;
+      transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    /* ToC button text changes font colour correctly */
+    nav.toc.expanded .toc-toggle .toc-title {
+      color: var(--mint) !important;
+    }
+
+    nav.toc:not(.expanded) .toc-toggle .toc-title {
+      color: var(--cream) !important;
+    }
+
+    /* ToC plus/x icon changes colour correctly */
+    nav.toc:not(.expanded) .toc-toggle .toc-icon::before,
+    nav.toc:not(.expanded) .toc-toggle .toc-icon::after {
+      background: var(--cream) !important;
+    }
+
+    nav.toc.expanded .toc-toggle .toc-icon::before,
+    nav.toc.expanded .toc-toggle .toc-icon::after {
+      background: var(--mint) !important;
+    }
+  }
+
+  /* note to self: 
+  should I have image galleries as grids instead of flex?
+  Might fix some of the weird alignment issues... 
+  */
+  
+  /* note to self: 
+  use <figure></figure> for multi-image galleries
+  omit <figure></figure> for single-image uploads 
+  */
+
+  /* 
+    You are now entering: Gallery Hell 
+    (you thought the Table of Contents was bad??) 
+  */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto; /* centers gallery */
+    max-width: fit-content; /* prevents overflow */
+    outline: 2px dotted #FFC099;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  } 
+
+  .gallery figure {
+    flex: 0 1 48%;
+    aspect-ratio: 4 / 3; /* new 11/09/25: maintains proportional preview boxes across screen sizes */
+    margin: 0;
+    overflow: hidden;
+    position: relative; /* hover effect */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .gallery figure > a { 
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery figure > a > img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  } */
+  
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease, filter 0.4s ease; /* hover effect */
+    transform-origin: center center; /* hover effect */
+  }
+
+  /* gallery hover/focus effect */
+  .gallery figure:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  .gallery figure:hover img,
+  .gallery figure:focus-within img {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  /* gallery hover-zoom on mobile */
+  @media (hover: none) and (pointer: coarse) {
+  .gallery img {
+    transition: transform 0.7s ease, filter 0.7s ease;
+  }
+
+  .gallery figure:hover img,
+  .gallery figure:focus-within img {
+    transform: scale(1.02);
+  }
+  }
+  
+  ul.none {
+      padding: 0;
+      list-style-type: none;
+  }
+  
+  .right {
+    float: right;
+    margin-left: 1em;
+  }
+  .left {
+    float: left;
+    margin-right: 1em;
+  }
+  .center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  
+  /* Recent Blog Posts section in index.html */
+  #recentpostlistdiv ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  /* Date/tags bar at the top of blog posts */
+  .postMetadata {
+    background-color: var(--cream);
+    width: fit-content;
+    text-align: left;
+  }
+  
+  /* navigation text at the bottom of blog posts */
+  #nextprev {
+    text-align: center;
+    margin-top: 1.4em;
+  }
+  
+  @media only screen and (max-width: 820px) { /* tablet view! */
+    .site-wrapper {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    
+    #flex {
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+
+    #navbar ul {
+      flex-wrap: wrap;
+    }
+    #sidebar {
+      width: calc(100% - 4em); /* Make sidebar take full width minus margins */
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-inline: 1.5em;
+      font-size: calc(.7vw + .7vh);
+    }
+
+    .gallery {
+      padding: 5px;
+      gap: 5px;
+    }
+
+    .toc-toggle + .toc-list { 
+      margin-top: 0.2rem; 
+    }
+    
+    nav.toc, 
+    .table-of-contents, 
+    .toc { 
+      margin-bottom: 0.6rem; 
+    }
+  }
+
+  @media screen and (min-width: 481px) { /* lowkey don't remember why I formatted this code like this, like 481? Why? But I'm afraid of breaking something if I change it lol */
+    #contact-toggle {
+      display: none;
+    }
+    #contact-links {
+      display: block !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) { /* mobile (phone) view! */
+    .site-wrapper {
+      width: 100vw; /* was 95% */
+      max-width: 100vw; /* was 95% */ 
+      padding: 1em;
+      box-sizing: border-box; /* 1-24-26 */
+      overflow-x: hidden; /* 1-24-26 */
+    }
+
+    #content-wrapper, #flex {   
+      flex-direction: column;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      line-height: 1.1;
+      margin-bottom: 1em; /* padding between title and date/tags */
+    }
+    
+    #navbar {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 1em;
+      display: flex; /* necessary? */
+      align-items: center; /* necessary? */
+      margin-bottom: 1.5em;
+    }
+    #navbar ul {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #navbar li {
+      white-space: nowrap;
+    }
+    .nav-links {
+      flex-direction: column;
+      display: none;
+      width: 25%;
+      position: absolute;
+      background-color: var(--cream);
+      font-size: 1.4em;
+      right: 5%;
+      top: 5.5em;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000; /* keeps menu on top */
+    }
+    .nav-links.show-nav {
+      display: flex;
+    }
+    .nav-links li {
+      padding: 1em 0;
+    }
+    .nav-links a {
+      display: block;
+      padding: 10px;
+      color: var(--mint);
+    }
+    .site-title {
+      font-size: 1.5em;
+    }
+
+    /* style for the hamburger icon on mobile -- please don't mess with this, this took forever to make lol */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      align-self: center;
+      position: relative;
+      padding-right: .25em;
+    }
+    .hamburger .bar {
+      width: 24px;
+      height: 3px;
+      margin: 6px auto;
+      background-color: var(--mint);
+      border-radius: 3px;
+      transition: all 0.4s ease;
+    }
+    .hamburger .bar1, .hamburger .bar3 {
+      transform-origin: center; /* Rotate around the center */
+    }
+    .hamburger.active .bar1 {
+      transform: rotate(45deg) translate(6.35px, 6.35px);
+      width: 21px;
+    }
+    .hamburger.active .bar2 {
+      opacity: 0;
+    }
+    .hamburger.active .bar3 {
+      transform: rotate(-45deg) translate(6.35px, -6.35px);
+      width: 21px;
+    }
+  
+    /* hamburger menu grey-out effect */
+    .grey-out {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 500;
+      display: none;
+    }
+    .grey-out.show-nav{
+      display: block;
+    }
+
+    /* alignment for sidebar and container */
+    #sidebar, #container {
+      width: 100%;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+    #container {
+      order: 2; /* keeps container below sidebar */
+      padding: 1em;
+      padding-top: 0em;
+      padding-bottom: 0em;
+    }
+    #sidebar {
+      order: 1; /* keeps sidebar above container */
+      padding: 1em;
+      font-size: 1.5em;
+      position: static;
+    }
+
+    /* flexbox for profile info + contacts links */
+    #profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: .5em;
+    }
+    #profile img {
+      width: 20%; 
+      height: 20%; 
+      border-radius: 50%;
+      margin: 1em;
+    }
+    #profile h2 {
+      margin: 0;
+    }
+    #profile p {
+      margin: 0;
+      text-align: left;
+      padding-top: .5em;
+      padding-bottom: .5em;
+      margin-top: .5em;
+      line-height: 1.2em;
+    }
+    #profile div {
+      display: flex; 
+      flex-direction: column;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    /* contact links toggle button */
+    #contact-toggle {
+      display: block;
+      width: 40%;
+      background-color: var(--mint);
+      color: var(--cream);
+      border: none;
+      border-radius: 28px;
+      padding: 4px;
+      font-size: .9em;
+      text-align: center;
+      cursor: pointer;
+      margin-top: .5em;
+    }
+    #contact-links {
+      display: none /* hidden by default */
+    }
+    #contact-toggle:hover {
+      color: var(--cream);
+      background-color: var(--dark-peach);
+    }
+    /* show contact links by clicking Contact button */
+    #contact-links.show {
+      display: block;
+      margin-top: 1em;
+    }
+
+    #flex {
+      gap: 1em;
+    }
+    article {
+      font-size: 1.8em;
+      line-height: 1.5em;
+      padding: .5em;
+    }
+
+    blockquote { /* mobile blockquote formatting */
+      background: var(--blockquote);
+      padding-left: 1em;
+      border-left: 6px solid var(--mint);
+      margin-left: 1em;
+      margin-right: 1em;
+      font-size: .9em;
+      line-height: 1.4em;
+    }
+
+    .gallery { /* 01-24-2026: fix gallery thumbnail formatting on mobile */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+    }
+
+    .gallery figure { /* 01-24-26 */
+      flex: 0 1 48%;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery img { /* 01-24-26 */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+      /* aspect-ratio: 3 / 4; */
+      /* max-width: 100%;
+      max-height: 100%;
+      min-width: 100%;
+      min-height: 100%; */
+    }
+
+    /* idle/closed */
+    nav.toc:not(.expanded) .toc-toggle {
+      background: var(--mint);
+      color: var(--cream);
+    }
+    /* hover/focus closed */
+    nav.toc:not(.expanded) .toc-toggle:hover,
+    nav.toc:not(.expanded) .toc-toggle:focus {
+      background: var(--light-mint);
+      color: var(--mint);
+    }
+    /* open (light mint bg, dark mint text) */
+    nav.toc.expanded .toc-toggle,
+    nav.toc.expanded .toc-toggle:hover,
+    nav.toc.expanded .toc-toggle:focus {
+      background: var(--light-mint) !important;
+      color: var(--mint) !important;
+    }
+  }
+
+  #footer {
+    margin-top: 1.5em;
+    font-size: var(--body-font-size); /* was 1.3em */
+  }
+  

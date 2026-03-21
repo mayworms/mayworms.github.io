@@ -542,13 +542,14 @@ body {
   }
 
   /* note to self: 
-  should I have image galleries as grids instead of flex?
-  Might fix some of the weird alignment issues... 
+    just massively overhauled my image gallery CSS 
+    to move from flexbox to grid; 
+    thank god tbh, works so much better already
   */
   
   /* note to self: 
-  use <figure></figure> for multi-image galleries
-  omit <figure></figure> for single-image uploads 
+    use <figure></figure> for multi-image galleries
+    omit <figure></figure> for single-image uploads 
   */
 
   /* 
@@ -556,52 +557,54 @@ body {
     (you thought the Table of Contents was bad??) 
   */
   .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+    gap: 10px; 
     padding: 10px;
+    margin: 0.5em auto;
     border-radius: 10px;
-    margin: 0 auto; /* centers gallery */
-    max-width: fit-content; /* prevents overflow */
     outline: 2px dotted #FFC099;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  } 
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 
-  .gallery figure {
-    flex: 0 1 48%;
-    aspect-ratio: 4 / 3; /* new 11/09/25: maintains proportional preview boxes across screen sizes */
+  /* allow either markup style: <div class="gallery"><figure>… or <a>… */
+  .gallery > figure,
+  .gallery > a {
     margin: 0;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
-    position: relative; /* hover effect */
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
   }
 
-  /* .gallery figure > a { 
+  .gallery a {
     display: block;
     width: 100%;
     height: 100%;
   }
 
-  .gallery figure > a > img { 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  } */
-  
   .gallery img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;      /* key: consistent tiles via crop */
+    object-position: center;/* default crop focus */
     display: block;
-    border-radius: 10px;
-    transition: transform 0.4s ease, filter 0.4s ease; /* hover effect */
-    transform-origin: center center; /* hover effect */
+    border-radius: inherit;
+
+    transition: transform 0.4s ease, filter 0.4s ease;
+    transform-origin: center center;
+  }
+
+  .gallery :is(figure, a):hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .gallery :is(figure, a):hover img,
+  .gallery :is(figure, a):focus-within img {
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   /* gallery hover/focus effect */
@@ -940,6 +943,18 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .gallery figure:only-child {
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: auto;
+    }
+
+    .gallery figure:only-child img {
+      height: auto;
+      object-fit: contain; /* show full comic, no crop */
     }
 
     .gallery img { /* 01-24-26 */
