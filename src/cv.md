@@ -59,7 +59,7 @@ Hibby Thach, <b><u>Samuel Mayworm</u></b>, Daniel Delmonaco, and Oliver L. Haims
 Conference on Human Factors in Computing Systems workshop on Resisting AI Solutionism: Where Do We Go From Here?</i>    
 
 <b><u>Samuel Mayworm</u></b>. 2026. <b>Identity in a Digital Deck.</b> <i>CHI
-Conference on Human Factors in Computing Systems. Workshop: Between and Beyond: Designing for Identity Complexity in HCI.</i>  
+Conference on Human Factors in Computing Systems workshop on Between and Beyond: Designing for Identity Complexity in HCI.</i>  
 
 ---  
 
