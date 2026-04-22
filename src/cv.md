@@ -58,6 +58,9 @@ Hibby Thach, <b><u>Samuel Mayworm</u></b>, Daniel Delmonaco, and Oliver L. Haims
 <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, Oliver L. Haimson. 2025. <b>Trans Resistance to AI Technologies.</b> <i>CHI
 Conference on Human Factors in Computing Systems workshop on Resisting AI Solutionism: Where Do We Go From Here?</i>    
 
+<b><u>Samuel Mayworm</u></b>. 2026. <b>Identity in a Digital Deck.</b> <i>CHI
+Conference on Human Factors in Computing Systems. Workshop: Between and Beyond: Designing for Identity Complexity in HCI.</i>  
+
 ---  
 
 <h3>Presentations</h3>
