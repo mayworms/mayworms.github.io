@@ -5,6 +5,15 @@ title: Publications
 description: Publications
 featured_image: favicon.png
 ---
+<h3>2026</h3>
+<hr>
+<h4>Workshop Papers (Non-Archival)</h4> 
+
+<b>Identity in a Digital Deck</b>    
+Author: <b><u>Samuel Mayworm</u></b>   
+Workshop: <i>Between and Beyond: Designing for Identity Complexity in HCI</i>         
+Conference: <i>2026 CHI Conference on Human Factors in Computing Systems (CHI 2026).</i>        
+
 <h3>2025</h3>
 <hr>
 <h4>Peer-Reviewed Works</h4>
