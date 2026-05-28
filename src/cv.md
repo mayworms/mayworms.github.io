@@ -54,6 +54,11 @@ Daniel Delmonaco, <b><u>Samuel Mayworm</u></b>, Josh Guberman, Hibby Thach, Aure
 
 Hibby Thach, <b><u>Samuel Mayworm</u></b>, Daniel Delmonaco, and Oliver L. Haimson. 2022. <a href="https://doi.org/10.1177/14614448221109804" target="_blank"><b>(In)Visible Moderation: A Digital Ethnography of Marginalized Users and Content Moderation on Twitch and Reddit.</b></a> <i>New Media & Society.</i>  
 
+<h4>Book Chapters</h4>
+<i>[In press]</i> Forum Modi, Mel Monier, <b><u>Samuel Mayworm</u></b>, Austin Toombs, Oliver L. Haimson. 2026. <b>Queer Roots to Queer Capitalism: Trans People of Color Experiences on Lex.</b> In <i>Dispatches from the Trans Internet</i>. B1NARY Press.    
+
+<i>[In press]</i> Kat Brewster, <b><u>Samuel Mayworm</u></b>, Oliver L. Haimson. 2026. <b>Hostile Digital Archives: Resisting, Refusing, and Reapproaching the Trans Digital Record.</b> In <i>Dispatches from the Trans Internet</i>. B1NARY Press.    
+
 <h4>Workshop Papers (Non-Archival)</h4>
 <b><u>Samuel Mayworm</u></b>, Michaelanne Thomas, Oliver L. Haimson. 2025. <b>Trans Resistance to AI Technologies.</b> <i>CHI
 Conference on Human Factors in Computing Systems workshop on Resisting AI Solutionism: Where Do We Go From Here?</i>    

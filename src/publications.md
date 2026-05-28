@@ -7,10 +7,22 @@ featured_image: favicon.png
 ---
 <h3>2026</h3>
 <hr>
+<h4>Book Chapters</h4>    
+
+<b><i>[In Press] </i>Queer Roots to Queer Capitalism: Trans People of Color Experiences on Lex</b>     
+Authors: Forum Modi, Mel Monier, <b><u>Samuel Reiji Mayworm</u></b>, Austin Toombs, Oliver L. Haimson    
+Published in: <a href="https://b1narypress.com/dispatches-from-the-trans-internet" target="_blank"><i>Dispatches from the Trans Internet</i></a>    
+Publisher: <a href="https://b1narypress.com/about" target="_blank">B1NARY Press</a>   
+
+<b><i>[In Press] </i>Hostile Digital Archives: Resisting, Refusing, and Reapproaching the Trans Digital Record</b>    
+Authors: Kat Brewster, <b><u>Samuel Reiji Mayworm</u></b>, Oliver L. Haimson    
+Published in: <a href="https://b1narypress.com/dispatches-from-the-trans-internet" target="_blank"><i>Dispatches from the Trans Internet</i></a>    
+Publisher: <a href="https://b1narypress.com/about" target="_blank">B1NARY Press</a>   
+
 <h4>Workshop Papers (Non-Archival)</h4> 
 
 <b>Identity in a Digital Deck</b>    
-Author: <b><u>Samuel Mayworm</u></b>   
+Author: <b><u>Samuel Reiji Mayworm</u></b>   
 Workshop: <i>Between and Beyond: Designing for Identity Complexity in HCI</i>         
 Conference: <i>2026 CHI Conference on Human Factors in Computing Systems (CHI 2026).</i>        
 
