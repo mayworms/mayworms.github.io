@@ -852,11 +852,13 @@ body {
       align-items: center;
       padding: .5em;
     }
-    #profile img {
-      width: 20%; 
-      height: 20%; 
+    #profile img { /* 09-21-2026: updated to fix flex stuff */
+      width: 80px;
+      height: 80px;
+      flex: 0 0 80px; 
+      object-fit: cover;
       border-radius: 50%;
-      margin: 1em;
+      margin: 0.75em;
     }
     #profile h2 {
       margin: 0;
@@ -870,10 +872,11 @@ body {
       line-height: 1.2em;
     }
     #profile div {
-      display: flex; 
+      display: flex;
       flex-direction: column;
-      margin-left: 1em;
-      margin-right: 1em;
+      min-width: 0; 
+      margin-left: 0.5em;
+      margin-right: 0.5em;
     }
 
     /* contact links toggle button */
