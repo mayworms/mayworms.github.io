@@ -5,7 +5,7 @@ title: Nice to meet you! 👋😃
 description: mayworms.info home page
 featured_image: favicon.png
 ---
-I am a PhD student at the <a href="https://www.si.umich.edu" target="_blank">University of Michigan School of Information</a> (UMSI), advised by <a href="https://oliverhaimson.com/index.html" target="_blank">Oliver L. Haimson</a> and <a href="https://michaelannethomas.com" target="_blank">Michaelanne Thomas</a>. I am a member of the <a href="https://oliverhaimson.com/team.html" target="_blank">Community Research on Identity and Technology (CRIT) Lab</a> and the <a href="https://michaelannethomas.com/anthropology-and-technology-lab/" target="_blank">Anthropology & Technology Lab (ATL)</a>.
+I am a PhD candidate at the <a href="https://www.si.umich.edu" target="_blank">University of Michigan School of Information</a> (UMSI), advised by <a href="https://oliverhaimson.com/index.html" target="_blank">Oliver L. Haimson</a> and <a href="https://michaelannethomas.com" target="_blank">Michaelanne Thomas</a>. I am a member of the <a href="https://oliverhaimson.com/team.html" target="_blank">Community Research on Identity and Technology (CRIT) Lab</a> and the <a href="https://michaelannethomas.com/anthropology-and-technology-lab/" target="_blank">Anthropology & Technology Lab (ATL)</a>.
 
 Some of my current research interests include trans-centered online communities, content moderation, algorithmic bias, folk theories, and community-built online infrastructures.
 
