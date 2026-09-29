@@ -114,6 +114,15 @@ University of Michigan
 
 ---
 
+<h3>Teaching</h3>
+
+**Graduate Student Instructor (GSI)**    
+Online Communities (SI 428)    
+University of Michigan School of Information    
+Fall 2026    
+
+---
+
 <h3>Professional Experience</h3>
 
 **Research Associate**  
