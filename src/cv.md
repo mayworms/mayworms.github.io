@@ -71,6 +71,10 @@ Conference on Human Factors in Computing Systems workshop on Between and Beyond:
 <h3>Presentations</h3>
 <h4>Conference Presentations</h4>
 
+**Digital Care and Survival: Contesting Platform Rigidity, Online Exclusion, and Technopower among Trans BIPOC Communities**     
+The 50th Anniversary for the Annual Meeting of the Society for Social Studies of Science (4S 2026)    
+Toronto, Ontario, Canada     
+
 **Content Moderation Folk Theories and Perceptions of Platform Spirit Among Marginalized Social Media Users**  
 The 27th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2024)  
 San Jose, Costa Rica
